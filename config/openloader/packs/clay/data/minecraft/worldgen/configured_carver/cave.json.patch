@@ -1,0 +1,9 @@
+[
+    {
+        "op": "replace",
+        "path": "/config/lava_level",
+        "value": {
+            "absolute": -65
+        }
+    }
+]

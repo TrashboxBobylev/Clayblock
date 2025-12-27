@@ -1,0 +1,12 @@
+[
+    {
+        "op": "replace",
+        "path": "/sea_level",
+        "value": -64
+    },
+    {
+        "op": "replace",
+        "path": "/aquifers_enabled",
+        "value": false
+    }
+]
