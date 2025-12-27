@@ -1,0 +1,8 @@
+logs/
+saves/
+screenshots/
+coremods/
+mods/*.jar
+options.txt
+config/sodium-fingerprint.json
+downloads/
