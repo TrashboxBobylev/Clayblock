@@ -6,3 +6,9 @@ mods/*.jar
 options.txt
 config/sodium-fingerprint.json
 downloads/
+.probe
+crash-reports/
+command_history.txt
+usercache.json
+usernamecache.json
+.vscode/
