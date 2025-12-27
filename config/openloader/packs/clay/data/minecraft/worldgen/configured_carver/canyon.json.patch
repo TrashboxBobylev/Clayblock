@@ -5,5 +5,10 @@
         "value": {
             "absolute": -65
         }
+    },
+    {
+        "op": "replace",
+        "path": "/config/probability",
+        "value": 0.2
     }
 ]
