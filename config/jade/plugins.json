@@ -72,5 +72,8 @@
     "registry_name": "OFF",
     "block_properties": false,
     "mod_name": true
+  },
+  "custommachinery": {
+    "machine_component_provider": true
   }
 }
