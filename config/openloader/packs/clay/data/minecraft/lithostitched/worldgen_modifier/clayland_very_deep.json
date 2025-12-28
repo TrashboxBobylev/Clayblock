@@ -1,0 +1,32 @@
+{
+  "type": "lithostitched:add_surface_rule",
+  "levels": [
+    "minecraft:overworld"
+  ],
+  "surface_rule": {
+    "type": "minecraft:condition",
+    "if_true": {
+      "type": "minecraft:biome",
+      "biome_is": ["modpack:clayland"]
+    },
+    "then_run": {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:vertical_gradient",
+          "false_at_and_above": {
+            "absolute": -40
+          },
+          "random_name": "kubejs:clay_2x",
+          "true_at_and_below": {
+            "absolute": -48
+          }
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "kubejs:clay_2x"
+          }
+        }
+      }
+  }
+}
