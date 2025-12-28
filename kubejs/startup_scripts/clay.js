@@ -1,3 +1,17 @@
+/** @type {typeof import("net.minecraft.world.item.Item$Properties").$Item$Properties } */
+let $Item$Properties  = Java.loadClass("net.minecraft.world.item.Item$Properties")
+/** @type {typeof import("net.minecraft.world.item.BlockItem").$BlockItem } */
+let $BlockItem  = Java.loadClass("net.minecraft.world.item.BlockItem")
+/** @type {typeof import("net.minecraft.world.level.material.PushReaction").$PushReaction } */
+let $PushReaction  = Java.loadClass("net.minecraft.world.level.material.PushReaction")
+/** @type {typeof import("net.minecraft.world.level.material.MapColor").$MapColor } */
+let $MapColor  = Java.loadClass("net.minecraft.world.level.material.MapColor")
+/** @type {typeof import("net.minecraft.world.level.block.state.BlockBehaviour$Properties").$BlockBehaviour$Properties } */
+let $BlockBehaviour$Properties  = Java.loadClass("net.minecraft.world.level.block.state.BlockBehaviour$Properties")
+/** @type {typeof import("net.minecraft.world.level.block.grower.TreeGrower").$TreeGrower } */
+let $TreeGrower  = Java.loadClass("net.minecraft.world.level.block.grower.TreeGrower")
+/** @type {typeof import("net.minecraft.world.level.block.SaplingBlock").$SaplingBlock } */
+let $SaplingBlock  = Java.loadClass("net.minecraft.world.level.block.SaplingBlock")
 /** @type {typeof import("net.minecraft.world.level.block.Block").$Block } */
 let $Block  = Java.loadClass("net.minecraft.world.level.block.Block")
 global.clays = [];
@@ -20,4 +34,14 @@ StartupEvents.registry("block", event => {
             tickEvent.level.removeBlock(tickEvent.block.getPos(), false);
         }
     }).hardness(0.3).viewBlocking(false).transparent(true).tagBlock("minecraft:mineable/shovel");
+
+    event.createCustom("clay_sapling", () => {
+        return new $SaplingBlock(new $TreeGrower("clay", "modpack:clay_tree", "modpack:clay_tree", "modpack:clay_tree"), $BlockBehaviour$Properties.of()["mapColor(net.minecraft.world.level.material.MapColor)"]($MapColor.PLANT).noCollission().randomTicks().instabreak().sound("grass").pushReaction($PushReaction.DESTROY));
+    });
+});
+
+StartupEvents.registry("item", event => {
+    event.createCustom("clay_sapling", () => {
+        return new $BlockItem("kubejs:clay_sapling", new $Item$Properties());
+    })
 });
