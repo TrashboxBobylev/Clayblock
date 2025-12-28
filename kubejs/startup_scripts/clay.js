@@ -7,7 +7,7 @@ StartupEvents.registry("block", event => {
     for (let i = 1; i <= 20; i++){
         let clay_id = `kubejs:clay_${i}x`;
         global.clays.push(clay_id);
-        event.create(clay_id).copyPropertiesFrom("minecraft:clay").hardness(0.6 + i*1);
+        event.create(clay_id).copyPropertiesFrom("minecraft:clay").hardness(0.6 + i*1).tagBlock("minecraft:mineable/shovel").requiresTool();
     }
 
     event.create("clay_leaves").soundType("gravel").suffocating(false).randomTick(tickEvent => {
@@ -19,5 +19,5 @@ StartupEvents.registry("block", event => {
             $Block.dropResources(tickEvent.block.getBlockState(), tickEvent.getLevel(),tickEvent.block.getPos());
             tickEvent.level.removeBlock(tickEvent.block.getPos(), false);
         }
-    }).hardness(0.3).viewBlocking(false).transparent(true);
+    }).hardness(0.3).viewBlocking(false).transparent(true).tagBlock("minecraft:mineable/shovel");
 });
