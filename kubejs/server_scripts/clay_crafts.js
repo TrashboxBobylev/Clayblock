@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
         ], {
             "C": global.clays[i-1]
         });
-        event.shapeless(global.clays[i-1]*4, [global.clays[i]]);
+        event.shapeless(Item.of(global.clays[i-1]).withCount(4), [global.clays[i]]);
     }
 });
 
