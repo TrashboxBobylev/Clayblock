@@ -13,3 +13,4 @@ usercache.json
 usernamecache.json
 .vscode/
 .mixin.out/
+local/kubejs/cache/
