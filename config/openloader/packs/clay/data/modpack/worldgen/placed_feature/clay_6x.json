@@ -1,9 +1,9 @@
 {
-  "feature": "modpack:clay_2x_2",
+  "feature": "modpack:clay_6x",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 30
+      "count": 11
     },
     {
       "type": "minecraft:in_square"
@@ -13,10 +13,10 @@
       "height": {
         "type": "minecraft:trapezoid",
         "max_inclusive": {
-          "absolute": 128
+          "above_bottom": 80
         },
         "min_inclusive": {
-          "absolute": -10
+          "above_bottom": -80
         }
       }
     },

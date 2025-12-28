@@ -1,9 +1,9 @@
 {
-  "feature": "modpack:clay_2x_1",
+  "feature": "modpack:clay_2x",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 1
+      "count": 2
     },
     {
       "type": "minecraft:in_square"
