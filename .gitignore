@@ -12,3 +12,4 @@ command_history.txt
 usercache.json
 usernamecache.json
 .vscode/
+.mixin.out/
