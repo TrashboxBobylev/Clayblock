@@ -19,6 +19,7 @@
     "block.kubejs.clay_18x": "18x Compressed Clay",
     "block.kubejs.clay_19x": "19x Compressed Clay",
     "block.kubejs.clay_20x": "20x Compressed Clay (Perfect)",
+    "block.kubejs.clay_leaves": "Clay Leaves",
 
     "modpack.clay_amount": "Worth %s clay balls."
 }
