@@ -14,3 +14,6 @@ usernamecache.json
 .vscode/
 .mixin.out/
 local/kubejs/cache/
+config/jei/world/*
+config/jei/ingredient-list-mod-sort-order.ini
+config/jei/recipe-category-sort-order.ini
