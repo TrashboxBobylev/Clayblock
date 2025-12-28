@@ -1,0 +1,16 @@
+filename = 'chunksending-1.21-2.8.jar'
+name = 'Chunk Sending[Forge/Fabric]'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '35cfb1c8a22f7acc25fbd9ff6ae6ec53329fa0de'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5540768
+project-id = 831663
