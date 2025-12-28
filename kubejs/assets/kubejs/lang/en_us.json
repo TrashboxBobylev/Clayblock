@@ -1,0 +1,24 @@
+{
+    "block.kubejs.clay_1x": "1x Compressed Clay",
+    "block.kubejs.clay_2x": "2x Compressed Clay",
+    "block.kubejs.clay_3x": "3x Compressed Clay",
+    "block.kubejs.clay_4x": "4x Compressed Clay",
+    "block.kubejs.clay_5x": "5x Compressed Clay",
+    "block.kubejs.clay_6x": "6x Compressed Clay",
+    "block.kubejs.clay_7x": "7x Compressed Clay",
+    "block.kubejs.clay_8x": "8x Compressed Clay",
+    "block.kubejs.clay_9x": "9x Compressed Clay",
+    "block.kubejs.clay_10x": "10x Compressed Clay",
+    "block.kubejs.clay_11x": "11x Compressed Clay",
+    "block.kubejs.clay_12x": "12x Compressed Clay",
+    "block.kubejs.clay_13x": "13x Compressed Clay",
+    "block.kubejs.clay_14x": "14x Compressed Clay",
+    "block.kubejs.clay_15x": "15x Compressed Clay",
+    "block.kubejs.clay_16x": "16x Compressed Clay",
+    "block.kubejs.clay_17x": "17x Compressed Clay",
+    "block.kubejs.clay_18x": "18x Compressed Clay",
+    "block.kubejs.clay_19x": "19x Compressed Clay",
+    "block.kubejs.clay_20x": "20x Compressed Clay (Perfect)",
+
+    "modpack.clay_amount": "Worth %s clay balls."
+}
