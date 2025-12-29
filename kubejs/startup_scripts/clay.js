@@ -45,5 +45,9 @@ StartupEvents.registry("block", event => {
 StartupEvents.registry("item", event => {
     event.createCustom("clay_sapling", () => {
         return new $BlockItem("kubejs:clay_sapling", new $Item$Properties());
-    })
+    });
+
+    event.create("clay_snack").food(food => {
+        food.saturation(0.6).nutrition(3).fastToEat().usingConvertsTo("minecraft:clay")
+    });
 });

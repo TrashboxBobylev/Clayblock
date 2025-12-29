@@ -23,5 +23,7 @@
     "block.kubejs.clay_sapling": "Clay Sapling",
     "block.kubejs.clay_planks": "Clay Planks",
 
+    "item.kubejs.clay_snack": "Clay Snack",
+
     "modpack.clay_amount": "Worth %s clay balls."
 }

@@ -20,6 +20,15 @@ ServerEvents.recipes(event => {
         event.shapeless(Item.of(global.clays[i-1]).withCount(4), [global.clays[i]]);
     }
 
+    event.shaped("4x kubejs:clay_snack", [
+        "CcC",
+        "c c",
+        "CcC"
+    ], {
+        "C": "kubejs:clay_2x",
+        "c": "kubejs:clay_1x"    
+    });
+
     event.shaped("6x kubejs:clay_planks", [
         "Cc",
         "cC"
