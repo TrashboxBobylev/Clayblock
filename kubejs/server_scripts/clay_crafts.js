@@ -24,6 +24,20 @@ ServerEvents.recipes(event => {
         "C": "kubejs:clay_1x",
         "c": "minecraft:clay_ball"
     });
+
+    event.campfireCooking('minecraft:brick', 'minecraft:clay', 0.35, 300);
+    event.campfireCooking('minecraft:terracotta', 'kubejs:clay_1x', 0.35, 300);
+
+    event.remove({output: "clayworks:kiln"});
+    event.shaped("clayworks:kiln", [
+        "TBT",
+        "BCB",
+        "TBT"
+    ], {
+        "C": "kubejs:clay_3x",
+        "B": "minecraft:bricks",
+        "T": "minecraft:terracotta"
+    });
 });
 
 ItemEvents.modifyTooltips(event => {
