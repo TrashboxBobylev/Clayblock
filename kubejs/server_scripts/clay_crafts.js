@@ -80,6 +80,7 @@ ServerEvents.recipes(event => {
     baking("kubejs:clay_3x", "minecraft:coal");
     baking("kubejs:clay_2x", "minecraft:cobblestone");
     baking("kubejs:clay_4x", "minecraft:raw_iron");
+    baking("kubejs:clay_5x", "minecraft:raw_gold");
     baking("kubejs:clay_6x", "minecraft:diamond");
 });
 
