@@ -38,6 +38,8 @@ StartupEvents.registry("block", event => {
     event.createCustom("clay_sapling", () => {
         return new $SaplingBlock(new $TreeGrower("clay", "modpack:clay_tree", "modpack:clay_tree", "modpack:clay_tree"), $BlockBehaviour$Properties.of()["mapColor(net.minecraft.world.level.material.MapColor)"]($MapColor.PLANT).noCollission().randomTicks().instabreak().sound("grass").pushReaction($PushReaction.DESTROY));
     });
+
+    event.create("clay_planks").copyPropertiesFrom("minecraft:oak_planks").tagBoth("minecraft:planks");
 });
 
 StartupEvents.registry("item", event => {

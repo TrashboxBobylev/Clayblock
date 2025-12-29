@@ -8,6 +8,22 @@ ServerEvents.recipes(event => {
         });
         event.shapeless(Item.of(global.clays[i-1]).withCount(4), [global.clays[i]]);
     }
+
+    event.shaped("6x kubejs:clay_planks", [
+        "Cc",
+        "cC"
+    ], {
+        "C": "kubejs:clay_2x",
+        "c": "minecraft:clay_ball"
+    });
+
+    event.shaped("kubejs:clay_planks", [
+        "Cc",
+        "cC"
+    ], {
+        "C": "kubejs:clay_1x",
+        "c": "minecraft:clay_ball"
+    });
 });
 
 ItemEvents.modifyTooltips(event => {
