@@ -1,0 +1,44 @@
+[
+    {
+        "mob": "untitledduckmod:duck",
+        "incontrol": true,
+        "seesky": false,
+        "when": "onjoin",
+        "result": "deny"
+    },
+    {
+        "mob": "untitledduckmod:goose",
+        "maxlight_full": 1,
+        "when": "onjoin",
+        "result": "allow"
+    },
+    {
+        "mob": "untitledduckmod:goose",
+        "mintime": 12500,
+        "maxtime": 23500,
+        "when": "onjoin",
+        "result": "allow"
+    },
+    {
+        "mob": "untitledduckmod:goose",
+        "when": "onjoin",
+        "result": "deny"
+    },
+    {
+        "mob": "untitledduckmod:goose",
+        "when": "finalize",
+        "result": "allow",
+        "healthmultiply": 3,
+        "damagemultiply": 2.5,
+        "speedmultiply": 0.8,
+        "ai": {
+            "goals": [
+                {
+                    "goal": "nearest_attackable_target",
+                    "priority": 2,
+                    "random_interval": 30
+                }
+            ]
+        }
+    }
+]

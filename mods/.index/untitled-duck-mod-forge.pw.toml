@@ -1,0 +1,16 @@
+filename = 'untitledduckmod-1.2.0-neoforge-1.21.1.jar'
+name = 'Untitled Duck Mod (Forge)'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '3ede2d1355565cfc860dbffaaef64d73b67d2ce6'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6903227
+project-id = 451789
