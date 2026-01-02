@@ -82,8 +82,8 @@ ServerEvents.recipes(event => {
     baking("kubejs:clay_4x", "minecraft:raw_iron");
     baking("kubejs:clay_5x", "minecraft:raw_gold");
     baking("kubejs:clay_6x", "minecraft:diamond");
-    baking("untitledduckmod:duck_egg", "kubejs:clay_3x");
-    baking("untitledduckmod:goose_egg", "kubejs:clay_4x");
+    baking("untitledduckmod:duck_egg", "kubejs:clay_4x");
+    baking("untitledduckmod:goose_egg", "kubejs:clay_5x");
 });
 
 ItemEvents.modifyTooltips(event => {
