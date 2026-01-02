@@ -1,21 +1,21 @@
 [
     {
         "mob": "untitledduckmod:duck",
-        "persecond": 0.5,
+        "persecond": 0.6,
         "attempts": 30,
         "amount": {
-            "minimum": 2,
+            "minimum": 1,
             "maximum": 5,
             "groupdistance": 3
         },
         "conditions": {
             "dimension": "minecraft:overworld",
             "norestrictions": true,
-            "mindist": 5,
-            "maxdist": 50,
+            "mindist": 10,
+            "maxdist": 80,
             "minheight": 45,
             "maxheight": 175,
-            "maxthis": 20
+            "maxthis": 60
         }
     },
     {

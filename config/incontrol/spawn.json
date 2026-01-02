@@ -7,6 +7,16 @@
         "result": "deny"
     },
     {
+        "mob": "untitledduckmod:duck",
+        "incontrol": true,
+        "when": "onjoin",
+        "maxcount": {
+            "amount": 3,
+            "perchunk": true
+        },
+        "result": "deny"
+    },
+    {
         "mob": "untitledduckmod:goose",
         "maxlight_full": 1,
         "when": "onjoin",
