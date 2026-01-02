@@ -12,5 +12,20 @@ NativeEvents.onEvent($LivingBreatheEvent, event => {
                 goose.igniteForSeconds(5);
             }
         }
+
+        let distance = 0;
+        for (let player of level.players){
+            if (player.distanceToEntity(goose) > 32){
+                if (distance == 0 || player.distanceToEntity(goose) < distance){
+                    distance = player.distanceToEntity(goose);
+                }
+            }
+        }
+
+        if (distance != 0){
+            if (level.random.nextInt(400) == 0){
+                goose.remove("discarded");
+            }
+        }
     }
 });
