@@ -10,7 +10,7 @@
         "mob": "untitledduckmod:duck",
         "incontrol": true,
         "when": "onjoin",
-        "maxcount": {
+        "mincount": {
             "amount": 3,
             "perchunk": true
         },
