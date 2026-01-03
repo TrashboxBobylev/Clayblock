@@ -16,12 +16,18 @@ let $SaplingBlock  = Java.loadClass("net.minecraft.world.level.block.SaplingBloc
 let $Block  = Java.loadClass("net.minecraft.world.level.block.Block")
 global.clays = [];
 global.clays.push("minecraft:clay");
+global.terracottas = [];
+global.terracottas.push("minecraft:terracotta");
 
 StartupEvents.registry("block", event => {
     for (let i = 1; i <= 20; i++){
         let clay_id = `kubejs:clay_${i}x`;
         global.clays.push(clay_id);
         event.create(clay_id).copyPropertiesFrom("minecraft:clay").hardness(0.6 + i*1).tagBlock("minecraft:mineable/shovel").requiresTool();
+
+        let terracotta_id = `kubejs:terracotta_${i}x`;
+        global.terracottas.push(terracotta_id);
+        event.create(terracotta_id).copyPropertiesFrom("minecraft:terracotta").hardness(1.25 + i*2.25).tagBlock("minecraft:mineable/pickaxe").requiresTool();
     }
 
     event.create("clay_leaves").soundType("gravel").suffocating(false).randomTick(tickEvent => {

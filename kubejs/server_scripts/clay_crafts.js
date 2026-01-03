@@ -18,6 +18,17 @@ ServerEvents.recipes(event => {
             "C": global.clays[i-1]
         });
         event.shapeless(Item.of(global.clays[i-1]).withCount(4), [global.clays[i]]);
+
+        event.smelting(Item.of(global.terracottas[i]), Item.of(global.clays[i]), 0.35);
+        event.shapeless(Item.of(global.terracottas[i-1]).withCount(4), [global.terracottas[i]]);
+        if (i > 1){
+            event.shaped(global.terracottas[i], [
+                "CC",
+                "CC"
+            ], {
+                "C": global.terracottas[i-1]
+            });
+        }
     }
 
     event.shaped("4x kubejs:clay_snack", [
@@ -89,6 +100,7 @@ ServerEvents.recipes(event => {
 ItemEvents.modifyTooltips(event => {
     for (let i = 0; i <= 20; i++){
         event.add(global.clays[i], [{translate: "modpack.clay_amount", with: [Math.pow(4, i+1).toString()]}]);
+        event.add(global.terracottas[i], [{translate: "modpack.terracotta_amount", with: [Math.pow(4, i).toString()]}]);
     }
     event.add("#untitledduckmod:duck_taming_food", [{translate: "modpack.tame_scrimblows"}]);
     event.add("#untitledduckmod:duck_breeding_food", [{translate: "modpack.breed_scrimblows"}]);
