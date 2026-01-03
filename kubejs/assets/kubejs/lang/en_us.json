@@ -25,5 +25,7 @@
 
     "item.kubejs.clay_snack": "Clay Snack",
 
-    "modpack.clay_amount": "Worth %s clay balls."
+    "modpack.clay_amount": "Worth %s clay balls.",
+    "modpack.tame_scrimblows": "Can be used to tame Scrimblows",
+    "modpack.breed_scrimblows": "Can be used to breed Scrimblows"
 }

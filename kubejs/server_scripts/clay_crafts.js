@@ -90,4 +90,6 @@ ItemEvents.modifyTooltips(event => {
     for (let i = 0; i <= 20; i++){
         event.add(global.clays[i], [{translate: "modpack.clay_amount", with: [Math.pow(4, i+1).toString()]}]);
     }
+    event.add("#untitledduckmod:duck_taming_food", [{translate: "modpack.tame_scrimblows"}]);
+    event.add("#untitledduckmod:duck_breeding_food", [{translate: "modpack.breed_scrimblows"}]);
 });
