@@ -95,6 +95,13 @@ ServerEvents.recipes(event => {
     baking("kubejs:clay_6x", "minecraft:diamond");
     baking("untitledduckmod:duck_egg", "kubejs:clay_3x");
     baking("untitledduckmod:goose_egg", "kubejs:clay_4x");
+
+    baking("clayworks:cyan_terracotta_bricks", "minecraft:gravel");
+    baking("kubejs:terracotta_2x", "minecraft:red_sand");
+    baking("kubejs:terracotta_3x", "minecraft:raw_copper");
+
+    baking("untitledduckmod:duck_feather", "minecraft:blue_dye");
+    baking("untitledduckmod:goose_foot", "minecraft:red_dye");
 });
 
 ItemEvents.modifyTooltips(event => {
