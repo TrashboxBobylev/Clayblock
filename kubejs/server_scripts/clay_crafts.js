@@ -97,6 +97,7 @@ ServerEvents.recipes(event => {
     baking("untitledduckmod:goose_egg", "kubejs:clay_4x");
 
     baking("clayworks:cyan_terracotta_bricks", "minecraft:gravel");
+    baking("minecraft:gray_glazed_terracotta", "minecraft:gunpowder");
     baking("kubejs:terracotta_2x", "minecraft:red_sand");
     baking("kubejs:terracotta_3x", "minecraft:raw_copper");
 
