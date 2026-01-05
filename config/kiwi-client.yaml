@@ -12,8 +12,8 @@ qol:
 debug:
   showTranslatedTagsByDefault: false
   printDataComponentsWhenCopy: true
-  tagsTooltip: true
-  debugTooltipMsg: true
+  tagsTooltip: false
+  debugTooltipMsg: false
   tagsTooltipAppendKeybindHint: false
   F3CopyInInventory: true
   tagsPerPage: 6
