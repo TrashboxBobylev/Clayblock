@@ -73,6 +73,9 @@ ServerEvents.recipes(event => {
     event.campfireCooking('minecraft:brick', 'minecraft:clay', 0.35, 300);
     event.campfireCooking('minecraft:terracotta', 'kubejs:clay_1x', 0.35, 300);
 
+    event.smelting("minecraft:pointed_dripstone", "kubejs:clay_snack", 0.35);
+    event.campfireCooking("minecraft:pointed_dripstone", "kubejs:clay_snack", 0.35, 600);
+
     event.remove({output: "clayworks:kiln"});
     event.shaped("clayworks:kiln", [
         "TBT",
