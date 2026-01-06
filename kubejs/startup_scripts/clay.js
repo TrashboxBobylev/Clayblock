@@ -27,7 +27,7 @@ StartupEvents.registry("block", event => {
 
         let terracotta_id = `kubejs:terracotta_${i}x`;
         global.terracottas.push(terracotta_id);
-        event.create(terracotta_id).copyPropertiesFrom("minecraft:terracotta").hardness(1.25 + i*2.25).tagBlock("minecraft:mineable/pickaxe").requiresTool();
+        event.create(terracotta_id).copyPropertiesFrom("minecraft:terracotta").hardness(1.25 + i*2.25).tagBlock("minecraft:mineable/pickaxe").tagBoth("minecraft:terracotta").requiresTool();
     }
 
     event.create("clay_leaves").soundType("gravel").suffocating(false).randomTick(tickEvent => {
@@ -39,7 +39,7 @@ StartupEvents.registry("block", event => {
             $Block.dropResources(tickEvent.block.getBlockState(), tickEvent.getLevel(),tickEvent.block.getPos());
             tickEvent.level.removeBlock(tickEvent.block.getPos(), false);
         }
-    }).hardness(0.3).viewBlocking(false).transparent(true).tagBlock("minecraft:mineable/shovel").renderType("cutout_mipped");
+    }).hardness(0.3).viewBlocking(false).transparent(true).tagBlock("minecraft:mineable/shovel").tagBoth("minecraft:leaves").renderType("cutout_mipped");
 
     event.createCustom("clay_sapling", () => {
         return new $SaplingBlock(new $TreeGrower("clay", "modpack:clay_tree", "modpack:clay_tree", "modpack:clay_tree"), $BlockBehaviour$Properties.of()["mapColor(net.minecraft.world.level.material.MapColor)"]($MapColor.PLANT).noCollission().randomTicks().instabreak().sound("grass").pushReaction($PushReaction.DESTROY));
