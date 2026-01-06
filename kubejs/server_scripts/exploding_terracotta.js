@@ -3,7 +3,13 @@ ServerEvents.recipes(event => {
         "minecraft:red_terracotta": "minecraft:redstone",
         "minecraft:blue_terracotta": "minecraft:lapis_lazuli",
         "minecraft:purple_terracotta": "minecraft:amethyst_shard",
-        "minecraft:yellow_terracotta": "minecraft:glowstone_dust" 
+        "minecraft:yellow_terracotta": "minecraft:glowstone_dust",
+        "minecraft:green_terracotta": "minecraft:emerald",
+        "minecraft:cyan_terracotta": "minecraft:string",
+        "minecraft:white_terracotta": "minecraft:quartz",
+        "minecraft:lime_terracotta": "minecraft:slime_ball",
+        "minecraft:magenta_terracotta": "minecraft:popped_chorus_fruit",
+        "minecraft:orange_terracotta": "minecraft:honey_bottle"
     };
 
     for (let recipe of Object.entries(recipes)){
