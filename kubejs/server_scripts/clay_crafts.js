@@ -56,6 +56,20 @@ ServerEvents.recipes(event => {
         "c": "minecraft:clay_ball"
     });
 
+    event.shaped("4x kubejs:clay_stairs", [
+        "C  ",
+        "CC ",
+        "CCC"
+    ], {
+        "C": "kubejs:clay_planks"
+    });
+
+    event.shaped("6x kubejs:clay_slab", [
+        "CCC"
+    ], {
+        "C": "kubejs:clay_planks"
+    });
+
     event.campfireCooking('minecraft:brick', 'minecraft:clay', 0.35, 300);
     event.campfireCooking('minecraft:terracotta', 'kubejs:clay_1x', 0.35, 300);
 

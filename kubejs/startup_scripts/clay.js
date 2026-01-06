@@ -45,7 +45,11 @@ StartupEvents.registry("block", event => {
         return new $SaplingBlock(new $TreeGrower("clay", "modpack:clay_tree", "modpack:clay_tree", "modpack:clay_tree"), $BlockBehaviour$Properties.of()["mapColor(net.minecraft.world.level.material.MapColor)"]($MapColor.PLANT).noCollission().randomTicks().instabreak().sound("grass").pushReaction($PushReaction.DESTROY));
     });
 
-    event.create("clay_planks").copyPropertiesFrom("minecraft:oak_planks").tagBoth("minecraft:planks");
+    event.create("clay_planks").copyPropertiesFrom("minecraft:oak_planks").tagBoth("minecraft:planks").tagBlock("minecraft:mineable/axe");
+
+    event.create("clay_slab", "kubejs:slab").copyPropertiesFrom("minecraft:oak_slab").tagBoth(["minecraft:wooden_slabs", "minecraft:slab"]).tagBlock("minecraft:mineable/axe").texture("kubejs:block/clay_planks");
+
+    event.create("clay_stairs", "kubejs:stairs").copyPropertiesFrom("minecraft:oak_stairs").tagBoth(["minecraft:wooden_stairs", "minecraft:stairs"]).tagBlock("minecraft:mineable/axe").texture("kubejs:block/clay_planks");
 });
 
 StartupEvents.registry("item", event => {
