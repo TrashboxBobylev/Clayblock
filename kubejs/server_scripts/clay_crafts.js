@@ -120,6 +120,7 @@ ServerEvents.recipes(event => {
 
     baking("untitledduckmod:duck_feather", "minecraft:blue_dye");
     baking("untitledduckmod:goose_foot", "minecraft:red_dye");
+    baking("minecraft:dripstone_block", "minecraft:beef");
 });
 
 ItemEvents.modifyTooltips(event => {
