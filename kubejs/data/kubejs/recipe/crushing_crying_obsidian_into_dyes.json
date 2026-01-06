@@ -1,0 +1,42 @@
+{
+    "type": "lychee:block_crushing",
+    "landing_block": "minecraft:crying_obsidian",
+    "post": [
+        {
+            "type": "explode",
+            "radius": 6
+        },
+        "delay 0.1 /hide",
+        {
+            "type": "random",
+            "rolls": {
+                "min": 6,
+                "max": 12
+            },
+            "entries": [
+                {
+                    "type": "drop_item",
+                    "id": "minecraft:red_dye"
+                },
+                {
+                    "type": "drop_item",
+                    "id": "minecraft:blue_dye"
+                },
+                {
+                    "type": "drop_item",
+                    "id": "minecraft:white_dye"
+                },
+                {
+                    "type": "drop_item",
+                    "id": "minecraft:green_dye"
+                },
+                {
+                    "type": "drop_item",
+                    "id": "minecraft:black_dye"
+                }
+            ]
+        },
+        "drop 10xp",
+        "place *"
+    ]
+}
