@@ -1,0 +1,26 @@
+{
+    "type": "lychee:random_block_ticking",
+    "block_in": "minecraft:crying_obsidian",
+    "if": {
+        "type": "and",
+        "contextual": [
+            {
+                "type": "location",
+                "offsetY": -2,
+                "predicate": {
+                    "block": {
+                        "blocks": "minecraft:pointed_dripstone"
+                    }
+                }
+            },
+            {
+                "type": "chance",
+                "chance": 0.5
+            }
+        ]
+    },
+    "post": {
+        "type": "place",
+        "block": "minecraft:obsidian"
+    }
+}

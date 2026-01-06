@@ -126,4 +126,6 @@ ItemEvents.modifyTooltips(event => {
     }
     event.add("#untitledduckmod:duck_taming_food", [{translate: "modpack.tame_scrimblows"}]);
     event.add("#untitledduckmod:duck_breeding_food", [{translate: "modpack.breed_scrimblows"}]);
+
+    event.add("minecraft:crying_obsidian", [{translate: "modpack:dripping_crying_1"}, {translate: "modpack:dripping_crying_2"}]);
 });

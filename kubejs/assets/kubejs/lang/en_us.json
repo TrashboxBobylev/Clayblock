@@ -50,5 +50,7 @@
     "modpack.clay_amount": "Worth %s clay balls.",
     "modpack.terracotta_amount": "Worth %s terracotta blocks.",
     "modpack.tame_scrimblows": "Can be used to tame Scrimblows",
-    "modpack.breed_scrimblows": "Can be used to breed Scrimblows"
+    "modpack.breed_scrimblows": "Can be used to breed Scrimblows",
+    "modpack.dripping_crying_1": "Drips water into a cauldron, when pointed two blocks above dripstone",
+    "modpack.dripping_crying_2": "Will eventually decay, if used for this purpose"
 }

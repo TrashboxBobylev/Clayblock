@@ -1,0 +1,16 @@
+{
+    "type": "lychee:dripstone_dripping",
+    "source_block": "minecraft:crying_obsidian",
+    "target_block": "minecraft:cauldron",
+    "post": [
+        {
+            "type": "place",
+            "block": {
+                "blocks": "minecraft:water_cauldron",
+                "state": {
+                    "level": "3"
+                }
+            }
+        }
+    ]
+}
