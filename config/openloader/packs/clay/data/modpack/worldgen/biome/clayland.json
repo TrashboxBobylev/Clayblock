@@ -22,7 +22,9 @@
   "features": [
     [],
     [],
-    [],
+    [
+      "modpack:clay_geode"
+    ],
     [],
     [],
     [],
