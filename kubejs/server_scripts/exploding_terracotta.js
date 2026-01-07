@@ -9,7 +9,8 @@ ServerEvents.recipes(event => {
         "minecraft:white_terracotta": "minecraft:quartz",
         "minecraft:lime_terracotta": "minecraft:slime_ball",
         "minecraft:magenta_terracotta": "minecraft:popped_chorus_fruit",
-        "minecraft:orange_terracotta": "minecraft:honey_bottle"
+        "minecraft:orange_terracotta": "minecraft:honey_bottle",
+        "minecraft:brown_terracotta": "minecraft:leather"
     };
 
     for (let recipe of Object.entries(recipes)){
