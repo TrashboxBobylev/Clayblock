@@ -31,6 +31,8 @@ ServerEvents.recipes(event => {
         }
     }
 
+    event.shapeless("4x minecraft:clay_ball", ["minecraft:clay"]);
+
     event.shaped("4x kubejs:clay_snack", [
         "CcC",
         "c c",
