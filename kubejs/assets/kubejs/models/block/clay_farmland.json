@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_farmland",
+  "textures": {
+    "dirt": "kubejs:block/clay_3x",
+    "top": "kubejs:block/clay_land_top"
+  }
+}
