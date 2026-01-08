@@ -21,7 +21,7 @@ let $CommonHooks = Java.loadClass("net.neoforged.neoforge.common.CommonHooks")
 StartupEvents.registry("block", event => {
     event.create("clay_stalk", "kubejs:wall").texture("minecraft:block/verdant_froglight_side").copyPropertiesFrom("minecraft:tuff_brick_wall").tagBlock("minecraft:mineable/axe").hardness(10).requiresTool();
 
-    event.create("clay_fruit").copyPropertiesFrom("minecraft:moss_block").tagItem("c:crops").tagBlock("minecraft:mineable/axe");
+    event.create("clay_fruit").copyPropertiesFrom("minecraft:moss_block").tagItem("c:crops").tagBlock("minecraft:mineable/axe").notSolid();
 
     event.createCustom("clay_farmland", () => {
         return new JavaAdapter($FarmBlock, {
