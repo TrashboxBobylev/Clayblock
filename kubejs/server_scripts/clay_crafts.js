@@ -72,6 +72,14 @@ ServerEvents.recipes(event => {
         "C": "kubejs:clay_planks"
     });
 
+    event.shaped("minecraft:moss_block"*2, [
+        "CCC",
+        "CCC",
+        "CCC"
+    ], {
+        "C": "kubejs:clay_fruit"
+    });
+
     event.campfireCooking('minecraft:brick', 'minecraft:clay', 0.35, 300);
     event.campfireCooking('minecraft:terracotta', 'kubejs:clay_1x', 0.35, 300);
 
@@ -123,6 +131,8 @@ ServerEvents.recipes(event => {
     baking("untitledduckmod:duck_feather", "minecraft:blue_dye");
     baking("untitledduckmod:goose_foot", "minecraft:red_dye");
     baking("minecraft:dripstone_block", "minecraft:beef");
+
+    baking("kubejs:clay_fruit", "3x minecraft:short_grass");
 });
 
 ItemEvents.modifyTooltips(event => {
