@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
         "C": "kubejs:clay_planks"
     });
 
-    event.shaped("minecraft:moss_block"*2, [
+    event.shaped("2x minecraft:moss_block", [
         "CCC",
         "CCC",
         "CCC"
@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
     baking("untitledduckmod:goose_foot", "minecraft:red_dye");
     baking("minecraft:dripstone_block", "minecraft:beef");
 
-    baking("kubejs:clay_fruit", "3x minecraft:short_grass");
+    baking("kubejs:clay_fruit", "minecraft:short_grass");
 });
 
 ItemEvents.modifyTooltips(event => {
