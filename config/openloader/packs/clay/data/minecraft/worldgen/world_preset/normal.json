@@ -27,8 +27,8 @@
       "generator": {
         "type": "minecraft:noise",
         "biome_source": {
-          "type": "minecraft:multi_noise",
-          "preset": "minecraft:nether"
+          "type": "minecraft:fixed",
+          "biome": "modpack:terracottaland"
         },
         "settings": "minecraft:nether"
       }

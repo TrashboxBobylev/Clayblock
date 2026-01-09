@@ -1,0 +1,17 @@
+[
+    {
+        "op": "replace",
+        "path": "/sea_level",
+        "value": 16
+    },
+    {
+        "op": "replace",
+        "path": "/default_block/Name",
+        "value": "kubejs:terracotta_1x"
+    },
+    {
+        "op": "replace",
+        "path": "/surface_rule/sequence/7/result_state/Name",
+        "value": "kubejs:terracotta_1x"
+    }
+]
