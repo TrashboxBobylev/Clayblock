@@ -10,8 +10,7 @@
         "value": "kubejs:terracotta_1x"
     },
     {
-        "op": "replace",
-        "path": "/surface_rule/sequence/7/result_state/Name",
-        "value": "kubejs:terracotta_1x"
+        "op": "remove",
+        "path": "/surface_rule/sequence/7"
     }
 ]

@@ -1,8 +1,7 @@
 {
   "carvers": {
     "air": [
-        "minecraft:nether_cave",
-        "minecraft:cave"
+        "minecraft:nether_cave"
     ]
   },
   "downfall": 0.0,

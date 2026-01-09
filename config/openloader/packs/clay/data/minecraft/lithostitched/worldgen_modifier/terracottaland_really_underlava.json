@@ -1,0 +1,32 @@
+{
+  "type": "lithostitched:add_surface_rule",
+  "levels": [
+    "minecraft:the_nether"
+  ],
+  "surface_rule": {
+    "type": "minecraft:condition",
+    "if_true": {
+      "type": "minecraft:biome",
+      "biome_is": ["modpack:terracottaland"]
+    },
+    "then_run": {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:vertical_gradient",
+          "false_at_and_above": {
+            "absolute": 28
+          },
+          "random_name": "kubejs:terracotta_4x",
+          "true_at_and_below": {
+            "absolute": 20
+          }
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "kubejs:terracotta_4x"
+          }
+        }
+      }
+  }
+}
