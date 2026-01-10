@@ -55,4 +55,17 @@ ServerEvents.recipes(event => {
         "C": "clayworks:kiln",
         "S": "minecraft:soul_sand"
     });
+
+    event.blasting("minecraft:ancient_debris", "kubejs:terracotta_6x", 0.75, 200);
+    event.blasting("minecraft:crying_obsidian", "minecraft:obsidian", 0.75, 200);
+    event.blasting("minecraft:mangrove_log", "kubejs:terracotta_5x", 0.75, 200);
+    event.blasting("minecraft:copper_ore", "kubejs:terracotta_4x", 0.75, 200);
+    event.blasting("minecraft:leather", "kubejs:terracotta_3x", 0.75, 200);
+    event.blasting("minecraft:blackstone", "kubejs:terracotta_2x", 0.75, 200);
+    event.blasting("minecraft:gravel", "kubejs:clay_2x", 0.75, 200);
+    event.blasting("minecraft:coal_ore", "kubejs:clay_3x", 0.75, 200);
+    event.blasting("minecraft:iron_ore", "kubejs:clay_4x", 0.75, 200);
+    event.blasting("minecraft:gold_ore", "kubejs:clay_5x", 0.75, 200);
+    event.blasting("minecraft:diamond_ore", "kubejs:clay_6x", 0.75, 200);
+    event.blasting("minecraft:black_dye", "minecraft:coal_block", 0.75, 200);
 });
