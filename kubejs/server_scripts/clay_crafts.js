@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
     /**
      * 
      * @param {import("net.minecraft.world.item.crafting.Ingredient").$Ingredient$$Type} input 
-     * @param {import("net.minecraft.world.item.ItemStack").$ItemStack} output 
+     * @param {import("net.minecraft.world.item.ItemStack").$ItemStack$$Type} output 
      */
     function baking(input, output){
         let finalInput = Ingredient.of(input);
@@ -125,6 +125,9 @@ ServerEvents.recipes(event => {
     baking("minecraft:dripstone_block", "minecraft:beef");
 
     baking("kubejs:clay_fruit", "minecraft:short_grass");
+    baking("minecraft:mangrove_roots", "8x minecraft:stick");
+    baking("minecraft:granite", "minecraft:quartz");
+    baking("minecraft:brown_mushroom_block", "3x minecraft:torch");
 });
 
 ItemEvents.modifyTooltips(event => {

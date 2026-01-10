@@ -14,7 +14,10 @@ ServerEvents.recipes(event => {
         "minecraft:light_blue_terracotta": "minecraft:prismarine_shard",
         "minecraft:black_terracotta": "minecraft:echo_shard",
         "minecraft:pink_terracotta": "minecraft:spider_eye",
-        "minecraft:light_gray_terracotta": "minecraft:brown_mushroom"
+        "minecraft:light_gray_terracotta": "minecraft:brown_mushroom",
+
+        "minecraft:gray_concrete_powder": "minecraft:gunpowder",
+        "minecraft:red_nether_bricks": "minecraft:nether_brick"
     };
 
     for (let recipe of Object.entries(recipes)){
