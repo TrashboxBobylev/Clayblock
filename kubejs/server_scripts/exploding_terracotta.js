@@ -17,7 +17,8 @@ ServerEvents.recipes(event => {
         "minecraft:light_gray_terracotta": "minecraft:brown_mushroom",
 
         "minecraft:gray_concrete_powder": "minecraft:gunpowder",
-        "minecraft:red_nether_bricks": "minecraft:nether_brick"
+        "minecraft:red_nether_bricks": "minecraft:nether_brick",
+        "minecraft:ochre_froglight": {item: "minecraft:blaze_powder", chance: 0.33}
     };
 
     for (let recipe of Object.entries(recipes)){
@@ -27,8 +28,8 @@ ServerEvents.recipes(event => {
             post: [
                 {
                     type: "drop_item",
-                    if: {type: "chance", chance: 0.5},
-                    id: recipe[1]
+                    if: {type: "chance", chance: typeof(recipe[1]) == "string" ? 0.5 : recipe[1].chance },
+                    id: typeof(recipe[1]) == "string" ? recipe[1] : recipe[1].item
                 },
                 {
                     type: "prevent_default"

@@ -26,4 +26,33 @@ ServerEvents.recipes(event => {
             "O": `minecraft:${value}_glazed_terracotta`
         });
     });
+
+    event.shaped("minecraft:blaze_rod", [
+        " bb",
+        "bsb",
+        "bb "
+    ], {
+        "b": "minecraft:blaze_powder",
+        "s": "minecraft:stick"
+    });
+
+    event.shaped("minecraft:soul_sand", [
+        "GS",
+        "SG"
+    ], {
+        "G": "minecraft:granite",
+        "S": "minecraft:red_sand"
+    });
+
+    event.remove("minecraft:blast_furnace");
+    event.shaped("2x minecraft:blast_furnace", [
+        "NNN",
+        "MCM",
+        "SSS"
+    ], {
+        "N": "minecraft:nether_bricks",
+        "M": "minecraft:magma_block",
+        "C": "clayworks:kiln",
+        "S": "minecraft:soul_sand"
+    });
 });
