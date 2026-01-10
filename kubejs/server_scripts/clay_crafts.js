@@ -1,14 +1,6 @@
 /** @type {typeof import("net.minecraft.world.item.crafting.Ingredient").$Ingredient } */
 let $Ingredient  = Java.loadClass("net.minecraft.world.item.crafting.Ingredient")
 
-/**
- * 
- * @param {import("net.minecraft.world.item.crafting.Ingredient").$Ingredient$$Original} thing 
- */
-function properJsonConvert(thing){
-    return thing.containsAnyTag() ? thing.toJson() : thing.getStackArray()[0].toJson();
-}
-
 ServerEvents.recipes(event => {
     for (let i = 1; i <= 20; i++){
         event.shaped(global.clays[i], [
@@ -100,18 +92,18 @@ ServerEvents.recipes(event => {
     /**
      * 
      * @param {import("net.minecraft.world.item.crafting.Ingredient").$Ingredient$$Type} input 
-     * @param {import("net.minecraft.world.item.crafting.Ingredient").$Ingredient$$Type} output 
+     * @param {import("net.minecraft.world.item.ItemStack").$ItemStack} output 
      */
     function baking(input, output){
         let finalInput = Ingredient.of(input);
-        let finalOutput = Ingredient.of(output);
+        let finalOutput = Item.of(output);
         event.custom({
             type: "clayworks:baking",
             category: "misc",
             cookingtime: 200,
             experience: 0.3,
             ingredient: finalInput.toJson(),
-            result: properJsonConvert(finalOutput)
+            result: finalOutput.toJson()
         });
     }
 
