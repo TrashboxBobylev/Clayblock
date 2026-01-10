@@ -1,0 +1,9 @@
+{
+  "feature": "modpack:granite_rocks",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 1
+    }
+  ]
+}

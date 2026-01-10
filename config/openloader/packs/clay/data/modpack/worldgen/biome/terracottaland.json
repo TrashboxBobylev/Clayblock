@@ -31,14 +31,23 @@
   "features": [
     [],
     [],
-    [],
+    [
+    ],
     [],
     [],
     [],
     [],
     [
+        "modpack:terracotta_2x",
+        "modpack:grayvel",
+        "modpack:rooty_roots",
+        "modpack:brown_mush",
+        "modpack:red_sand"
     ],
-    [],
+    [
+        "modpack:cavey_vine_things",
+        "modpack:granite_rocks"
+    ],
     [
       "minecraft:spring_lava",
       "minecraft:brown_mushroom_normal",
