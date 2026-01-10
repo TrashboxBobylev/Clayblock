@@ -46,7 +46,8 @@
     ],
     [
         "modpack:cavey_vine_things",
-        "modpack:granite_rocks"
+        "modpack:granite_rocks",
+        "modpack:terracotta_tree"
     ],
     [
       "minecraft:spring_lava",
