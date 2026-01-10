@@ -68,4 +68,5 @@ ServerEvents.recipes(event => {
     event.blasting("minecraft:gold_ore", "kubejs:clay_5x", 0.75, 200);
     event.blasting("minecraft:diamond_ore", "kubejs:clay_6x", 0.75, 200);
     event.blasting("minecraft:black_dye", "minecraft:coal_block", 0.75, 200);
+    event.blasting("minecraft:quartz", "minecraft:granite", 0.75, 200);
 });

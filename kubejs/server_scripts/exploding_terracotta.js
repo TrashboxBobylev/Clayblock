@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
         "minecraft:yellow_terracotta": "minecraft:glowstone_dust",
         "minecraft:green_terracotta": "minecraft:emerald",
         "minecraft:cyan_terracotta": "minecraft:string",
-        "minecraft:white_terracotta": "minecraft:quartz",
+        "minecraft:white_terracotta": {item: "minecraft:snowball", chance: 0.75},
         "minecraft:lime_terracotta": "minecraft:slime_ball",
         "minecraft:magenta_terracotta": "minecraft:popped_chorus_fruit",
         "minecraft:orange_terracotta": "minecraft:honey_bottle",
