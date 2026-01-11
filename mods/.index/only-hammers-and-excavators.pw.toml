@@ -1,0 +1,16 @@
+filename = 'onlyhammersandexcavators-1.21.1-0.9.jar'
+name = 'Only Hammers And Excavators'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'ff64d040a465caaac5ee839cf2dc0d52c47632bf'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6987616
+project-id = 939215
