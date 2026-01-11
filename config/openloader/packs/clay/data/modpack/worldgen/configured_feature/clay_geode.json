@@ -71,7 +71,7 @@
     },
     "max_gen_offset": 16,
     "min_gen_offset": -16,
-    "noise_multiplier": 0.2,
+    "noise_multiplier": 0.05,
     "outer_wall_distance": {
       "type": "minecraft:uniform",
       "max_inclusive": 6,
