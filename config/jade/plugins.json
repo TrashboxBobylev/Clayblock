@@ -84,5 +84,11 @@
   },
   "custommachinery": {
     "machine_component_provider": true
+  },
+  "storagedrawers": {
+    "display.stacklimit": true,
+    "main": true,
+    "display.content": true,
+    "display.status": true
   }
 }

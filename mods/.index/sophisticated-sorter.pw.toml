@@ -1,0 +1,16 @@
+filename = 'sophisticatedsorter-1.0.6-hotfix.jar'
+name = 'Sophisticated Sorter'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'f4df0d43df3df1da8cd4d52d53e3a323daff3922'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7361414
+project-id = 1375092
