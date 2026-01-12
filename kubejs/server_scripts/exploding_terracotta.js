@@ -1,3 +1,5 @@
+/** @type {typeof import("net.neoforged.neoforge.event.level.ExplosionEvent$Start").$ExplosionEvent$Start } */
+let $ExplosionEvent$Start  = Java.loadClass("net.neoforged.neoforge.event.level.ExplosionEvent$Start")
 ServerEvents.recipes(event => {
     let recipes = {
         "minecraft:red_terracotta": "minecraft:redstone",
@@ -32,9 +34,27 @@ ServerEvents.recipes(event => {
                     id: typeof(recipe[1]) == "string" ? recipe[1] : recipe[1].item
                 },
                 {
+                    type: "drop_item",
+                    if: [
+                        {type: "chance", chance: typeof(recipe[1]) == "string" ? 0.33 : recipe[1].chance*0.66 },
+                        {type: "location", dimension: "minecraft:the_nether"}
+                    ],
+                    id: typeof(recipe[1]) == "string" ? recipe[1] : recipe[1].item
+                },
+                {
                     type: "prevent_default"
                 }
             ]
         });
+    }
+});
+
+NativeEvents.onEvent($ExplosionEvent$Start, event => {
+    if (event.getLevel().dimension == "minecraft:the_nether"){
+        let explosion = event.getExplosion();
+        if (explosion.radius() < 6.5){
+            event.setCanceled(true);
+            event.getLevel().explode(explosion.directSourceEntity, explosion.damageSource, explosion.damageCalculator, explosion.center().x(), explosion.center().y(), explosion.center().z(), 6.5, false, explosion.blockInteraction());
+        }
     }
 });
