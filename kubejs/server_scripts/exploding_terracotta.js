@@ -54,7 +54,7 @@ NativeEvents.onEvent($ExplosionEvent$Start, event => {
         let explosion = event.getExplosion();
         if (explosion.radius() < 6.5){
             event.setCanceled(true);
-            event.getLevel().explode(explosion.directSourceEntity, explosion.damageSource, explosion.damageCalculator, explosion.center().x(), explosion.center().y(), explosion.center().z(), 6.5, false, explosion.blockInteraction());
+            event.getLevel().explode(explosion.directSourceEntity, explosion.damageSource, explosion.damageCalculator, explosion.center().x(), explosion.center().y(), explosion.center().z(), 6.5, false, explosion.blockInteraction);
         }
     }
 });
