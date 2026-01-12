@@ -89,6 +89,16 @@ ServerEvents.recipes(event => {
         "T": "minecraft:terracotta"
     });
 
+    event.shaped('custommachinery:custom_machine_item[custommachinery:machine="custommachinery:clay_generator"]', [
+        "TCT",
+        "TFT",
+        "TCT"
+    ], {
+        "T": "kubejs:clay_4x",
+        "F": "clayworks:kiln",
+        "C": "minecraft:copper_block"
+    });
+
     /**
      * 
      * @param {import("net.minecraft.world.item.crafting.Ingredient").$Ingredient$$Type} input 
