@@ -1,0 +1,95 @@
+{
+  "name": {
+    "text": {
+      "translate": "Clay Generator"
+    },
+    "color": "white"
+  },
+  "appearance": {
+    "running": {
+      "custommachinery:block": "custommachinery:machine/claygen_on",
+      "custommachinery:light": 13
+    },
+    "custommachinery:block": "custommachinery:machine/claygen",
+    "custommachinery:color": 11184810,
+    "custommachinery:hardness": 4.980263,
+    "custommachinery:interaction_sound": {
+      "step": "minecraft:block.gravel.step",
+      "place": "minecraft:block.gravel.place",
+      "hit": "minecraft:block.gravel.hit",
+      "fall": "minecraft:block.gravel.fall",
+      "pitch": 1.12,
+      "break": "minecraft:block.gravel.break"
+    }
+  },
+  "components": [
+    {
+      "type": "custommachinery:energy",
+      "max_output": 1000,
+      "config": {
+        "output": true,
+        "TOP": "OUTPUT",
+        "BOTTOM": "OUTPUT",
+        "FRONT": "OUTPUT",
+        "RIGHT": "OUTPUT",
+        "BACK": "OUTPUT",
+        "LEFT": "OUTPUT"
+      },
+      "capacity": 50000,
+      "max_input": 1000
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "fuel",
+      "mode": "input"
+    }
+  ],
+  "gui": [
+    {
+      "type": "custommachinery:background",
+      "width": 256,
+      "height": 192
+    },
+    {
+      "type": "custommachinery:energy",
+      "highlight": false,
+      "x": 119,
+      "y": 5
+    },
+    {
+      "type": "custommachinery:player_inventory",
+      "x": 47,
+      "y": 94
+    },
+    {
+      "type": "custommachinery:progress",
+      "orientation": "TOP",
+      "start": 1.0,
+      "end": 0.0,
+      "x": 120,
+      "y": 53,
+      "texture_empty": {
+        "texture": "minecraft:textures/block/gray_terracotta.png"
+      },
+      "texture_filled": {
+        "texture": "minecraft:textures/block/clay.png"
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "fuel",
+      "x": 119,
+      "y": 73,
+      "ghost": {
+        "items": {
+          "item": "minecraft:clay_ball"
+        }
+      }
+    }
+  ],
+  "tooltips": {
+    "text": {
+      "translate": "Consumes clay to generate power"
+    }
+  }
+}

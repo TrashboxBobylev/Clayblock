@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "bottom": "kubejs:block/claygen_bottom",
+    "front": "kubejs:block/claygen_front_on",
+    "side": "kubejs:block/claygen_side",
+    "top": "kubejs:block/claygen_top"
+  }
+}
