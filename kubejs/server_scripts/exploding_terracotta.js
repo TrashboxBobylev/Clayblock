@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
                     type: "drop_item",
                     if: [
                         {type: "chance", chance: typeof(recipe[1]) == "string" ? 0.33 : recipe[1].chance*0.66 },
-                        {type: "location", dimension: "minecraft:the_nether"}
+                        {type: "location", predicate: {dimension: "minecraft:the_nether"}}
                     ],
                     id: typeof(recipe[1]) == "string" ? recipe[1] : recipe[1].item
                 },
@@ -54,7 +54,7 @@ NativeEvents.onEvent($ExplosionEvent$Start, event => {
         let explosion = event.getExplosion();
         if (explosion.radius() < 6.5){
             event.setCanceled(true);
-            event.getLevel().explode(explosion.directSourceEntity, explosion.damageSource, explosion.damageCalculator, explosion.center().x(), explosion.center().y(), explosion.center().z(), 6.5, false, explosion.blockInteraction);
+            event.getLevel().explode(explosion.directSourceEntity, explosion.damageSource, explosion.damageCalculator, explosion.center().x(), explosion.center().y(), explosion.center().z(), 6.5, false, 'tnt');
         }
     }
 });
