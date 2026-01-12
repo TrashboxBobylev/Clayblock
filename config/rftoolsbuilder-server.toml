@@ -76,7 +76,7 @@
 	# Range: 0.0 ~ 1000000.0
 	fortunequarryShapeCardFactor = 2.0
 	#Use this block for the builder to replace with
-	quarryReplace = "minecraft:dirt"
+	quarryReplace = "minecraft:dead_tube_coral_block"
 	#If true the quarry will also quarry tile entities. Otherwise it just ignores them
 	quarryTileEntities = true
 	#If true the quarry will chunkload a chunk at a time. If false the quarry will stop if a chunk is not loaded

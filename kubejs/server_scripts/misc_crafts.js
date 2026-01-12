@@ -27,6 +27,34 @@ ServerEvents.recipes(event => {
         });
     });
 
+    event.remove("rftoolsbase:machine_base");
+    event.shaped("2x rftoolsbase:machine_base", [
+        "LLL",
+        "CCC"
+    ], {
+        "L": "minecraft:lapis_lazuli",
+        "C": "kubejs:clay_4x"
+    });
+
+    event.remove("rftoolsbase:machine_frame");
+    event.shaped("2x rftoolsbase:machine_frame", [
+        "CCC",
+        "C C",
+        "CCC"
+    ], {
+        "C": "kubejs:clay_5x"
+    });
+
+    event.shaped("3x minecraft:ender_pearl", [
+        "ECE",
+        "CTC",
+        "ECE"
+    ], {
+        "T": "#modpack:ender_pearl_core",
+        "C": "minecraft:echo_shard",
+        "E": "kubejs:clay_5x"
+    });
+
     event.shaped("minecraft:blaze_rod", [
         " bb",
         "bsb",
@@ -56,6 +84,8 @@ ServerEvents.recipes(event => {
         "S": "minecraft:soul_sand"
     });
 
+    event.remove("rftoolsbase:dimensionalshard");
+
     event.blasting("minecraft:ancient_debris", "kubejs:terracotta_6x", 0.75, 200);
     event.blasting("minecraft:crying_obsidian", "minecraft:obsidian", 0.75, 200);
     event.blasting("minecraft:mangrove_log", "kubejs:terracotta_5x", 0.75, 200);
@@ -69,4 +99,15 @@ ServerEvents.recipes(event => {
     event.blasting("minecraft:diamond_ore", "kubejs:clay_6x", 0.75, 200);
     event.blasting("minecraft:black_dye", "minecraft:coal_block", 0.75, 200);
     event.blasting("minecraft:quartz", "minecraft:granite", 0.75, 200);
+    event.blasting("5x rftoolsbase:dimensionalshard", "kubejs:clay_8x", 0.75, 200);
+});
+
+ServerEvents.tags("item", event => {
+    event.add("modpack:ender_pearl_core", "rftoolsbase:dimensionalshard");
+    event.add("modpack:ender_pearl_core", "mowziesmobs:umvuthana_mask_faith");
+    event.add("modpack:ender_pearl_core", "mowziesmobs:umvuthana_mask_rage");
+    event.add("modpack:ender_pearl_core", "mowziesmobs:umvuthana_mask_misery");
+    event.add("modpack:ender_pearl_core", "mowziesmobs:umvuthana_mask_fear");
+    event.add("modpack:ender_pearl_core", "mowziesmobs:umvuthana_mask_bliss");
+    event.add("modpack:ender_pearl_core", "mowziesmobs:umvuthana_mask_fury");
 });
