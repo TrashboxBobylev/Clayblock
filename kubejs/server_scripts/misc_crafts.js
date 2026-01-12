@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
         "bb "
     ], {
         "b": "minecraft:blaze_powder",
-        "s": "minecraft:stick"
+        "s": "mowziesmobs:bluff_rod"
     });
 
     event.shaped("minecraft:soul_sand", [
