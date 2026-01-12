@@ -58,3 +58,7 @@ NativeEvents.onEvent($ExplosionEvent$Start, event => {
         }
     }
 });
+
+ItemEvents.modifyTooltips(event => {
+    event.add("minecraft:tnt", [{translate: "modpack.tnt_tip"}]);
+});
