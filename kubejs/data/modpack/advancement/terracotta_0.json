@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:terracotta"
+    },
+    "title": {
+      "translate": "modpack.advancement.terracotta_0.title"
+    },
+    "description": {
+      "translate": "modpack.advancement.terracotta_0.desc"
+    }
+  },
+  "criteria": {
+    "clay": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:terracotta"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "modpack:clay_0",
+  "rewards": {
+    "experience": 4
+  }
+}

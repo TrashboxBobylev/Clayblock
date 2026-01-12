@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:clay"
+    },
+    "title": {
+      "translate": "modpack.advancement.clay_0.title"
+    },
+    "description": {
+      "translate": "modpack.advancement.clay_0.desc"
+    },
+    "background": "kubejs:textures/block/clay_1x.png"
+  },
+  "criteria": {
+    "clay": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:clay"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 2
+  }
+}

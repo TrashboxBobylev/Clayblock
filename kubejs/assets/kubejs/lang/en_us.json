@@ -55,5 +55,59 @@
     "modpack.tame_scrimblows": "Can be used to tame Scrimblows",
     "modpack.breed_scrimblows": "Can be used to breed Scrimblows",
     "modpack.dripping_crying_1": "Drips water into a cauldron, when pointed two blocks above dripstone",
-    "modpack.dripping_crying_2": "Will eventually decay, if used for this purpose"
+    "modpack.dripping_crying_2": "Will eventually decay, if used for this purpose",
+    
+    "modpack.advancement.clay_0.title": "Claytopia",
+    "modpack.advancement.clay_0.desc": "A world of clay... and more clay",
+
+    "modpack.advancement.clay_1.title": "First Compression",
+    "modpack.advancement.clay_1.desc": "Obtain the first compression of clay (16 clayballs)\n\nIt cannot be broken by hands!",
+
+    "modpack.advancement.clay_2.title": "Second Complication",
+    "modpack.advancement.clay_2.desc": "Obtain the second compression of clay (64 clayballs)\n\nSeems to work like a tree log...",
+    
+    "modpack.advancement.clay_3.title": "Third Conglomerate",
+    "modpack.advancement.clay_3.desc": "Obtain the third compression of clay (256 clayballs)\n\nHow it can be cooked into something useful?",
+
+    "modpack.advancement.clay_4.title": "Fourth Confederation",
+    "modpack.advancement.clay_4.desc": "Obtain the fourth compression of clay (1,024 clayballs)\n\nIt became metallic enough for decent equipment",
+    
+    "modpack.advancement.clay_5.title": "Fifth Confluence",
+    "modpack.advancement.clay_5.desc": "Obtain the fifth compression of clay (4,096 clayballs)\n\nHave you explored the underground enough yet?",
+    
+    "modpack.advancement.clay_6.title": "Sixth Coagulation",
+    "modpack.advancement.clay_6.desc": "Obtain the sixth compression of clay (16,384 clayballs)\n\nThe density of clay molecules can be described as brilliant",
+    
+    "modpack.advancement.clay_7.title": "Seventh Coacervate",
+    "modpack.advancement.clay_7.desc": "Obtain the seventh compression of clay (65,536 clayballs)\n\nYou should get ready enough to take on deeper depths",
+    
+    "modpack.advancement.clay_8.title": "Eight Coadjuvancy",
+    "modpack.advancement.clay_8.desc": "Obtain the eight compression of clay (262,144 clayballs)\n\nThe mass of resulting blob is enough to tear dimensions!",
+    
+    "modpack.advancement.terracotta_0.title": "Step to Baking",
+    "modpack.advancement.terracotta_0.desc": "Seek the camp sites of grays to harden your clay mass",
+    
+    "modpack.advancement.terracotta_1.title": "Hop to Sturdiness",
+    "modpack.advancement.terracotta_1.desc": "Obtain the first compression of terracotta (4 terracotta)\n\nBaking blobs of clay and terracotta may yield useful things",
+    
+    "modpack.advancement.terracotta_2.title": "Jump to Stability",
+    "modpack.advancement.terracotta_2.desc": "Obtain the second compression of terracotta (16 terracotta)\n\nIt is solid enough to crumble into dust on heating",
+    
+    "modpack.advancement.terracotta_3.title": "Leap to Science",
+    "modpack.advancement.terracotta_3.desc": "Obtain the third compression of terracotta (64 terracotta)\n\nThe clay power is in your hands now",
+    
+    "modpack.advancement.terracotta_4.title": "Pounce to Sacristy",
+    "modpack.advancement.terracotta_4.desc": "Obtain the fourth compression of terracotta (256 terracotta)\n\nHave you heard of Temple of Color?",
+    
+    "modpack.advancement.terracotta_5.title": "Dive to Spontaneity",
+    "modpack.advancement.terracotta_5.desc": "Obtain the fifth compression of terracotta (1,024 terracotta)\n\nColored terracotta yields colorful gems and crystals on being exploded",
+    
+    "modpack.advancement.terracotta_6.title": "Plunge to Systematics",
+    "modpack.advancement.terracotta_6.desc": "Obtain the sixth compression of terracotta (4,096 terracotta)\n\nAutomate the growth and collection of every clay asset no matter how small",
+    
+    "modpack.advancement.terracotta_7.title": "Spring to Synthesis",
+    "modpack.advancement.terracotta_7.desc": "Obtain the seventh compression of terracotta (4,096 terracotta)\n\nAutomate the growth and collection of every clay asset no matter how small",
+    
+    "modpack.advancement.terracotta_8.title": "Vault to Symbolism",
+    "modpack.advancement.terracotta_8.desc": "Obtain the eight compression of terracotta (16,768 terracotta)\n\nYou probably have experienced the joy and heat of hell, aren't ya?"
 }
