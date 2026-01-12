@@ -16,11 +16,11 @@
           "invert": {
             "type": "minecraft:vertical_gradient",
             "false_at_and_above": {
-              "below_top": 1
+              "absolute": 127
             },
             "random_name": "minecraft:bedrock_roof",
             "true_at_and_below": {
-              "below_top": 5
+              "absolute": 124
             }
           }
         },
