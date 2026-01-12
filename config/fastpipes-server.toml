@@ -8,13 +8,13 @@
 			#The maximum amount of ticks that items can be in the pipe. Lower is faster.
 			# Default: 20
 			# Range: > 0
-			maxTicks = 20
+			maxTicks = 15
 
 		[pipe.item.advanced]
 			#The maximum amount of ticks that items can be in the pipe. Lower is faster.
 			# Default: 10
 			# Range: > 0
-			maxTicks = 10
+			maxTicks = 7
 
 		[pipe.fluid.basic]
 			#The capacity in mB of the pipe.
@@ -30,41 +30,41 @@
 			#The capacity in mB of the pipe.
 			# Default: 4000
 			# Range: > 0
-			capacity = 4000
+			capacity = 5000
 			#The transfer rate in mB/t of the pipe.
 			# Default: 400
 			# Range: > 0
-			transferRate = 400
+			transferRate = 500
 
 		[pipe.fluid.advanced]
 			#The capacity in mB of the pipe.
 			# Default: 8000
 			# Range: > 0
-			capacity = 8000
+			capacity = 10000
 			#The transfer rate in mB/t of the pipe.
 			# Default: 800
 			# Range: > 0
-			transferRate = 800
+			transferRate = 1000
 
 		[pipe.fluid.elite]
 			#The capacity in mB of the pipe.
 			# Default: 16000
 			# Range: > 0
-			capacity = 16000
+			capacity = 20000
 			#The transfer rate in mB/t of the pipe.
 			# Default: 1600
 			# Range: > 0
-			transferRate = 1600
+			transferRate = 2000
 
 		[pipe.fluid.ultimate]
 			#The capacity in mB of the pipe.
 			# Default: 32000
 			# Range: > 0
-			capacity = 32000
+			capacity = 40000
 			#The transfer rate in mB/t of the pipe.
 			# Default: 3200
 			# Range: > 0
-			transferRate = 3200
+			transferRate = 4000
 
 		[pipe.energy.basic]
 			#The capacity in FE of the pipe.
@@ -80,41 +80,41 @@
 			#The capacity in FE of the pipe.
 			# Default: 4000
 			# Range: > 0
-			capacity = 4000
+			capacity = 5000
 			#The transfer rate in FE/t of the pipe.
 			# Default: 4000
 			# Range: > 0
-			transferRate = 4000
+			transferRate = 5000
 
 		[pipe.energy.advanced]
 			#The capacity in FE of the pipe.
 			# Default: 8000
 			# Range: > 0
-			capacity = 8000
+			capacity = 10000
 			#The transfer rate in FE/t of the pipe.
 			# Default: 8000
 			# Range: > 0
-			transferRate = 8000
+			transferRate = 10000
 
 		[pipe.energy.elite]
 			#The capacity in FE of the pipe.
 			# Default: 16000
 			# Range: > 0
-			capacity = 16000
+			capacity = 20000
 			#The transfer rate in FE/t of the pipe.
 			# Default: 16000
 			# Range: > 0
-			transferRate = 16000
+			transferRate = 20000
 
 		[pipe.energy.ultimate]
 			#The capacity in FE of the pipe.
 			# Default: 32000
 			# Range: > 0
-			capacity = 32000
+			capacity = 40000
 			#The transfer rate in FE/t of the pipe.
 			# Default: 32000
 			# Range: > 0
-			transferRate = 32000
+			transferRate = 40000
 
 			[pipe.attachment.extractor.basic]
 				#The interval between item extractions in ticks. Lower is faster.

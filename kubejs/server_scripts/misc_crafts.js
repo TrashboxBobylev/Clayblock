@@ -102,6 +102,11 @@ ServerEvents.recipes(event => {
     event.blasting("minecraft:black_dye", "minecraft:coal_block", 0.75, 200);
     event.blasting("minecraft:quartz", "minecraft:granite", 0.75, 200);
     event.blasting("5x rftoolsbase:dimensionalshard", "kubejs:clay_8x", 0.75, 200);
+
+    event.replaceInput(/fastpipes:*./, {"match": "minecraft:quartz"}, "minecraft:amethyst_block");
+    event.replaceInput(/fastpipes:*./, {"match": "minecraft:diamond"}, "minecraft:prismarine");
+    event.replaceInput(/fastpipes:*./, {"match": "minecraft:emerald"}, "minecraft:magma_cream");
+    event.replaceInput(/fastpipes:*./, {"match": "minecraft:popped_chorus_fruit"}, "minecraft:ender_pearl");
 });
 
 ServerEvents.tags("item", event => {
