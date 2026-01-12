@@ -17,3 +17,4 @@ local/kubejs/cache/
 config/jei/world/*
 config/jei/ingredient-list-mod-sort-order.ini
 config/jei/recipe-category-sort-order.ini
+patchouli_data.json
