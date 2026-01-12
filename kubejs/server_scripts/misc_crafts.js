@@ -45,6 +45,8 @@ ServerEvents.recipes(event => {
         "C": "kubejs:clay_5x"
     });
 
+    event.remove("rftoolspower:coalgenerator");
+
     event.shaped("3x minecraft:ender_pearl", [
         "ECE",
         "CTC",

@@ -65,6 +65,9 @@
   "untitledduckmod": {
     "lay_egg": true
   },
+  "fastpipes": {
+    "energy_pipe_info": true
+  },
   "jade": {
     "coordinates.rel": false,
     "registry_name.special": false,
