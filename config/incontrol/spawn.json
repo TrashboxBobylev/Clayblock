@@ -40,13 +40,18 @@
         "result": "allow",
         "healthmultiply": 3,
         "damagemultiply": 2.5,
-        "speedmultiply": 0.8,
+        "followrangeset": 15,
         "ai": {
-            "goals": [
+            "targets": [
                 {
                     "goal": "nearest_attackable_target",
-                    "priority": 2,
+                    "priority": 12,
                     "random_interval": 30
+                },
+                {
+                    "goal": "avoid_entity_goal",
+                    "priority": 6,
+                    "onlyWhenTargeting": true
                 }
             ]
         }
