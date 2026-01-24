@@ -107,6 +107,26 @@ ServerEvents.recipes(event => {
     event.replaceInput(/fastpipes:*./, {"match": "minecraft:diamond"}, "minecraft:prismarine");
     event.replaceInput(/fastpipes:*./, {"match": "minecraft:emerald"}, "minecraft:magma_cream");
     event.replaceInput(/fastpipes:*./, {"match": "minecraft:popped_chorus_fruit"}, "minecraft:ender_pearl");
+
+    event.shaped("minecraft:end_portal_frame", [
+        "C",
+        "S",
+        "T"
+    ], {
+        "C": "minecraft:end_crystal",
+        "S": "minecraft:sculk",
+        "T": "kubejs:terracotta_7x"
+    });
+
+    event.shaped("minecraft:end_crystal", [
+        "GQG",
+        "QEQ",
+        "GQG"
+    ], {
+        "Q": "minecraft:quartz_block",
+        "G": "minecraft:glass",
+        "E": "minecraft:ender_eye"
+    });
 });
 
 ServerEvents.tags("item", event => {
