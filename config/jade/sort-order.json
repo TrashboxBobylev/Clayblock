@@ -1,4 +1,5 @@
 {
+  "astages:block_component_provider": null,
   "balm:jade": null,
   "custommachinery:machine_component_provider": null,
   "custommachinery:machine_server_data_provider": null,
@@ -64,6 +65,10 @@
   "minecraft:villager_profession": null,
   "minecraft:waxed": null,
   "minecraft:zombie_villager": null,
+  "modern_industrialization:machine": null,
+  "modern_industrialization:overclock": null,
+  "modern_industrialization:pipe": null,
+  "modern_industrialization:tank": null,
   "moderndynamics:item_pipe": null,
   "storagedrawers:main": null,
   "untitledduckmod:lay_egg": null

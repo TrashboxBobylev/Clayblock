@@ -79,8 +79,15 @@
     "block_properties": false,
     "mod_name": true
   },
+  "modern_industrialization": {
+    "overclock": true,
+    "pipe": true
+  },
   "gravestone": {
     "grave": true
+  },
+  "astages": {
+    "block_component_provider": true
   },
   "balm": {
     "jade": true
