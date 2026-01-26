@@ -1,0 +1,16 @@
+{
+    "entity.minecraft.enderman": "Liam",
+    "item.minecraft.enderman_spawn_egg": "Liam Spawn Egg",
+    "subtitles.entity.enderman.ambient": "Liam talks",
+    "subtitles.entity.enderman.death": "Liam dies",
+    "subtitles.entity.enderman.hurt": "Liam hurts",
+    "subtitles.entity.enderman.scream": "Liam is offended",
+    "subtitles.entity.enderman.stare": "Liam stares inside your friend",
+    "subtitles.entity.enderman.teleport": "Liam reappears",
+
+    "block.minecraft.end_stone": "Clayium",
+    "block.minecraft.end_stone_brick_slab": "Clayium Brick Slab",
+    "block.minecraft.end_stone_brick_stairs": "Clayium Brick Stairs",
+    "block.minecraft.end_stone_brick_wall": "Clayium Brick Wall",
+    "block.minecraft.end_stone_bricks": "Clayium Bricks"
+}

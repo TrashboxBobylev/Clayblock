@@ -1,0 +1,17 @@
+[
+    {
+        "op": "replace",
+        "path": "/sea_level",
+        "value": 40
+    },
+    {
+        "op": "replace",
+        "path": "/default_block/Name",
+        "value": "kubejs:clay_3x"
+    },
+    {
+        "op": "replace",
+        "path": "/surface_rule/sequence/2/result_state/Name",
+        "value": "kubejs:clay_3x"
+    }
+]
