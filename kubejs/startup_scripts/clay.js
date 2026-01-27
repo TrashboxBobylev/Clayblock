@@ -1,3 +1,5 @@
+/** @type {typeof import("net.minecraft.world.level.block.TintedGlassBlock").$TintedGlassBlock } */
+let $TintedGlassBlock  = Java.loadClass("net.minecraft.world.level.block.TintedGlassBlock")
 /** @type {typeof import("net.minecraft.world.item.Item$Properties").$Item$Properties } */
 let $Item$Properties  = Java.loadClass("net.minecraft.world.item.Item$Properties")
 /** @type {typeof import("net.minecraft.world.item.BlockItem").$BlockItem } */
@@ -41,6 +43,10 @@ StartupEvents.registry("block", event => {
         }
     }).hardness(0.3).viewBlocking(false).transparent(true).tagBlock("minecraft:mineable/shovel").tagBoth("minecraft:leaves").renderType("cutout_mipped").notSolid();
 
+    event.createCustom("clay_glass", () => {
+        return new $TintedGlassBlock($BlockBehaviour$Properties.ofFullCopy(Block.getBlock("minecraft:tinted_glass").getBlock()));
+    });
+
     event.createCustom("clay_sapling", () => {
         return new $SaplingBlock(new $TreeGrower("clay", "modpack:clay_tree", "modpack:clay_tree", "modpack:clay_tree"), $BlockBehaviour$Properties.of()["mapColor(net.minecraft.world.level.material.MapColor)"]($MapColor.PLANT).noCollission().randomTicks().instabreak().sound("grass").pushReaction($PushReaction.DESTROY));
     });
@@ -55,6 +61,10 @@ StartupEvents.registry("block", event => {
 StartupEvents.registry("item", event => {
     event.createCustom("clay_sapling", () => {
         return new $BlockItem("kubejs:clay_sapling", new $Item$Properties());
+    });
+
+    event.createCustom("clay_glass", () => {
+        return new $BlockItem("kubejs:clay_glass", new $Item$Properties());
     });
 
     event.create("clay_snack").food(food => {
