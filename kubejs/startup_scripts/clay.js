@@ -33,7 +33,7 @@ StartupEvents.registry("block", event => {
     event.create("clay_leaves").soundType("gravel").suffocating(false).randomTick(tickEvent => {
         let blocks_around = tickEvent.level.getBlockStates(AABB.of(tickEvent.block.getX() - 6, tickEvent.block.getY() - 6, tickEvent.block.getZ() - 6, tickEvent.block.getX() + 6, tickEvent.block.getY() + 6, tickEvent.block.getZ() + 6));
         let thingsFound = blocks_around.filter(blockstate => {
-            return blockstate == "kubejs:clay_2x";
+            return blockstate == "kubejs:clay_2x" || blockstate == "kubejs:clay_4x";
         }).findAny();
         if (thingsFound.isEmpty()){
             $Block.dropResources(tickEvent.block.getBlockState(), tickEvent.getLevel(),tickEvent.block.getPos());
