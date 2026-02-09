@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_end",
+  "features": "modpack:clay_4x_end",
+  "step": "underground_ores"
+}
