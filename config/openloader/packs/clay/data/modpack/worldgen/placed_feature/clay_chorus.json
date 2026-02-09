@@ -5,13 +5,13 @@
       "type": "minecraft:count",
       "count": {
         "type": "minecraft:uniform",
-        "max_inclusive": 2,
+        "max_inclusive": 3,
         "min_inclusive": 0
       }
     },
     {
         "type": "minecraft:rarity_filter",
-        "chance": 3
+        "chance": 4
     },
     {
       "type": "minecraft:in_square"
