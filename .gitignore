@@ -20,3 +20,4 @@ config/jei/recipe-category-sort-order.ini
 patchouli_data.json
 xaero/*
 XaeroWaypoints_*/
+config/iris.properties
