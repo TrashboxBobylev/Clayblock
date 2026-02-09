@@ -23,6 +23,28 @@ ServerEvents.recipes(event => {
         "minecraft:ochre_froglight": {item: "minecraft:blaze_powder", chance: 0.33}
     };
 
+    for (let cable_type of ["copper", "silver", "tin", "electrum", "platinum", "kanthal", "cupronickel", "annealed_copper"]){
+        event.custom({
+            type: "lychee:item_exploding",
+            item_in: `modern_industrialization:${cable_type}_cable`,
+            post: [
+                {
+                    type: "drop_item",
+                    if: {type: "chance", chance: 0.5 },
+                    id: `modern_industrialization:${cable_type}_wire`
+                },
+                {
+                    type: "drop_item",
+                    if: [
+                        {type: "chance", chance: 0.33 },
+                        {type: "location", predicate: {dimension: "minecraft:the_nether"}}
+                    ],
+                    id: `modern_industrialization:${cable_type}_wire`
+                }
+            ]
+        });
+    }
+
     for (let recipe of Object.entries(recipes)){
         event.custom({
             type: "lychee:block_exploding",
