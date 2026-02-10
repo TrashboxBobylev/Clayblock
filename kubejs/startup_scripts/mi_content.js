@@ -14,4 +14,16 @@ MIMaterialEvents.addMaterials(event => {
             .defaultRecipes()
             .forgeHammerRecipes()
     });
+
+    event.createMaterial("Basalted", "basalt", 0x31303d, material => {
+        material.materialSet("stone")
+            .hardness("hard")
+            .addParts("dust", "ingot", "plate", "large_plate", "rod", "ring", "bolt", "gear")
+            .barrel(128)
+            .machineCasing(16.0)
+            .tank(16)
+            .block("lapis")
+            .defaultRecipes()
+            .forgeHammerRecipes()
+    });
 });

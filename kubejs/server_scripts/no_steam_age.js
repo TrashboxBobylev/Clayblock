@@ -3,6 +3,10 @@ ServerEvents.recipes(event => {
         "kubejs:clay_glass", "minecraft:dead_horn_coral_block", "minecraft:dead_horn_coral_block", "minecraft:dead_fire_coral_block", "minecraft:dead_fire_coral_block", "minecraft:dead_bubble_coral_block", "minecraft:dead_bubble_coral_block", "minecraft:dead_tube_coral_block", "minecraft:dead_tube_coral_block"
     ]);
 
+    event.shapeless("modern_industrialization:basalt_dust", [
+        "#c:obsidians", "minecraft:smooth_basalt", "minecraft:smooth_basalt", "minecraft:smooth_basalt", "minecraft:blackstone", "minecraft:blackstone", "minecraft:blackstone"
+    ]);
+
     event.recipes.modern_industrialization.mixer(2, 100)
         .itemIn("2x minecraft:dead_horn_coral_block")
         .itemIn("2x minecraft:dead_fire_coral_block")
@@ -10,12 +14,17 @@ ServerEvents.recipes(event => {
         .itemIn("2x minecraft:dead_tube_coral_block")
         .itemOut("modern_industrialization:curium_dust");
 
-    event.shaped("2x modern_industrialization:curium_cable", [
+    event.recipes.modern_industrialization.mixer(2, 200)
+        .itemIn("4x minecraft:smooth_basalt")
+        .itemIn("4x minecraft:blackstone")
+        .itemOut("modern_industrialization:basalt_dust");
+
+    event.shaped("3x modern_industrialization:curium_cable", [
         "RRR",
         "CCC",
         "RRR"
     ], {
-        "R": "minecraft:smooth_basalt",
+        "R": "#c:plates/basalt",
         "C": "#c:ingots/curium"
     });
 
@@ -53,12 +62,12 @@ ServerEvents.recipes(event => {
     }
 
     event.shaped("modern_industrialization:analog_circuit_board", [
-        "OOO",
+        " O ",
         "OCO",
-        "OOO"
+        " O "
     ], {
         "C": "minecraft:copper_block",
-        "O": "#c:obsidians"
+        "O": "#c:plates/basalt"
     });
 
     event.shaped("modern_industrialization:battery_alloy_dust", [
@@ -78,4 +87,20 @@ ServerEvents.recipes(event => {
         "C": "kubejs:clay_glass",
         "B": "minecraft:blaze_rod"
     });
+
+    event.shaped("modern_industrialization:basalt_machine_casing", [
+        "PPP",
+        "PGP",
+        "PPP"
+    ], {
+        "P": "#c:plates/basalt",
+        "G": "#c:gears/basalt"
+    });
+
+    event.replaceInput({output: "modern_industrialization:basic_machine_hull"}, "modern_industrialization:steel_machine_casing", "#modpack:basic_casings");
+});
+
+ServerEvents.tags("item", event => {
+    event.add("modpack:basic_casings", "modern_industrialization:steel_machine_casing");
+    event.add("modpack:basic_casings", "modern_industrialization:basalt_machine_casing");
 });
