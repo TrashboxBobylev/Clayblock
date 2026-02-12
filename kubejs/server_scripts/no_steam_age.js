@@ -107,9 +107,30 @@ ServerEvents.recipes(event => {
         "R": "#c:dusts/redstone",
         "C": "#c:ingots/clayium"
     });
+
+    event.shaped("kubejs:clayium_rotary_blade", [
+        "DCD",
+        "CBC",
+        "DCD"
+    ], {
+        "D": "#c:plates/diamond",
+        "C": "#c:plates/clayium",
+        "B": "#c:gears/basalt"
+    });
+
+    event.recipes.modern_industrialization.assembler(8, 200)
+        .itemIn("4x #c:plates/diamond")
+        .itemIn("4x #c:plates/clayium")
+        .itemIn("#c:gears/basalt")
+        .itemOut("kubejs:clayium_rotary_blade");
+
+    event.replaceInput({input: "modern_industrialization:invar_rotary_blade"}, "modern_industrialization:invar_rotary_blade", "#modpack:basic_rotary_blades");
 });
 
 ServerEvents.tags("item", event => {
     event.add("modpack:basic_casings", "modern_industrialization:steel_machine_casing");
     event.add("modpack:basic_casings", "modern_industrialization:basalt_machine_casing");
+
+    event.add("modpack:basic_rotary_blades", "modern_industrialization:invar_rotary_blade");
+    event.add("modpack:basic_rotary_blades", "kubejs:clayium_rotary_blade");
 });

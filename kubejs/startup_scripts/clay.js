@@ -70,4 +70,6 @@ StartupEvents.registry("item", event => {
     event.create("clay_snack").food(food => {
         food.saturation(0.6).nutrition(3).fastToEat().usingConvertsTo("minecraft:clay")
     });
+
+    event.create("clayium_rotary_blade");
 });
