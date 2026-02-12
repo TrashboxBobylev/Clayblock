@@ -1,0 +1,17 @@
+[
+    {
+        "op": "replace",
+        "path": "/feature/config/vegetation_feature/feature/config/target/Name",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/ground_state/states/24/Name",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/ground_state/states/23/Name",
+        "value": "kubejs:clay_glass"
+    }
+]

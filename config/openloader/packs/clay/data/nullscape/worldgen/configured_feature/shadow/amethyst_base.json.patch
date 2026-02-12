@@ -1,0 +1,22 @@
+[
+    {
+        "op": "replace",
+        "path": "/config/vegetation_feature/feature/config/features/1/feature/feature/config/target/Name",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/config/vegetation_feature/feature/config/features/0/feature/feature/config/target/Name",
+        "value": "kubejs:clay_7x"
+    },
+    {
+        "op": "replace",
+        "path": "/config/ground_state/entries/1/data/Name",
+        "value": "kubejs:clay_10x"
+    },
+    {
+        "op": "replace",
+        "path": "/config/ground_state/entries/0/data/Name",
+        "value": "kubejs:otherworldy_crystal"
+    }
+]

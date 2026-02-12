@@ -1,0 +1,132 @@
+[
+    {
+        "op": "replace",
+        "path": "/placement/4/predicate/predicates/1/predicates/5/blocks/0",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/placement/4/predicate/predicates/1/predicates/4/blocks/0",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/placement/4/predicate/predicates/1/predicates/2/blocks/0",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/placement/4/predicate/predicates/1/predicates/1/blocks/0",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/placement/4/predicate/predicates/1/predicates/0/blocks/0",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/default/placement/0/predicate/predicates/1/predicates/5/blocks/0",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/default/placement/0/predicate/predicates/1/predicates/4/blocks/0",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/default/placement/0/predicate/predicates/1/predicates/3/blocks/0",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/default/placement/0/predicate/predicates/1/predicates/2/blocks/0",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/default/placement/0/predicate/predicates/1/predicates/1/blocks/0",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/default/placement/0/predicate/predicates/1/predicates/0/blocks/0",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/default/feature/config/to_place/states/10/Name",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/default/feature/config/to_place/states/9/Name",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/default/feature/config/to_place/states/8/Name",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/features/1/feature/placement/0/predicate/predicates/1/predicates/5/blocks/1",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/features/1/feature/placement/0/predicate/predicates/1/predicates/4/blocks/1",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/features/1/feature/placement/0/predicate/predicates/1/predicates/3/blocks/1",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/features/1/feature/placement/0/predicate/predicates/1/predicates/2/blocks/1",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/features/1/feature/placement/0/predicate/predicates/1/predicates/1/blocks/1",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/features/1/feature/placement/0/predicate/predicates/1/predicates/0/blocks/1",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/features/0/feature/placement/0/predicate/blocks/0",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/features/0/feature/feature/config/feature/feature/config/features/4/placement/0/predicate/predicates/0/blocks/0",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/features/0/feature/feature/config/feature/feature/config/features/3/placement/0/predicate/predicates/0/blocks/0",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/features/0/feature/feature/config/feature/feature/config/features/2/placement/0/predicate/predicates/0/blocks/0",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/features/0/feature/feature/config/feature/feature/config/features/1/placement/0/predicate/predicates/0/blocks/0",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/feature/config/feature/feature/config/features/0/feature/feature/config/feature/feature/config/features/0/placement/0/predicate/predicates/0/blocks/0",
+        "value": "kubejs:otherworldy_crystal"
+    }
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "op": "replace",
+        "path": "/config/vegetation_feature/feature/config/layers/1/provider/state/Name",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/config/vegetation_feature/feature/config/layers/0/provider/state/Name",
+        "value": "kubejs:otherworldy_crystal"
+    },
+    {
+        "op": "replace",
+        "path": "/config/ground_state/state/Name",
+        "value": "kubejs:otherworldy_crystal"
+    }
+]
