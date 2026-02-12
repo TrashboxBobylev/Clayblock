@@ -103,6 +103,12 @@ ServerEvents.recipes(event => {
     event.blasting("minecraft:quartz", "minecraft:granite", 0.75, 200);
     event.blasting("5x rftoolsbase:dimensionalshard", "kubejs:clay_8x", 0.75, 200);
 
+    event.blasting("8x modern_industrialization:tin_ingot", "modern_industrialization:clayium_ingot", 5, 400);
+    event.blasting("2x modern_industrialization:lead_tiny_dust", "kubejs:clay_glass", 0.75, 200);
+    event.blasting("modern_industrialization:antimony_tiny_dust", "minecraft:end_stone", 0.75, 200);
+    event.blasting("12x modern_industrialization:raw_silver", "kubejs:clay_9x", 5, 400);
+    event.blasting("12x modern_industrialization:raw_nickel", "kubejs:terracotta_9x", 5, 400);
+
     event.replaceInput(/fastpipes:*./, {"match": "minecraft:quartz"}, "minecraft:amethyst_block");
     event.replaceInput(/fastpipes:*./, {"match": "minecraft:diamond"}, "minecraft:prismarine");
     event.replaceInput(/fastpipes:*./, {"match": "minecraft:emerald"}, "minecraft:magma_cream");
