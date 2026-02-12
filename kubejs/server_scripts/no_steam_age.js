@@ -98,6 +98,15 @@ ServerEvents.recipes(event => {
     });
 
     event.replaceInput({output: "modern_industrialization:basic_machine_hull"}, "modern_industrialization:steel_machine_casing", "#modpack:basic_casings");
+
+    event.shaped("modern_industrialization:clayium_rod_magnetic", [
+        " RR",
+        "RCR",
+        "RR "
+    ], {
+        "R": "#c:dusts/redstone",
+        "C": "#c:ingots/clayium"
+    });
 });
 
 ServerEvents.tags("item", event => {

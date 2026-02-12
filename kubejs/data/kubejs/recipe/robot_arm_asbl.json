@@ -1,0 +1,32 @@
+
+{
+  "type" : "minecraft:crafting_shaped",
+  "pattern" : [
+    "ccc",
+    "mrm",
+    "pCr"
+  ],
+  "key":
+  {
+    "m" : {
+      "item" : "modern_industrialization:motor"
+    },
+    "r" : {
+      "tag" : "c:rods/clayium"
+    },
+    "c" : {
+      "item" : "modern_industrialization:tin_cable"
+    },
+    "p" :{
+      "item" : "modern_industrialization:piston"
+    },
+    "C" :{
+      "item" : "modern_industrialization:analog_circuit"
+    }
+  },
+
+  "result": {
+    "id": "modern_industrialization:robot_arm",
+    "count": 2
+  }
+}

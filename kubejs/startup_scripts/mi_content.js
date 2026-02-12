@@ -26,4 +26,15 @@ MIMaterialEvents.addMaterials(event => {
             .defaultRecipes()
             .forgeHammerRecipes()
     });
+
+    event.createMaterial("Primed Clayium", "clayium", 0xb3bfd2, material => {
+        material.materialSet("shiny")
+            .addParts("dust", "ingot", "plate", "rod", "rod_magnetic")
+            .barrel(256)
+            .tank(32)
+            .block("diamond")
+            .cable("lv")
+            .defaultRecipes()
+            .forgeHammerRecipes()
+    });
 });
