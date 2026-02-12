@@ -1,0 +1,11 @@
+{
+  "type": "modern_industrialization:forge_hammer",
+  "damage": 20,
+  "ingredient": {
+    "tag": "c:ingots/battery_alloy"
+  },
+  "result": {
+    "count": 1,
+    "id": "modern_industrialization:battery_alloy_plate"
+  }
+}
