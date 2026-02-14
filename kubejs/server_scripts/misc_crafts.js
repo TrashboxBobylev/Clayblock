@@ -133,6 +133,17 @@ ServerEvents.recipes(event => {
         "G": "minecraft:glass",
         "E": "minecraft:ender_eye"
     });
+
+    event.remove("modern_industrialization:forge_hammer");
+    event.shaped("modern_industrialization:forge_hammer", [
+        "CEB",
+        " E ",
+        "EEE"
+    ], {
+        "C": "#c:storage_blocks/curium",
+        "B": "#c:storage_blocks/basalt",
+        "E": "#c:ingots/iron"
+    });
 });
 
 ServerEvents.tags("item", event => {
