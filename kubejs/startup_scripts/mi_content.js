@@ -38,3 +38,12 @@ MIMaterialEvents.addMaterials(event => {
             .forgeHammerRecipes()
     });
 });
+
+MIMachineEvents.registerCasings(event => {
+    event.registerNamed("basalt", "Basalt");
+});
+
+MIMachineEvents.registerHatches(event => {
+    event.fluid("Basalted", "basalt", "basalt", 16);
+    event.item("Basalted", "basalt", "basalt", 2, 1, 80, 30);
+});
