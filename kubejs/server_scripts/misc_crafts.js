@@ -114,6 +114,14 @@ ServerEvents.recipes(event => {
     event.replaceInput(/fastpipes:*./, {"match": "minecraft:emerald"}, "minecraft:magma_cream");
     event.replaceInput(/fastpipes:*./, {"match": "minecraft:popped_chorus_fruit"}, "minecraft:ender_pearl");
 
+    event.shaped("minecraft:sculk", [
+        "SSS",
+        "SSS",
+        "SSS"
+    ], {
+        "S": "minecraft:echo_shard"
+    });
+
     event.shaped("minecraft:end_portal_frame", [
         "C",
         "S",
