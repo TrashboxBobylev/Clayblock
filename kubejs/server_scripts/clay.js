@@ -17,6 +17,13 @@ ServerEvents.recipes(event => {
     clay_fuels.push("minecraft:clay_ball");
     global.clays.forEach(element => {
         clay_fuels.push(element);
+        if (element == "minecraft:clay" || Number.parseInt(/([0-9]+)/.exec(element)[1]) > 15)
+            return;
+        //get the item name out of ResourceLocation
+        let mi_clay_name = `modern_industrialization:${/(?:[0-9a-z_]*):([0-9a-z_]*)/.exec(element)[1]}`;
+        event.recipes.modern_industrialization.compressor(1, 20)
+            .itemIn(element)
+            .itemOut(mi_clay_name);
     });
     for (let i = 0; i < clay_fuels.length; i++){
         let base_power = 500;
