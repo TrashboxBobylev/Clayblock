@@ -29,7 +29,7 @@ MIMaterialEvents.addMaterials(event => {
 
     event.createMaterial("Primed Clayium", "clayium", 0xb3bfd2, material => {
         material.materialSet("shiny")
-            .addParts("dust", "ingot", "plate", "rod", "rod_magnetic")
+            .addParts("dust", "ingot", "plate", "rod", "rod_magnetic", "ring", "bolt", "gear")
             .barrel(256)
             .tank(32)
             .block("diamond")

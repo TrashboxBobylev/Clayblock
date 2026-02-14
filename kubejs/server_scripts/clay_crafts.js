@@ -98,6 +98,78 @@ ServerEvents.recipes(event => {
         "F": "clayworks:kiln",
         "C": "minecraft:copper_block"
     });
+    
+    event.shaped("2x modern_industrialization:clay_generator_i", [
+        "GGG",
+        "UHU",
+        "CCC"
+    ], {
+        "C": "modern_industrialization:curium_cable",
+        "G": 'custommachinery:custom_machine_item[custommachinery:machine="custommachinery:clay_generator"]',
+        "U": "#c:gears/clayium",
+        "H": "modern_industrialization:basic_machine_hull"
+    });
+
+    event.recipes.modern_industrialization.assembler(8, 200).
+        itemIn("modern_industrialization:basic_machine_hull").
+        itemIn('3x custommachinery:custom_machine_item[custommachinery:machine="custommachinery:clay_generator"]').
+        itemIn('2x #c:gears/clayium').
+        itemIn("3x modern_industrialization:curium_cable").
+        itemOut("2x modern_industrialization:clay_generator_i");
+
+    event.shaped("2x modern_industrialization:clay_generator_ii", [
+        "GGG",
+        "UHU",
+        "CCC"
+    ], {
+        "C": "modern_industrialization:aluminum_cable",
+        "G": "modern_industrialization:clay_generator_i",
+        "U": "#c:gears/clayium",
+        "H": "modern_industrialization:advanced_machine_hull"
+    });
+
+    event.recipes.modern_industrialization.assembler(8, 200).
+        itemIn("modern_industrialization:advanced_machine_hull").
+        itemIn('3x modern_industrialization:clay_generator_i').
+        itemIn('2x #c:gears/clayium').
+        itemIn("3x modern_industrialization:aluminum_cable").
+        itemOut("2x modern_industrialization:clay_generator_ii");
+
+    event.shaped("2x modern_industrialization:clay_generator_iii", [
+        "GGG",
+        "UHU",
+        "CCC"
+    ], {
+        "C": "modern_industrialization:annealed_copper_cable",
+        "G": "modern_industrialization:clay_generator_ii",
+        "U": "#c:gears/clayium",
+        "H": "modern_industrialization:turbo_machine_hull"
+    });
+
+    event.recipes.modern_industrialization.assembler(8, 200).
+        itemIn("modern_industrialization:turbo_machine_hull").
+        itemIn('3x modern_industrialization:clay_generator_ii').
+        itemIn('2x #c:gears/clayium').
+        itemIn("3x modern_industrialization:annealed_copper_cable").
+        itemOut("2x modern_industrialization:clay_generator_iii");
+
+    event.shaped("2x modern_industrialization:clay_generator_iv", [
+        "GGG",
+        "UHU",
+        "CCC"
+    ], {
+        "C": "modern_industrialization:platinum_cable",
+        "G": "modern_industrialization:clay_generator_iii",
+        "U": "#c:storage_blocks/clayium",
+        "H": "modern_industrialization:highly_advanced_machine_hull"
+    });
+
+    event.recipes.modern_industrialization.assembler(8, 200).
+        itemIn("modern_industrialization:highly_advanced_machine_hull").
+        itemIn('3x modern_industrialization:clay_generator_iii').
+        itemIn('2x #c:storage_blocks/clayium').
+        itemIn("3x modern_industrialization:platinum_cable").
+        itemOut("2x modern_industrialization:clay_generator_iv");
 
     /**
      * 
