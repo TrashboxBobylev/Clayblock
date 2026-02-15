@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
     });
 
     event.shaped("minecraft:end_portal_frame", [
-        " C",
+        " C ",
         "QSQ",
         "QTQ"
     ], {
