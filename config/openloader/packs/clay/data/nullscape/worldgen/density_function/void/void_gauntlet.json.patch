@@ -1,0 +1,78 @@
+[
+    {
+        "op": "replace",
+        "path": "/argument2/argument2",
+        "value": {
+            "type": "mul",
+            "argument1": {
+                "type": "minecraft:noise",
+                "noise": "nullscape:void/ring1",
+                "xz_scale": 16,
+                "y_scale": 64
+            },
+            "argument2": 0.05
+        }
+    },
+    {
+        "op": "remove",
+        "path": "/argument2/argument1/y_scale"
+    },
+    {
+        "op": "remove",
+        "path": "/argument2/argument1/xz_scale"
+    },
+    {
+        "op": "remove",
+        "path": "/argument2/argument1/noise"
+    },
+    {
+        "op": "replace",
+        "path": "/argument2/argument1/type",
+        "value": "minecraft:mul"
+    },
+    {
+        "op": "add",
+        "path": "/argument2/argument1/argument1",
+        "value": 0.16666666666666666
+    },
+    {
+        "op": "add",
+        "path": "/argument2/argument1/argument2",
+        "value": {
+            "type": "minecraft:add",
+            "argument1": {
+                "type": "minecraft:add",
+                "argument1": "nullscape:void/ring1_sync",
+                "argument2": {
+                    "type": "minecraft:add",
+                    "argument1": "nullscape:void/ring2_sync",
+                    "argument2": "nullscape:void/ring3_sync"
+                }
+            },
+            "argument2": {
+                "type": "minecraft:add",
+                "argument1": "nullscape:void/ring4_sync",
+                "argument2": {
+                    "type": "minecraft:add",
+                    "argument1": "nullscape:void/ring5_sync",
+                    "argument2": "nullscape:void/ring6_sync"
+                }
+            }
+        }
+    },
+    {
+        "op": "replace",
+        "path": "/argument2/type",
+        "value": "add"
+    },
+    {
+        "op": "replace",
+        "path": "/argument1",
+        "value": 0.82
+    },
+    {
+        "op": "replace",
+        "path": "/type",
+        "value": "minecraft:add"
+    }
+]
