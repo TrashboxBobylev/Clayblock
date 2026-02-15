@@ -123,13 +123,14 @@ ServerEvents.recipes(event => {
     });
 
     event.shaped("minecraft:end_portal_frame", [
-        "C",
-        "S",
-        "T"
+        " C",
+        "QSQ",
+        "QTQ"
     ], {
-        "C": "minecraft:end_crystal",
+        "C": "minecraft:ender_eye",
         "S": "minecraft:sculk",
-        "T": "kubejs:terracotta_7x"
+        "T": "kubejs:terracotta_7x",
+        "Q": "minecraft:quartz_block"
     });
 
     event.shaped("minecraft:end_crystal", [
@@ -137,8 +138,8 @@ ServerEvents.recipes(event => {
         "QEQ",
         "GQG"
     ], {
-        "Q": "minecraft:quartz_block",
-        "G": "minecraft:glass",
+        "Q": "modern_industrialization:clayium_rod",
+        "G": "kubejs:clay_glass",
         "E": "minecraft:ender_eye"
     });
 
