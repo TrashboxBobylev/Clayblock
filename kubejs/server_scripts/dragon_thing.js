@@ -37,3 +37,31 @@ EntityEvents.death("minecraft:player", event => {
         }
     }
 });
+
+LootJS.lootTables(event => {
+    event.create("modpack:ender_dragon_loot", LootType.CHEST).createPool(pool => {
+        pool.rolls([4, 8]);
+        pool.addEntry(LootEntry.of("modern_industrialization:curium_block", [4, 6]));
+        pool.addEntry(LootEntry.of("modern_industrialization:basalt_block", [4, 6]));
+        pool.addEntry(LootEntry.of("modern_industrialization:clayium_ingot", [2, 4]));
+        pool.addEntry(LootEntry.of("rftoolsbase:dimensionalshard", [4, 6]));
+    }).createPool(pool => {
+        pool.rolls([4, 8]);
+        pool.addEntry(LootEntry.of("kubejs:clay_glass", [30, 50]));
+        pool.addEntry(LootEntry.of("kubejs:otherworldy_crystal", [30, 50]));
+        pool.addEntry(LootEntry.of("minecraft:gunpowder", [30, 50]));
+    }).createPool(pool => {
+        pool.rolls([2, 4]);
+        pool.addEntry(LootEntry.of("modern_industrialization:item_pipe", [40, 60]));
+        pool.addEntry(LootEntry.of("modern_industrialization:fluid_pipe", [40, 60]));
+    });
+});
+
+ServerEvents.recipes(event => {
+    let treasure_bag = Item.of("minecraft:black_shulker_box");
+    treasure_bag.setItemName(Component.translatable("modpack.dragon_treasure.name"));
+    treasure_bag.setContainerLootTable("modpack:ender_dragon_loot");
+    treasure_bag.setLore([Component.translatable("modpack.dragon_treasure.desc").italic(false)]);
+
+    event.shapeless(treasure_bag, ["minecraft:dragon_egg"]);
+});
