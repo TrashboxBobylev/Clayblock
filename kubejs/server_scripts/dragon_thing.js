@@ -54,10 +54,14 @@ LootJS.lootTables(event => {
         pool.rolls([2, 4]);
         pool.addEntry(LootEntry.of("modern_industrialization:item_pipe", [40, 60]));
         pool.addEntry(LootEntry.of("modern_industrialization:fluid_pipe", [40, 60]));
+    }).createPool(pool => {
+        pool.addEntry(LootEntry.of("rehooked:ender_hook"));
     });
 });
 
 ServerEvents.recipes(event => {
+    event.remove("rehooked:ender_hook");
+
     let treasure_bag = Item.of("minecraft:black_shulker_box");
     treasure_bag.setItemName(Component.translatable("modpack.dragon_treasure.name"));
     treasure_bag.setContainerLootTable("modpack:ender_dragon_loot");

@@ -143,6 +143,17 @@ ServerEvents.recipes(event => {
         "E": "minecraft:ender_eye"
     });
 
+    event.remove("rehooked:blaze_hook");
+    event.shaped("rehooked:blaze_hook", [
+        "QBH",
+        " BB",
+        "B Q"
+    ], {
+        "Q": "minecraft:quartz_block",
+        "B": "minecraft:blaze_rod",
+        "H": "rehooked:diamond_hook"
+    });
+
     event.remove("modern_industrialization:forge_hammer");
     event.shaped("modern_industrialization:forge_hammer", [
         "CEB",

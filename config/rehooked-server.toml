@@ -91,15 +91,15 @@
 		#The hooks range
 		# Default: 64.0
 		# Range: 1.0 ~ 1.7976931348623157E308
-		range = 64.0
+		range = 96.0
 		#The hooks shooting speed
 		# Default: 1920.0
 		# Range: 0.1 ~ 1.7976931348623157E308
-		travelSpeed = 1920.0
+		travelSpeed = 1000.0
 		#How fast the hook pulls the player
 		# Default: 36.0
 		# Range: 0.1 ~ 1.7976931348623157E308
-		pullSpeed = 36.0
+		pullSpeed = 48.0
 		#Should the hook provide creative flight or not
 		creativeFlight = false
 
@@ -112,14 +112,14 @@
 		#The hooks range
 		# Default: 96.0
 		# Range: 1.0 ~ 1.7976931348623157E308
-		range = 96.0
+		range = 1000.0
 		#The hooks shooting speed
 		# Default: 1920.0
 		# Range: 0.1 ~ 1.7976931348623157E308
-		travelSpeed = 1920.0
+		travelSpeed = 1000.0
 		#How fast the hook pulls the player
 		# Default: 48.0
 		# Range: 0.1 ~ 1.7976931348623157E308
-		pullSpeed = 48.0
+		pullSpeed = 64.0
 		#Should the hook provide creative flight or not
 		creativeFlight = false
