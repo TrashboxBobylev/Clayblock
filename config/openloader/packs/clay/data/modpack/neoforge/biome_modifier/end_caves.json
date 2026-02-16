@@ -1,6 +1,0 @@
-{
-    "type": "neoforge:add_carvers",
-    "biomes": "#minecraft:is_end",
-    "carvers": ["minecraft:cave", "minecraft:cave_extra_underground", "minecraft:canyon"],
-    "step": "air"
-}
