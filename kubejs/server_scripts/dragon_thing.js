@@ -43,13 +43,13 @@ LootJS.lootTables(event => {
         pool.rolls([4, 8]);
         pool.addEntry(LootEntry.of("modern_industrialization:curium_block", [4, 6]));
         pool.addEntry(LootEntry.of("modern_industrialization:basalt_block", [4, 6]));
-        pool.addEntry(LootEntry.of("modern_industrialization:clayium_ingot", [2, 4]));
-        pool.addEntry(LootEntry.of("rftoolsbase:dimensionalshard", [4, 6]));
+        pool.addEntry(LootEntry.of("modern_industrialization:clayium_ingot", [4, 6]));
+        pool.addEntry(LootEntry.of("rftoolsbase:dimensionalshard", [5, 8]));
     }).createPool(pool => {
         pool.rolls([4, 8]);
         pool.addEntry(LootEntry.of("kubejs:clay_glass", [30, 50]));
         pool.addEntry(LootEntry.of("kubejs:otherworldy_crystal", [30, 50]));
-        pool.addEntry(LootEntry.of("minecraft:gunpowder", [30, 50]));
+        pool.addEntry(LootEntry.of("minecraft:tnt", [8, 16]));
     }).createPool(pool => {
         pool.rolls([2, 4]);
         pool.addEntry(LootEntry.of("modern_industrialization:item_pipe", [40, 60]));
