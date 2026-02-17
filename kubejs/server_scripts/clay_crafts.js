@@ -217,8 +217,4 @@ ItemEvents.modifyTooltips(event => {
         event.add(global.clays[i], [{translate: "modpack.clay_amount", with: [Math.pow(4, i+1).toString()]}]);
         event.add(global.terracottas[i], [{translate: "modpack.terracotta_amount", with: [Math.pow(4, i).toString()]}]);
     }
-    event.add("#untitledduckmod:duck_taming_food", [{translate: "modpack.tame_scrimblows"}]);
-    event.add("#untitledduckmod:duck_breeding_food", [{translate: "modpack.breed_scrimblows"}]);
-
-    event.add("minecraft:crying_obsidian", [{translate: "modpack.dripping_crying_1"}, {translate: "modpack.dripping_crying_2"}]);
 });
