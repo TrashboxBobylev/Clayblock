@@ -4,7 +4,10 @@ let tooltip_changes = {
     "#untitledduckmod:duck_taming_food": [{translate: "modpack.tame_scrimblows"}],
     "#untitledduckmod:duck_breeding_food": [{translate: "modpack.breed_scrimblows"}],
     "minecraft:crying_obsidian": [{translate: "modpack.dripping_crying_1"}, {translate: "modpack.dripping_crying_2"}],
-    "minecraft:tnt": [{translate: "modpack.tnt_tip"}]
+    "minecraft:tnt": [{translate: "modpack.tnt_tip"}],
+    "modern_industrialization:forge_hammer": [{translate: "modpack.mi_how_to_unlock"}],
+    "rehooked:blaze_hook": [{translate: "modpack.hook_changes_1"}],
+    "rehooked:ender_hook": [{translate: "modpack.hook_changes_1"}, {translate: "modpack.hook_changes_2"}]
 };
 
 ItemEvents.modifyTooltips(event => {

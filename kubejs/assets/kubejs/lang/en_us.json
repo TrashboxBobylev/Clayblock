@@ -62,6 +62,9 @@
     "modpack.tnt_tip": "Has bigger explosion power in the Nether",
     "modpack.mi_title": "Discovered Modern Industrialization!",
     "modpack.mi_unlocked": "You discover a brand new way to create materials and machines...",
+    "modpack.mi_how_to_unlock": "Unlocks the rest of Modern Industrialization upon obtaining",
+    "modpack.hook_changes_1": "Decreased travel speed by 50%, but increased pull speed by 33%",
+    "modpack.hook_changes_2": "Has practically infinite range",
 
     "modpack.dragon_message": "The Ender Dragon is optional in Clayblock! Explore the End and its new resources at your own pace and challenge the dragon for extra resources!",
     "modpack.dragon_treasure.name": "Ender Dragon Treasure Bag",
