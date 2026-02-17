@@ -109,6 +109,10 @@ ServerEvents.recipes(event => {
     event.blasting("12x modern_industrialization:raw_silver", "kubejs:clay_9x", 5, 400);
     event.blasting("12x modern_industrialization:raw_nickel", "kubejs:terracotta_9x", 5, 400);
 
+    event.forEachRecipe(/fastpipes:*./, recipe => {
+        recipe.set("result", recipe.originalRecipeResult.withCount(recipe.originalRecipeResult.count*2));
+    });
+
     event.replaceInput(/fastpipes:*./, {"match": "minecraft:quartz"}, "minecraft:amethyst_block");
     event.replaceInput(/fastpipes:*./, {"match": "minecraft:diamond"}, "minecraft:prismarine");
     event.replaceInput(/fastpipes:*./, {"match": "minecraft:emerald"}, "minecraft:magma_cream");
