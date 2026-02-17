@@ -12,6 +12,20 @@ let tooltip_changes = {
     "fastpipes:advanced_item_pipe": [{translate: "modpack.item_pipe_advanced"}],
     "#fastpipes:fluid_pipes": [{translate: "modpack.fluid_pipe"}],
     "#fastpipes:energy_pipes": [{translate: "modpack.fluid_pipe"}],
+    "minecraft:anvil": [{translate: "modpack.anvil"}],
+    "kubejs:clay_stalk": [{translate: "modpack.claysta"}],
+    "minecraft:dragon_egg": [{translate: "modpack.dragon_egg_1"}, {translate: "modpack.dragon_egg_2"}],
+    "onlyhammersandexcavators:emerald_hammer": [{translate: "modpack.emerald_tool"}],
+    "onlyhammersandexcavators:emerald_excavator": [{translate: "modpack.emerald_tool"}],
+    "onlyhammersandexcavators:obsidian_hammer": [{translate: "modpack.obsidian_tool"}],
+    "onlyhammersandexcavators:obsidian_excavator": [{translate: "modpack.obsidian_tool"}],
+    "storagedrawers:controller": [{translate: "modpack.storage_controller"}],
+    "storagedrawers:copper_storage_upgrade": [{translate: "modpack.copper_upgrade"}],
+    "storagedrawers:iron_storage_upgrade": [{translate: "modpack.copper_upgrade"}],
+    "storagedrawers:emerald_storage_upgrade": [{translate: "modpack.emerald_upgrade"}],
+    "storagedrawers:diamond_storage_upgrade": [{translate: "modpack.diamond_upgrade"}],
+    "storagedrawers:netherite_storage_upgrade": [{translate: "modpack.netherite_upgrade"}],
+    "storagedrawers:obsidian_storage_upgrade": [{translate: "modpack.obsidian_upgrade"}],
 };
 
 ItemEvents.modifyTooltips(event => {
