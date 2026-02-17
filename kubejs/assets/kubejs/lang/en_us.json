@@ -66,6 +66,10 @@
     "modpack.hook_changes_1": "Decreased travel speed by 50%, but increased pull speed by 33%",
     "modpack.hook_changes_2": "Has practically infinite range",
 
+    "modpack.item_pipe_improved": "Increased transfer rate by 33%",
+    "modpack.item_pipe_advanced": "Increased transfer rate by 43%",
+    "modpack.fluid_pipe": "Increased capacity and transfer by 25%",
+
     "modpack.dragon_message": "The Ender Dragon is optional in Clayblock! Explore the End and its new resources at your own pace and challenge the dragon for extra resources!",
     "modpack.dragon_treasure.name": "Ender Dragon Treasure Bag",
     "modpack.dragon_treasure.desc": "Place to see your rewards",

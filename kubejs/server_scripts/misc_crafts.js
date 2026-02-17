@@ -178,4 +178,7 @@ ServerEvents.tags("item", event => {
     event.add("modpack:ender_pearl_core", "mowziesmobs:umvuthana_mask_fear");
     event.add("modpack:ender_pearl_core", "mowziesmobs:umvuthana_mask_bliss");
     event.add("modpack:ender_pearl_core", "mowziesmobs:umvuthana_mask_fury");
+
+    event.add("fastpipes:fluid_pipes", "fastpipes:basic_fluid_pipe", "fastpipes:improved_fluid_pipe", "fastpipes:advanced_fluid_pipe", "fastpipes:elite_fluid_pipe", "fastpipes:ultimate_fluid_pipe");
+    event.add("fastpipes:energy_pipes", "fastpipes:basic_energy_pipe", "fastpipes:improved_energy_pipe", "fastpipes:advanced_energy_pipe", "fastpipes:elite_energy_pipe", "fastpipes:ultimate_energy_pipe");
 });

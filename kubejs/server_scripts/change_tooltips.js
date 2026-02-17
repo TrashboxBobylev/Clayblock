@@ -7,7 +7,11 @@ let tooltip_changes = {
     "minecraft:tnt": [{translate: "modpack.tnt_tip"}],
     "modern_industrialization:forge_hammer": [{translate: "modpack.mi_how_to_unlock"}],
     "rehooked:blaze_hook": [{translate: "modpack.hook_changes_1"}],
-    "rehooked:ender_hook": [{translate: "modpack.hook_changes_1"}, {translate: "modpack.hook_changes_2"}]
+    "rehooked:ender_hook": [{translate: "modpack.hook_changes_1"}, {translate: "modpack.hook_changes_2"}],
+    "fastpipes:improved_item_pipe": [{translate: "modpack.item_pipe_improved"}],
+    "fastpipes:advanced_item_pipe": [{translate: "modpack.item_pipe_advanced"}],
+    "#fastpipes:fluid_pipes": [{translate: "modpack.fluid_pipe"}],
+    "#fastpipes:energy_pipes": [{translate: "modpack.fluid_pipe"}],
 };
 
 ItemEvents.modifyTooltips(event => {
