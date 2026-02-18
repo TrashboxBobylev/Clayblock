@@ -1,7 +1,6 @@
 AStages.customizeStage("MI")
-    .setAddChatMessage(Component.translatable("modpack.mi_unlocked").green())
-    .setAddSubTitle(Component.translatable("modpack.mi_title"))
-    .setStack("modern_industrialization:wrench");
+    .setAddChatMessage(stageKey => Component.translatable("modpack.mi_unlocked").green())
+    .setAddSubTitle(stageKey => Component.translatable("modpack.mi_title"));
 
 AStages.addRestrictionForMod("mi_away", "MI", "modern_industrialization")
     .ignoreItems([

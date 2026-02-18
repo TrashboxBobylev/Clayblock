@@ -44,6 +44,16 @@
 	# Default: 0.5
 	# Range: 0.0 ~ 100.0
 	food_healing_value = 0.5
+	#Enable/disable automatic force-eating for duck/goose
+	enable_force_eat = false
+	#Min tick before duck/goose auto-eat held food
+	# Default: 500
+	# Range: > 0
+	force_eat_random_min_tick = 500
+	#Max tick before duck/goose auto-eat held food
+	# Default: 1000
+	# Range: > 0
+	force_eat_random_max_tick = 1000
 
 [intimidation]
 	#Intimidate effects don't work on mobs in the list

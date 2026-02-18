@@ -63,7 +63,8 @@
     "entity_variant": true
   },
   "untitledduckmod": {
-    "lay_egg": true
+    "lay_egg": true,
+    "next_eat": true
   },
   "fastpipes": {
     "energy_pipe_info": true
