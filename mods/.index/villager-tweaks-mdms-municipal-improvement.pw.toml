@@ -1,0 +1,17 @@
+filename = 'TakesAVillage(NEOFORGE)V2.1.jar'
+name = "Villager Tweaks (MDM's Municipal Improvement Initiative)"
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'TakesAVillage(NEOFORGE)V2.1.jar'
+
+[download]
+hash = '82816ee295dc33ea0e34000fadddeacea63bba4c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6211836
+project-id = 1075955

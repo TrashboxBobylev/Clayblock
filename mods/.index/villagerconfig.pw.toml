@@ -1,0 +1,17 @@
+filename = 'villagerconfig-neoforge-4.5.2+1.21.1.jar'
+name = 'VillagerConfig'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'VillagerConfig NeoForge 4.5.2+1.21.1'
+
+[download]
+hash = 'd864debc45b355007ce07443c93e279bfc5417ad'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7332114
+project-id = 400741
