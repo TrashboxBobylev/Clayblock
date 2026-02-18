@@ -5,7 +5,7 @@ LootJS.lootTables(event => {
                 ItemFilter.hasEnchantment("minecraft:silk_touch", 1)
             ));
             let ores = [];
-            for (let ore of ["antimony", "bauxite", "lead", "lignite_coal", "monazite", "nickel", "salt", "tin", "tungsten", "uranium", "silver"]){
+            for (let ore of ["antimony", "bauxite", "lead", "lignite_coal", "nickel", "salt", "tin", "tungsten", "uranium", "silver"]){
                 ores.push(LootEntry.of(`modern_industrialization:${ore}_dust`));
             }
             full_entry.addEntry(LootEntry.group(ores));
