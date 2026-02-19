@@ -147,6 +147,15 @@ ServerEvents.recipes(event => {
         "E": "minecraft:ender_eye"
     });
 
+    event.shaped("minecraft:wither_skeleton_skull", [
+        "OOO",
+        "OCO",
+        "OOO"
+    ], {
+        "O": "minecraft:obsidian",
+        "C": "kubejs:clay_7x"
+    });
+
     event.remove("rehooked:blaze_hook");
     event.shaped("rehooked:blaze_hook", [
         "QBH",
