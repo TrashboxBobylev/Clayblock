@@ -198,6 +198,15 @@ ServerEvents.recipes(event => {
         "C": "kubejs:terracotta_8x"
     });
 
+    event.shaped("4x minecraft:ochre_froglight", [
+        "BBB",
+        "BPB",
+        "BBB"
+    ], {
+        "B": "minecraft:glow_berries",
+        "P": "minecraft:blaze_powder"
+    });
+
     event.remove("rehooked:blaze_hook");
     event.shaped("rehooked:blaze_hook", [
         "QBH",
