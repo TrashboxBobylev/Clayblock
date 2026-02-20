@@ -156,6 +156,30 @@ ServerEvents.recipes(event => {
         "E": "minecraft:ender_eye"
     });
 
+    event.shaped("minecraft:sculk_sensor", [
+        "C",
+        "S"
+    ], {
+        "C": "minecraft:comparator",
+        "S": "minecraft:sculk"
+    });
+
+    event.shaped("minecraft:sculk_shrieker", [
+        "C",
+        "S"
+    ], {
+        "C": "minecraft:repeater",
+        "S": "minecraft:sculk_sensor"
+    });
+
+    event.shaped("minecraft:sculk_catalyst", [
+        "C",
+        "S"
+    ], {
+        "C": "minecraft:diamond",
+        "S": "minecraft:sculk"
+    });
+
     event.shaped("minecraft:wither_skeleton_skull", [
         "OOO",
         "OCO",
