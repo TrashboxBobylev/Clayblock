@@ -156,6 +156,15 @@ ServerEvents.recipes(event => {
         "C": "kubejs:clay_7x"
     });
 
+    event.shaped("minecraft:netherite_upgrade_smithing_template", [
+        "OOO",
+        "OCO",
+        "OOO"
+    ], {
+        "O": "minecraft:nether_bricks",
+        "C": "kubejs:terracotta_8x"
+    });
+
     event.remove("rehooked:blaze_hook");
     event.shaped("rehooked:blaze_hook", [
         "QBH",
