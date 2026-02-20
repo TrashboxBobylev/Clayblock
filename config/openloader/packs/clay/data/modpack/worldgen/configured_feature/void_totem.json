@@ -1,0 +1,79 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "decorators": [],
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:smooth_basalt"
+      }
+    },
+    "foliage_placer": {
+      "type": "minecraft:pine_foliage_placer",
+      "height": 3,
+      "offset": 0,
+      "radius": 1
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:pearlescent_froglight",
+        "Properties": {
+          "axis": "x"
+        }
+      }
+    },
+    "force_dirt": false,
+    "ignore_vines": true,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 1,
+      "lower_size": 0,
+      "upper_size": 1
+    },
+    "trunk_placer": {
+      "type": "minecraft:giant_trunk_placer",
+      "base_height": 4,
+      "height_rand_a": 20,
+      "height_rand_b": 20
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:polished_deepslate"
+      }
+    },
+    "root_placer": {
+      "type": "minecraft:mangrove_root_placer",
+      "root_provider": {
+         "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:deepslate",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+      },
+      "trunk_offset_y": {
+        "type": "minecraft:uniform",
+        "max_inclusive": 4,
+        "min_inclusive": 0
+      },
+      "mangrove_root_placement": {
+        "can_grow_through": ["minecraft:smooth_basalt", "minecraft:blackstone"],
+        "max_root_length": 24,
+        "max_root_width": 8,
+        "muddy_roots_in": [
+          "minecraft:blackstone"
+        ],
+        "muddy_roots_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:deepslate_tiles"
+          }
+        },
+        "random_skew_chance": 0.25
+      }
+    }
+  }
+}

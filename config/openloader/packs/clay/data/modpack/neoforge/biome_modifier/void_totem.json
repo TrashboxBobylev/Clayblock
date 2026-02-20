@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "nullscape:void_barrens",
+  "features": "modpack:void_totem",
+  "step": "underground_ores"
+}
