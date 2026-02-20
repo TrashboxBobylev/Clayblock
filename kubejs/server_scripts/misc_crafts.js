@@ -66,6 +66,15 @@ ServerEvents.recipes(event => {
         "s": "mowziesmobs:bluff_rod"
     });
 
+    event.shaped("minecraft:breeze_rod", [
+        " bb",
+        "bsb",
+        "bb "
+    ], {
+        "b": "kubejs:clay_4x",
+        "s": "mowziesmobs:bluff_rod"
+    });
+
     event.shaped("minecraft:soul_sand", [
         "GS",
         "SG"
