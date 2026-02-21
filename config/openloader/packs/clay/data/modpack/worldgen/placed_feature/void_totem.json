@@ -2,7 +2,8 @@
   "feature": "modpack:void_totem",
   "placement": [
     {
-        "type": "minecraft:in_square"
+      "type": "minecraft:rarity_filter",
+      "chance": 2
     },
     {
       "type": "minecraft:in_square"
