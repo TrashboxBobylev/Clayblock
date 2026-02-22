@@ -125,6 +125,16 @@ ServerEvents.recipes(event => {
         .itemOut("kubejs:clayium_rotary_blade");
 
     event.replaceInput({input: "modern_industrialization:invar_rotary_blade"}, "modern_industrialization:invar_rotary_blade", "#modpack:basic_rotary_blades");
+
+    event.remove(/modern_industrialization:materials\/(.*)\/craft\/barrel/);
+
+    event.forEachRecipe(/modern_industrialization:materials\/(.*)\/assembler\/barrel/, recipe => {
+        /**
+         * @type {import("aztech.modern_industrialization.machines.recipe.MachineRecipe$ItemOutput").$MachineRecipe$ItemOutput$$Original}
+         */
+        let output = recipe.get("item_outputs")[0];
+        recipe.set("item_outputs", [{id: output.variant().toStack().id, count: 3}]);
+    });
 });
 
 ServerEvents.tags("item", event => {
