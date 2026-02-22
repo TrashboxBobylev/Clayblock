@@ -207,6 +207,17 @@ ServerEvents.recipes(event => {
         "P": "minecraft:blaze_powder"
     });
 
+    event.remove("storagedrawers:upgrade_template");
+    event.shaped("4x storagedrawers:upgrade_template", [
+        "SCS",
+        "CDC",
+        "SCS"
+    ], {
+        "S": "minecraft:stick",
+        "C": "kubejs:clay_fruit",
+        "D": "#storagedrawers:drawers"
+    });
+
     event.remove("rehooked:blaze_hook");
     event.shaped("rehooked:blaze_hook", [
         "QBH",
