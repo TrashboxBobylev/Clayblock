@@ -82,3 +82,9 @@ ServerEvents.recipes(event => {
         .itemOut("minecraft:pearlescent_froglight", 0.0125)
         .itemOut("minecraft:end_crystal", 0.0125);
 });
+
+ServerEvents.recipes(event => {
+    event.remove("modern_industrialization:quarry/copper");
+    event.remove("modern_industrialization:quarry/gold");
+    event.remove("modern_industrialization:quarry/bronze");
+});

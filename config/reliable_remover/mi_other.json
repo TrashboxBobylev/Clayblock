@@ -1,0 +1,10 @@
+{
+    "action": "remove",
+    "items": [
+        "industrialization_overdrive:multi_processing_array",
+        "modern_industrialization:bronze_drill",
+        "modern_industrialization:bronze_drill_head",
+        "modern_industrialization:gold_drill",
+        "modern_industrialization:gold_drill_head"
+    ]
+}
