@@ -1,7 +1,7 @@
 MIMaterialEvents.addMaterials(event => {
     event.createMaterial("Curium", "curium", 0x867b77, material => {
         material.materialSet("stone")
-            .addParts("dust", "ingot", "plate", "large_plate")
+            .addParts("dust", "ingot", "plate", "large_plate", "curved_plate", "drill_head", "drill")
             .barrel(196)
             .tank(24)
             .block("coal")
@@ -29,10 +29,21 @@ MIMaterialEvents.addMaterials(event => {
 
     event.createMaterial("Primed Clayium", "clayium", 0xb3bfd2, material => {
         material.materialSet("shiny")
-            .addParts("dust", "ingot", "plate", "rod", "rod_magnetic", "ring", "bolt", "gear")
+            .addParts("dust", "ingot", "plate", "rod", "rod_magnetic", "ring", "bolt", "gear", "curved_plate", "drill_head", "drill")
             .barrel(256)
             .tank(32)
             .block("diamond")
+            .cable("lv")
+            .defaultRecipes()
+            .forgeHammerRecipes()
+    });
+
+    event.createMaterial("Stained Nethercotta", "terracotta", 0xaf3200, material => {
+        material.materialSet("shiny")
+            .addParts("dust", "ingot", "plate", "rod", "ring", "bolt", "gear", "curved_plate", "drill_head", "drill")
+            .barrel(256)
+            .tank(32)
+            .block("copper")
             .cable("lv")
             .defaultRecipes()
             .forgeHammerRecipes()

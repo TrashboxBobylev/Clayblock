@@ -117,6 +117,15 @@
         }
       ]
     },
+    "modern_industrialization:terracotta_gear": {
+      "components": [
+        {
+          "color": "#A9A9A9",
+          "italic": false,
+          "translate": "text.modern_industrialization.HasBetterYieldAssemblerRecipe"
+        }
+      ]
+    },
     "modern_industrialization:tin_gear": {
       "components": [
         {

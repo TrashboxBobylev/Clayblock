@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "c:gears/clayium"
+    },
+    "R": {
+      "tag": "c:rods/clayium"
+    },
+    "b": {
+      "item": "modern_industrialization:clayium_bolt"
+    },
+    "c": {
+      "item": "modern_industrialization:clayium_curved_plate"
+    },
+    "p": {
+      "tag": "c:plates/clayium"
+    }
+  },
+  "pattern": [
+    "bcp",
+    "GRc",
+    "bGb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "modern_industrialization:clayium_drill_head"
+  }
+}

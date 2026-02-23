@@ -31,6 +31,7 @@
     "#c:plates/stainless_steel",
     "#c:plates/steel",
     "#c:plates/superconductor",
+    "#c:plates/terracotta",
     "#c:plates/tin",
     "#c:plates/titanium",
     "#c:plates/tungsten"

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "c:gears/terracotta"
+    },
+    "R": {
+      "tag": "c:rods/terracotta"
+    },
+    "b": {
+      "item": "modern_industrialization:terracotta_bolt"
+    },
+    "c": {
+      "item": "modern_industrialization:terracotta_curved_plate"
+    },
+    "p": {
+      "tag": "c:plates/terracotta"
+    }
+  },
+  "pattern": [
+    "bcp",
+    "GRc",
+    "bGb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "modern_industrialization:terracotta_drill_head"
+  }
+}
