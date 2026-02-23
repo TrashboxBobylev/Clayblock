@@ -1,0 +1,14 @@
+{
+    "type": "lychee:block_crushing",
+    "landing_block": "kubejs:terracotta_9x",
+    "item_in": [
+        "5x minecraft:blaze_rod",
+        "5x minecraft:nether_bricks",
+        "5x minecraft:quartz_block",
+        "10x modern_industrialization:sulfur_dust"
+    ],
+    "post": [
+        "place modern_industrialization:terracotta_block",
+        "run \"particle minecraft:dust{color:11780050, scale: 3} ~ ~1 ~ 1 1 1 0.2 30\" /hide"
+    ]
+}
