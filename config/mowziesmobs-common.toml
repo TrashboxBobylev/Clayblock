@@ -578,9 +578,9 @@
 			#A blank entry means all biomes. No entries means no biomes.
 			#For example, 'minecraft:is_forest,c:is_spooky,!c:is_snowy' would mean all biomes that are spooky forests but not snowy forests
 			#'!minecraft:is_mountain' would mean all non-mountain biomes
-			biome_tags = ["c:is_forest,mowziesmobs:is_magical,!c:is_snowy"]
+			biome_tags = [""]
 			#Allow spawns in these biomes regardless of the biome tag settings
-			biome_whitelist = []
+			biome_whitelist = ["modpack:clayland"]
 			#Prevent spawns in these biomes regardless of the biome tag settings
 			biome_blacklist = []
 
@@ -589,7 +589,7 @@
 			#Smaller number causes less spawning, 0 to disable spawning
 			# Default: 5
 			# Range: > 0
-			spawn_rate = 5
+			spawn_rate = 8
 			#Minimum number of mobs that appear in a spawn group
 			# Default: 2
 			# Range: > 1
@@ -597,7 +597,7 @@
 			#Maximum number of mobs that appear in a spawn group
 			# Default: 4
 			# Range: > 1
-			max_group_size = 4
+			max_group_size = 5
 			#Probability of a spawn attempt succeeding. 1 for normal spawning, 0 will prevent spawning. Used to make mobs extra rare.
 			# Default: 1.0
 			# Range: 0.0 ~ 1.0
@@ -607,7 +607,7 @@
 			#Names of blocks this mob is allowed to spawn on. Leave blank to ignore block names.
 			allowed_blocks = []
 			#Tags of blocks this mob is allowed to spawn on. Leave blank to ignore block tags.
-			allowed_block_tags = ["minecraft:animals_spawnable_on", "minecraft:leaves", "minecraft:logs"]
+			allowed_block_tags = []
 			#Maximum height for this spawn. -65 to ignore.
 			# Default: -65
 			# Range: -65 ~ 256
@@ -615,7 +615,7 @@
 			#Minimum height for this spawn. -65 to ignore.
 			# Default: 60
 			# Range: -65 ~ 256
-			height_min = 60
+			height_min = -10
 			#Set to true to only allow this mob to spawn in the dark, like zombies and skeletons.
 			needs_darkness = true
 			#Set to true to only spawn mob if it can see the sky.
