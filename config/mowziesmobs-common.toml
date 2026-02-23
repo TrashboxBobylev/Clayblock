@@ -611,11 +611,11 @@
 			#Maximum height for this spawn. -65 to ignore.
 			# Default: -65
 			# Range: -65 ~ 256
-			height_max = -65
+			height_max = -10
 			#Minimum height for this spawn. -65 to ignore.
 			# Default: 60
 			# Range: -65 ~ 256
-			height_min = -10
+			height_min = -65
 			#Set to true to only allow this mob to spawn in the dark, like zombies and skeletons.
 			needs_darkness = true
 			#Set to true to only spawn mob if it can see the sky.
