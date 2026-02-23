@@ -37,6 +37,7 @@
         "modern_industrialization:steel_fluid_output_hatch",
         "extended_industrialization:large_steam_macerator",
         "extended_industrialization:large_steam_furnace",
-        "modern_industrialization:steel_upgrade"
+        "modern_industrialization:steel_upgrade",
+        "industrialization_overdrive:multi_processing_array"
     ]
 }
