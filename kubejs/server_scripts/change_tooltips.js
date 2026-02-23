@@ -26,6 +26,9 @@ let tooltip_changes = {
     "storagedrawers:diamond_storage_upgrade": [{translate: "modpack.diamond_upgrade"}],
     "storagedrawers:netherite_storage_upgrade": [{translate: "modpack.netherite_upgrade"}],
     "storagedrawers:obsidian_storage_upgrade": [{translate: "modpack.obsidian_upgrade"}],
+    "rftoolsbuilder:builder": [{translate: "modpack.rftoolsbuilder_1"}, {translate: "modpack.rftoolsbuilder_2"}],
+    "rftoolsbuilder:shape_card_quarry_clear_fortune": [{translate: "modpack.quarryfortune"}],
+    "rftoolsbuilder:shape_card_quarry_clear_silk": [{translate: "modpack.quarrysilk"}]
 };
 
 ItemEvents.modifyTooltips(event => {
