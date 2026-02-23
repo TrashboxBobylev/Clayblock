@@ -240,6 +240,8 @@ ServerEvents.recipes(event => {
         "E": "#c:ingots/iron"
     });
 
+    event.replaceInput({output: "rftoolsbuilder:builder"}, {match: "minecraft:ender_pearl"}, "kubejs:terracotta_7x");
+
     for (let quarry_type of ["", "_fortune", "_silk"]){
         event.remove(`rftoolsbuilder:shape_card_quarry${quarry_type}`);
         event.remove(`rftoolsbuilder:shape_card_quarry_clear${quarry_type}`);
