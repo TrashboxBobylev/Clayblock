@@ -2,6 +2,7 @@ MIMaterialEvents.addMaterials(event => {
     event.createMaterial("Curium", "curium", 0x867b77, material => {
         material.materialSet("stone")
             .addParts("dust", "ingot", "plate", "large_plate", "curved_plate", "drill_head", "drill")
+            .customRegularPart("Energized %s Drill", "drill_energized")
             .barrel(196)
             .tank(24)
             .block("coal")
@@ -30,6 +31,7 @@ MIMaterialEvents.addMaterials(event => {
     event.createMaterial("Primed Clayium", "clayium", 0xb3bfd2, material => {
         material.materialSet("shiny")
             .addParts("dust", "ingot", "plate", "rod", "rod_magnetic", "ring", "bolt", "gear", "curved_plate", "drill_head", "drill")
+            .customRegularPart("Energized %s Drill", "drill_energized")
             .barrel(256)
             .tank(32)
             .block("diamond")
@@ -41,6 +43,7 @@ MIMaterialEvents.addMaterials(event => {
     event.createMaterial("Stained Nethercotta", "terracotta", 0xaf3200, material => {
         material.materialSet("shiny")
             .addParts("dust", "ingot", "plate", "rod", "ring", "bolt", "gear", "curved_plate", "drill_head", "drill")
+            .customRegularPart("Energized %s Drill", "drill_energized")
             .barrel(256)
             .tank(32)
             .block("copper")
@@ -57,6 +60,13 @@ MIMaterialEvents.addMaterials(event => {
         material.defaultRecipes();
     })
 });
+
+for (let material of ["copper", "steel", "titanium", "stainless_steel", "aluminum"]){
+    MIMaterialEvents.modifyMaterial(material, event => {
+        event.builder.customRegularPart("Energized %s Drill", "drill_energized");
+    });
+}
+
 
 MIMachineEvents.registerCasings(event => {
     event.registerNamed("basalt", "Basalt");
