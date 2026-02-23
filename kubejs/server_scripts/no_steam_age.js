@@ -118,6 +118,8 @@ ServerEvents.recipes(event => {
         "B": "#c:gears/basalt"
     });
 
+    event.replaceInput({output: "modern_industrialization:steel_hammer"}, {match: "modern_industrialization:steel_large_plate"}, "modern_industrialization:curium_large_plate");
+
     event.recipes.modern_industrialization.assembler(8, 200)
         .itemIn("4x #c:plates/diamond")
         .itemIn("4x #c:plates/clayium")

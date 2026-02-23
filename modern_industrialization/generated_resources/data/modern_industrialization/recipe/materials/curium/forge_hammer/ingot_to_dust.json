@@ -1,0 +1,10 @@
+{
+  "type": "modern_industrialization:forge_hammer",
+  "ingredient": {
+    "tag": "c:ingots/curium"
+  },
+  "result": {
+    "count": 1,
+    "id": "modern_industrialization:curium_dust"
+  }
+}

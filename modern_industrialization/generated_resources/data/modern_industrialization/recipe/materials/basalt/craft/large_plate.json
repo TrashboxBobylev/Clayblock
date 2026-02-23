@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "x": {
+      "tag": "c:plates/basalt"
+    }
+  },
+  "pattern": [
+    "xx",
+    "xx"
+  ],
+  "result": {
+    "count": 1,
+    "id": "modern_industrialization:basalt_large_plate"
+  }
+}

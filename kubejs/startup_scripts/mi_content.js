@@ -1,7 +1,7 @@
 MIMaterialEvents.addMaterials(event => {
     event.createMaterial("Curium", "curium", 0x867b77, material => {
         material.materialSet("stone")
-            .addParts("dust", "ingot", "plate")
+            .addParts("dust", "ingot", "plate", "large_plate")
             .barrel(196)
             .tank(24)
             .block("coal")
