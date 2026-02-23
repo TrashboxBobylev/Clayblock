@@ -239,6 +239,62 @@ ServerEvents.recipes(event => {
         "B": "#c:storage_blocks/basalt",
         "E": "#c:ingots/iron"
     });
+
+    for (let quarry_type of ["", "_fortune", "_silk"]){
+        event.remove(`rftoolsbuilder:shape_card_quarry${quarry_type}`);
+        event.remove(`rftoolsbuilder:shape_card_quarry_clear${quarry_type}`);
+        event.remove(`rftoolsbuilder:shape_card_quarry${quarry_type}_dirt`);
+    }
+
+    event.remove("rftoolsbuilder:shape_card_pump");
+    event.remove("rftoolsbuilder:shape_card_pump_clear");
+    event.remove("rftoolsbuilder:shape_card_pump_dirt");
+
+    event.shaped("rftoolsbuilder:shape_card_quarry_clear", [
+        "rPr",
+        "iMi",
+        "rSr"
+    ], {
+        "M": "rftoolsbuilder:shape_card_def",
+        "P": "onlyhammersandexcavators:diamond_excavator",
+        "S": "minecraft:redstone_block",
+        "i": "#c:ingots/iron",
+        "r": "minecraft:redstone"
+    });
+
+    event.shaped("rftoolsbuilder:shape_card_quarry_clear_fortune", [
+        "nPn",
+        "nMn",
+        "nSn"
+    ], {
+        "M": "rftoolsbuilder:shape_card_quarry_clear",
+        "P": "minecraft:end_portal_frame",
+        "S": "rftoolsbase:infused_enderpearl",
+        "n": "#c:ingots/netherite"
+    });
+
+    event.shaped("rftoolsbuilder:shape_card_quarry_clear_silk", [
+        " P ",
+        "nMn",
+        " S "
+    ], {
+        "M": "rftoolsbuilder:shape_card_quarry_clear",
+        "P": "minecraft:beacon",
+        "S": "modern_industrialization:steam_quarry",
+        "n": "#c:gears/clayium"
+    });
+
+    event.shaped("rftoolsbuilder:shape_card_pump_clear", [
+        "rPr",
+        "iMi",
+        "rSr"
+    ], {
+        "M": "rftoolsbuilder:shape_card_def",
+        "P": "minecraft:water_bucket",
+        "S": "minecraft:lava_bucket",
+        "i": "minecraft:bucket",
+        "r": "minecraft:redstone"
+    });
 });
 
 ServerEvents.tags("item", event => {
@@ -252,4 +308,5 @@ ServerEvents.tags("item", event => {
 
     event.add("fastpipes:fluid_pipes", "fastpipes:basic_fluid_pipe", "fastpipes:improved_fluid_pipe", "fastpipes:advanced_fluid_pipe", "fastpipes:elite_fluid_pipe", "fastpipes:ultimate_fluid_pipe");
     event.add("fastpipes:energy_pipes", "fastpipes:basic_energy_pipe", "fastpipes:improved_energy_pipe", "fastpipes:advanced_energy_pipe", "fastpipes:elite_energy_pipe", "fastpipes:ultimate_energy_pipe");
+    event.add("c:hidden_from_recipe_viewers", "rftoolsbuilder:shape_card_quarry", "rftoolsbuilder:shape_card_quarry_fortune",  "rftoolsbuilder:shape_card_quarry_silk");
 });

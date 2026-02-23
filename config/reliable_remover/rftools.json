@@ -1,0 +1,9 @@
+{
+    "action": "remove",
+    "items": [
+        "rftoolsbuilder:shape_card_quarry",
+        "rftoolsbuilder:shape_card_quarry_silk",
+        "rftoolsbuilder:shape_card_quarry_fortune",
+        "rftoolsbuilder:shape_card_pump"
+    ]
+}
