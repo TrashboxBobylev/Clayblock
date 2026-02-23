@@ -536,7 +536,7 @@
 			#Probability of a spawn attempt succeeding. 1 for normal spawning, 0 will prevent spawning. Used to make mobs extra rare.
 			# Default: 1.0
 			# Range: 0.0 ~ 1.0
-			extra_rarity = 1.0
+			extra_rarity = 0.5
 			#Names of dimensions this mob can spawn in
 			dimensions = ["minecraft:overworld"]
 			#Names of blocks this mob is allowed to spawn on. Leave blank to ignore block names.
@@ -589,7 +589,7 @@
 			#Smaller number causes less spawning, 0 to disable spawning
 			# Default: 5
 			# Range: > 0
-			spawn_rate = 8
+			spawn_rate = 5
 			#Minimum number of mobs that appear in a spawn group
 			# Default: 2
 			# Range: > 1
