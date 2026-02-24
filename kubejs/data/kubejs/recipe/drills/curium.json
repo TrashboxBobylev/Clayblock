@@ -1,0 +1,57 @@
+{
+    "type": "modern_industrialization:quarry",
+    "eu": 8,
+    "duration": 600,
+    "item_inputs": {
+        "item": "modern_industrialization:curium_drill",
+        "amount": 1,
+        "probability": 0.04
+    },
+    "item_outputs": [
+        {
+            "item": "kubejs:clay_glass",
+            "amount": 1,
+            "probability": 0.4
+        },
+        {
+            "item": "kubejs:otherworldy_crystal",
+            "amount": 1,
+            "probability": 0.2
+        },
+        {
+            "item": "rftoolsbase:dimensionalshard",
+            "amount": 1,
+            "probability": 0.025
+        },
+        {
+            "item": "modern_industrialization:curium_ore",
+            "amount": 1,
+            "probability": 0.25
+        },
+        {
+            "item": "minecraft:smooth_basalt",
+            "amount": 1,
+            "probability": 0.4
+        },
+        {
+            "item": "minecraft:blackstone",
+            "amount": 1,
+            "probability": 0.4
+        },
+        {
+            "item": "minecraft:deepslate",
+            "amount": 1,
+            "probability": 0.25
+        },
+        {
+            "item": "minecraft:pearlescent_froglight",
+            "amount": 1,
+            "probability": 0.0125
+        },
+        {
+            "item": "minecraft:end_crystal",
+            "amount": 1,
+            "probability": 0.0125
+        }
+    ]
+}

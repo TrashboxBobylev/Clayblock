@@ -1,0 +1,57 @@
+{
+    "type": "modern_industrialization:quarry",
+    "eu": 8,
+    "duration": 600,
+    "item_inputs": {
+        "item": "modern_industrialization:terracotta_drill",
+        "amount": 1,
+        "probability": 0.04
+    },
+    "item_outputs": [
+        {
+            "item": "kubejs:terracotta_4x",
+            "amount": 1,
+            "probability": 1
+        },
+        {
+            "item": "kubejs:terracotta_5x",
+            "amount": 1,
+            "probability": 0.6
+        },
+        {
+            "item": "kubejs:terracotta_6x",
+            "amount": 1,
+            "probability": 0.3
+        },
+        {
+            "item": "kubejs:terracotta_7x",
+            "amount": 1,
+            "probability": 0.15
+        },
+        {
+            "item": "kubejs:terracotta_8x",
+            "amount": 1,
+            "probability": 0.075
+        },
+        {
+            "item": "minecraft:ochre_froglight",
+            "amount": 1,
+            "probability": 0.33
+        },
+        {
+            "item": "minecraft:granite",
+            "amount": 1,
+            "probability": 0.33
+        },
+        {
+            "item": "minecraft:red_nether_bricks",
+            "amount": 1,
+            "probability": 0.33
+        },
+        {
+            "item": "mowziesmobs:bluff_rod",
+            "amount": 1,
+            "probability": 0.15
+        }
+    ]
+}

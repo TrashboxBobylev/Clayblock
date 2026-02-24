@@ -1,0 +1,52 @@
+{
+    "type": "modern_industrialization:quarry",
+    "eu": 4,
+    "duration": 600,
+    "item_inputs": {
+        "item": "modern_industrialization:clayium_drill",
+        "amount": 1,
+        "probability": 0.04
+    },
+    "item_outputs": [
+        {
+            "item": "kubejs:clay_3x",
+            "amount": 1,
+            "probability": 1
+        },
+        {
+            "item": "kubejs:clay_4x",
+            "amount": 1,
+            "probability": 0.6
+        },
+        {
+            "item": "kubejs:clay_5x",
+            "amount": 1,
+            "probability": 0.3
+        },
+        {
+            "item": "kubejs:clay_6x",
+            "amount": 1,
+            "probability": 0.15
+        },
+        {
+            "item": "kubejs:clay_7x",
+            "amount": 1,
+            "probability": 0.075
+        },
+        {
+            "item": "kubejs:clay_8x",
+            "amount": 1,
+            "probability": 0.0325
+        },
+        {
+            "item": "kubejs:clay_9x",
+            "amount": 1,
+            "probability": 0.0175
+        },
+        {
+            "item": "kubejs:clay_10x",
+            "amount": 1,
+            "probability": 0.00875
+        }
+    ]
+}
