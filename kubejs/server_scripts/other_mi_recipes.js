@@ -39,4 +39,13 @@ ServerEvents.recipes(event => {
         .itemIn("4x modern_industrialization:steel_large_plate")
         .itemIn("#c:gears/terracotta")
         .itemOut("2x modern_industrialization:mi_blast");
+
+    event.remove("modern_industrialization:materials/pressurizer/up/water");
+    event.recipes.modern_industrialization.pressurizer(64, 800)
+        .fluidIn("1000x minecraft:water")
+        .fluidOut("125x modern_industrialization:high_pressure_water");
+    event.remove("modern_industrialization:materials/pressurizer/up/heavy_water");
+    event.recipes.modern_industrialization.pressurizer(64, 800)
+        .fluidIn("1000x modern_industrialization:heavy_water")
+        .fluidOut("125x modern_industrialization:high_pressure_heavy_water");
 });

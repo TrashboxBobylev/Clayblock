@@ -28,7 +28,9 @@ let tooltip_changes = {
     "storagedrawers:obsidian_storage_upgrade": [{translate: "modpack.obsidian_upgrade"}],
     "rftoolsbuilder:builder": [{translate: "modpack.rftoolsbuilder_1"}, {translate: "modpack.rftoolsbuilder_2"}],
     "rftoolsbuilder:shape_card_quarry_clear_fortune": [{translate: "modpack.quarryfortune"}],
-    "rftoolsbuilder:shape_card_quarry_clear_silk": [{translate: "modpack.quarrysilk"}]
+    "rftoolsbuilder:shape_card_quarry_clear_silk": [{translate: "modpack.quarrysilk"}],
+    "modern_industrialization:high_pressure_water_bucket": [{translate: "modpack.hpwater"}],
+    "modern_industrialization:high_pressure_heavy_water_bucket": [{translate: "modpack.hpwater"}],
 };
 
 ItemEvents.modifyTooltips(event => {
