@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    event.shaped("6x modern_industrialization:clayium_drill", [
+    event.shaped("4x modern_industrialization:clayium_drill", [
         "G D",
         "GI ",
         "FGG"
@@ -12,20 +12,20 @@ ServerEvents.recipes(event => {
 
     event.recipes.modern_industrialization.assembler(8, 200)
         .itemInputs(["modern_industrialization:clayium_drill_head", "4x #c:gears/bronze", "#modern_industrialization:item_pipes", "#modern_industrialization:fluid_pipes"])
-        .itemOut("12x modern_industrialization:clayium_drill");
+        .itemOut("4x modern_industrialization:clayium_drill");
 
     event.recipes.modern_industrialization.quarry(4, 600)
         .itemIn("modern_industrialization:clayium_drill", 0.04)
         .itemOut("kubejs:clay_3x", 1)
-        .itemOut("kubejs:clay_4x", 0.5)
-        .itemOut("kubejs:clay_5x", 0.25)
-        .itemOut("kubejs:clay_6x", 0.125)
-        .itemOut("kubejs:clay_7x", 0.0625)
-        .itemOut("kubejs:clay_8x", 0.03125)
-        .itemOut("kubejs:clay_9x", 0.015625)
-        .itemOut("kubejs:clay_10x", 0.0078125);
+        .itemOut("kubejs:clay_4x", 0.6)
+        .itemOut("kubejs:clay_5x", 0.3)
+        .itemOut("kubejs:clay_6x", 0.15)
+        .itemOut("kubejs:clay_7x", 0.075)
+        .itemOut("kubejs:clay_8x", 0.0325)
+        .itemOut("kubejs:clay_9x", 0.0175)
+        .itemOut("kubejs:clay_10x", 0.00875);
 
-    event.shaped("6x modern_industrialization:terracotta_drill", [
+    event.shaped("4x modern_industrialization:terracotta_drill", [
         "GID",
         "MAI",
         "FMG"
@@ -40,17 +40,18 @@ ServerEvents.recipes(event => {
 
     event.recipes.modern_industrialization.assembler(8, 200)
         .itemInputs(["modern_industrialization:terracotta_drill_head", "2x #c:gears/bronze", "2x #modern_industrialization:item_pipes", "2x modern_industrialization:motor", "modern_industrialization:tin_cable", "modern_industrialization:analog_circuit"])
-        .itemOut("6x modern_industrialization:terracotta_drill");
+        .itemOut("4x modern_industrialization:terracotta_drill");
 
     event.recipes.modern_industrialization.quarry(8, 600)
         .itemIn("modern_industrialization:terracotta_drill", 0.04)
         .itemOut("kubejs:terracotta_4x", 1)
-        .itemOut("kubejs:terracotta_5x", 0.5)
-        .itemOut("kubejs:terracotta_6x", 0.25)
-        .itemOut("kubejs:terracotta_7x", 0.125)
-        .itemOut("minecraft:ochre_froglight", 0.25)
-        .itemOut("minecraft:granite", 0.25)
-        .itemOut("minecraft:red_nether_bricks", 0.25)
+        .itemOut("kubejs:terracotta_5x", 0.6)
+        .itemOut("kubejs:terracotta_6x", 0.3)
+        .itemOut("kubejs:terracotta_7x", 0.15)
+        .itemOut("kubejs:terracotta_8x", 0.075)
+        .itemOut("minecraft:ochre_froglight", 0.33)
+        .itemOut("minecraft:granite", 0.33)
+        .itemOut("minecraft:red_nether_bricks", 0.33)
         .itemOut("mowziesmobs:bluff_rod", 0.15)
 
     event.shaped("4x modern_industrialization:curium_drill", [
