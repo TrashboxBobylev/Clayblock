@@ -97,26 +97,55 @@ ServerEvents.recipes(event => {
 
     event.remove("rftoolsbase:dimensionalshard");
 
-    event.blasting("minecraft:ancient_debris", "kubejs:terracotta_6x", 0.75, 200);
-    event.blasting("minecraft:crying_obsidian", "minecraft:obsidian", 0.75, 200);
-    event.blasting("minecraft:mangrove_log", "kubejs:terracotta_5x", 0.75, 200);
-    event.blasting("minecraft:copper_ore", "kubejs:terracotta_4x", 0.75, 200);
-    event.blasting("minecraft:leather", "kubejs:terracotta_3x", 0.75, 200);
-    event.blasting("minecraft:blackstone", "kubejs:terracotta_2x", 0.75, 200);
-    event.blasting("minecraft:gravel", "kubejs:clay_2x", 0.75, 200);
-    event.blasting("minecraft:coal_ore", "kubejs:clay_3x", 0.75, 200);
-    event.blasting("minecraft:iron_ore", "kubejs:clay_4x", 0.75, 200);
-    event.blasting("minecraft:gold_ore", "kubejs:clay_5x", 0.75, 200);
-    event.blasting("minecraft:diamond_ore", "kubejs:clay_6x", 0.75, 200);
-    event.blasting("minecraft:black_dye", "minecraft:coal_block", 0.75, 200);
-    event.blasting("minecraft:quartz", "minecraft:granite", 0.75, 200);
-    event.blasting("5x rftoolsbase:dimensionalshard", "kubejs:clay_8x", 0.75, 200);
+    event.forEachRecipe({type: "minecraft:blasting"}, recipe => {
+        event.recipes.modern_industrialization.mi_blast(4, 100)
+            .itemIn(recipe.originalRecipeIngredients.getFirst())
+            .itemOut(recipe.originalRecipeResult);
+    });
 
-    event.blasting("8x modern_industrialization:tin_ingot", "modern_industrialization:clayium_ingot", 5, 400);
-    event.blasting("2x modern_industrialization:lead_tiny_dust", "kubejs:clay_glass", 0.75, 200);
-    event.blasting("modern_industrialization:antimony_tiny_dust", "minecraft:end_stone", 0.75, 200);
-    event.blasting("12x modern_industrialization:raw_silver", "kubejs:clay_9x", 5, 400);
-    event.blasting("12x modern_industrialization:raw_nickel", "kubejs:terracotta_9x", 5, 400);
+    /**
+     * 
+     * @param {import("net.minecraft.world.item.crafting.Ingredient").$Ingredient$$Type} input 
+     * @param {import("net.minecraft.world.item.ItemStack").$ItemStack$$Type} output 
+     */
+    function blasting(output, input){
+        event.blasting(output, input, 0.75, 200);
+        event.recipes.modern_industrialization.mi_blast(4, 200)
+            .itemIn(input)
+            .itemOut(output);
+    }
+    /**
+     * 
+     * @param {import("net.minecraft.world.item.crafting.Ingredient").$Ingredient$$Type} input 
+     * @param {import("net.minecraft.world.item.ItemStack").$ItemStack$$Type} output 
+     */
+    function mega_blasting(output, input){
+        event.blasting(output, input, 5, 400);
+        event.recipes.modern_industrialization.mi_blast(8, 300)
+            .itemIn(input)
+            .itemOut(output);
+    }
+
+    blasting("minecraft:ancient_debris", "kubejs:terracotta_6x");
+    blasting("minecraft:crying_obsidian", "minecraft:obsidian");
+    blasting("minecraft:mangrove_log", "kubejs:terracotta_5x");
+    blasting("minecraft:copper_ore", "kubejs:terracotta_4x");
+    blasting("minecraft:leather", "kubejs:terracotta_3x");
+    blasting("minecraft:blackstone", "kubejs:terracotta_2x");
+    blasting("minecraft:gravel", "kubejs:clay_2x");
+    blasting("minecraft:coal_ore", "kubejs:clay_3x");
+    blasting("minecraft:iron_ore", "kubejs:clay_4x");
+    blasting("minecraft:gold_ore", "kubejs:clay_5x");
+    blasting("minecraft:diamond_ore", "kubejs:clay_6x");
+    blasting("minecraft:black_dye", "minecraft:coal_block");
+    blasting("minecraft:quartz", "minecraft:granite");
+    blasting("5x rftoolsbase:dimensionalshard", "kubejs:clay_8x");
+
+    mega_blasting("8x modern_industrialization:tin_ingot", "modern_industrialization:clayium_ingot");
+    blasting("2x modern_industrialization:lead_tiny_dust", "kubejs:clay_glass");
+    blasting("modern_industrialization:antimony_tiny_dust", "minecraft:end_stone");
+    mega_blasting("12x modern_industrialization:raw_silver", "kubejs:clay_9x");
+    mega_blasting("12x modern_industrialization:raw_nickel", "kubejs:terracotta_9x");
 
     event.forEachRecipe(/fastpipes:*./, recipe => {
         recipe.set("result", recipe.originalRecipeResult.withCount(recipe.originalRecipeResult.count*2));

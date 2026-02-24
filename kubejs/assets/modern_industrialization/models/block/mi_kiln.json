@@ -1,0 +1,17 @@
+{
+  "loader": "modern_industrialization:machine",
+  "casing": "lv",
+  "default_overlays": {
+    "front": "modern_industrialization:block/machine/mi_kiln/kiln_front",
+    "front_active": "modern_industrialization:block/machine/mi_kiln/kiln_front_on",
+    "output": "modern_industrialization:block/overlays/output",
+    "top": "modern_industrialization:block/machine/mi_kiln/kiln_top",
+    "top_active": "modern_industrialization:block/machine/mi_kiln/kiln_top_on",
+    "left": "modern_industrialization:block/machine/mi_kiln/kiln_left",
+    "right": "modern_industrialization:block/machine/mi_kiln/kiln_right",
+    "back": "modern_industrialization:block/machine/mi_kiln/kiln_back",
+    "bottom": "modern_industrialization:block/machine/mi_kiln/kiln_bottom",
+    "item_auto": "modern_industrialization:block/overlays/item_auto",
+    "fluid_auto": "modern_industrialization:block/overlays/fluid_auto"
+  }
+}

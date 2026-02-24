@@ -171,6 +171,12 @@ ServerEvents.recipes(event => {
         itemIn("3x modern_industrialization:platinum_cable").
         itemOut("2x modern_industrialization:clay_generator_iv");
 
+    event.forEachRecipe({type: "clayworks:baking"}, recipe => {
+        event.recipes.modern_industrialization.mi_kiln(4, 100)
+            .itemIn(recipe.originalRecipeIngredients.getFirst())
+            .itemOut(recipe.originalRecipeResult);
+    });
+
     /**
      * 
      * @param {import("net.minecraft.world.item.crafting.Ingredient").$Ingredient$$Type} input 
@@ -187,6 +193,9 @@ ServerEvents.recipes(event => {
             ingredient: finalInput.toJson(),
             result: finalOutput.toJson()
         });
+        event.recipes.modern_industrialization.mi_kiln(4, 200)
+            .itemIn(input)
+            .itemOut(output);
     }
 
     baking("kubejs:clay_3x", "minecraft:coal");

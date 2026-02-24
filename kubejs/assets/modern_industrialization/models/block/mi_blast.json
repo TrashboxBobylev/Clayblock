@@ -1,0 +1,14 @@
+{
+  "loader": "modern_industrialization:machine",
+  "casing": "lv",
+  "default_overlays": {
+    "front": "modern_industrialization:block/machine/mi_blast/blast_furnace_front",
+    "front_active": "modern_industrialization:block/machine/mi_blast/blast_furnace_front_on",
+    "output": "modern_industrialization:block/overlays/output",
+    "top": "modern_industrialization:block/machine/mi_blast/blast_furnace_top",
+    "side": "modern_industrialization:block/machine/mi_blast/blast_furnace_side",
+    "bottom": "modern_industrialization:block/machine/mi_blast/blast_furnace_top",
+    "item_auto": "modern_industrialization:block/overlays/item_auto",
+    "fluid_auto": "modern_industrialization:block/overlays/fluid_auto"
+  }
+}
