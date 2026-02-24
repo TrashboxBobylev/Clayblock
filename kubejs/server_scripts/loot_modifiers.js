@@ -48,3 +48,28 @@ LootJS.lootTables(event => {
         pool.removeItem("minecraft:beetroot_seeds");
     });
 });
+
+LootJS.lootTables(event => {
+    for (let entity of ["minecraft:pillager", "minecraft:vindicator"]){
+        event.getEntityTable(entity).createPool(pool => {
+            pool.rolls([2, 3]);
+            pool.addEntry(LootEntry.reference("modpack:end_city_plain_ingots").randomChanceWithEnchantment("minecraft:looting", [1/30, 0, 1/26, 1/20, 1/14]));
+        }).createPool(pool => {
+            pool.rolls([2, 3]);
+            pool.addEntry(LootEntry.reference("modpack:end_city_good_ingots").randomChanceWithEnchantment("minecraft:looting", [1/40, 0, 1/34, 1/26, 1/18]));
+        }).removeItem("minecraft:emerald");
+    }
+    event.getEntityTable("minecraft:evoker").firstPool(pool => {
+        pool.removeItem("minecraft:totem_of_undying");
+        pool.addEntry(LootEntry.of("minecraft:totem_of_undying").randomChanceWithEnchantment("minecraft:looting", [1/12, 0, 1/10, 1/8, 1/6]));
+    }).createPool(pool => {
+        pool.rolls([2, 4]);
+        pool.addEntry(LootEntry.reference("modpack:end_city_plain_ingots").randomChanceWithEnchantment("minecraft:looting", [1/24, 0, 1/20, 1/15, 1/10]));
+    }).createPool(pool => {
+        pool.rolls([2, 4]);
+        pool.addEntry(LootEntry.reference("modpack:end_city_good_ingots").randomChanceWithEnchantment("minecraft:looting", [1/30, 0, 1/24, 1/18, 1/13]));
+    }).createPool(pool => {
+        pool.rolls([2, 4]);
+        pool.addEntry(LootEntry.reference("modpack:end_city_other_stuff").randomChanceWithEnchantment("minecraft:looting", [1/45, 0, 1/36, 1/27, 1/20]));
+    }).removeItem("minecraft:emerald");
+});

@@ -1,0 +1,24 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#c:is_end",
+  "spawners": [
+    {
+        "type": "minecraft:pillager",
+        "weight": 2,
+        "minCount": 1,
+        "maxCount": 4
+    },
+    {
+        "type": "minecraft:vindicator",
+        "weight": 2,
+        "minCount": 1,
+        "maxCount": 3
+    },
+    {
+        "type": "minecraft:evoker",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 1
+    }
+  ]
+}
