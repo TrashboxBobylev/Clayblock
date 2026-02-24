@@ -10,6 +10,12 @@ ServerEvents.recipes(event => {
             "C": global.clays[i-1]
         });
         event.shapeless(Item.of(global.clays[i-1]).withCount(4), [global.clays[i]]);
+        event.recipes.modern_industrialization.packer(2, 100)
+            .itemIn(Item.of(global.clays[i-1]).withCount(4))
+            .itemOut(global.clays[i]);
+        event.recipes.modern_industrialization.unpacker(2, 100)
+            .itemIn(global.clays[i])
+            .itemOut(Item.of(global.clays[i-1]).withCount(4));
 
         event.smelting(Item.of(global.terracottas[i]), Item.of(global.clays[i]), 0.35);
         event.shapeless(Item.of(global.terracottas[i-1]).withCount(4), [global.terracottas[i]]);
@@ -21,6 +27,12 @@ ServerEvents.recipes(event => {
                 "C": global.terracottas[i-1]
             });
         }
+        event.recipes.modern_industrialization.packer(2, 100)
+            .itemIn(Item.of(global.terracottas[i-1]).withCount(4))
+            .itemOut(global.terracottas[i]);
+        event.recipes.modern_industrialization.unpacker(2, 100)
+            .itemIn(global.terracottas[i])
+            .itemOut(Item.of(global.terracottas[i-1]).withCount(4));
     }
 
     event.shapeless("4x minecraft:clay_ball", ["minecraft:clay"]);
