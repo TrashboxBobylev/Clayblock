@@ -72,4 +72,16 @@ LootJS.lootTables(event => {
         pool.rolls([2, 4]);
         pool.addEntry(LootEntry.reference("modpack:end_city_other_stuff").randomChanceWithEnchantment("minecraft:looting", [1/45, 0, 1/36, 1/27, 1/20]));
     }).removeItem("minecraft:emerald");
+    event.getEntityTable("minecraft:illusioner").firstPool(pool => {
+        pool.addEntry(LootEntry.of("minecraft:enchanted_book").enchantWithLevels([32, 42]).randomChanceWithEnchantment("minecraft:looting", [1/12, 0, 1/10, 1/8, 1/6]));
+    }).createPool(pool => {
+        pool.rolls([2, 4]);
+        pool.addEntry(LootEntry.reference("modpack:end_city_plain_ingots").randomChanceWithEnchantment("minecraft:looting", [1/24, 0, 1/20, 1/15, 1/10]));
+    }).createPool(pool => {
+        pool.rolls([2, 4]);
+        pool.addEntry(LootEntry.reference("modpack:end_city_good_ingots").randomChanceWithEnchantment("minecraft:looting", [1/30, 0, 1/24, 1/18, 1/13]));
+    }).createPool(pool => {
+        pool.rolls([2, 4]);
+        pool.addEntry(LootEntry.reference("modpack:end_city_other_stuff").randomChanceWithEnchantment("minecraft:looting", [1/45, 0, 1/36, 1/27, 1/20]));
+    });
 });
