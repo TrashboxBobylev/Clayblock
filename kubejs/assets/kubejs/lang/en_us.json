@@ -66,6 +66,7 @@
     "modpack.hook_changes_1": "Decreased travel speed by 50%, but increased pull speed by 33%",
     "modpack.hook_changes_2": "Has practically infinite range",
     "modpack.anvil": "Can be placed down with dispensers",
+    "modpack.redstone_automation": "Can be put in an item frame next to dispensers, crafters or droppers to make them constantly activate",
     "modpack.claysta": "Grows into Claysta Fruit-bearing vine",
     "modpack.dragon_egg_1": "Every successful dragon kill drops an egg",
     "modpack.dragon_egg_2": "Can be turned into treasure bag to get rewards",
