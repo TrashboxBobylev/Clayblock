@@ -69,7 +69,7 @@
         "when": "finalize",
         "result": "allow",
         "healthmultiply": 2,
-        "damagemultiply": 1.75,
+        "damagemultiply": 1.33,
         "speedmultiply": 1.33
     },
     {
@@ -85,7 +85,7 @@
         "when": "finalize",
         "result": "allow",
         "healthmultiply": 2,
-        "damagemultiply": 2,
+        "damagemultiply": 1.5,
         "speedmultiply": 1.25
     }
 ]
