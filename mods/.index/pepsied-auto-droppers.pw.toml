@@ -1,0 +1,30 @@
+filename = 'auto-droppers-1.0.5.jar'
+name = "Pepsi's Auto Droppers"
+side = ''
+x-prismlauncher-loaders = [ 'neoforge', 'forge', 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [
+    '1.21',
+    '1.21.1',
+    '1.21.10',
+    '1.21.11',
+    '1.21.2',
+    '1.21.3',
+    '1.21.4',
+    '1.21.5',
+    '1.21.6',
+    '1.21.7',
+    '1.21.8',
+    '1.21.9'
+]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'auto-droppers-1.0.5 (1.21)'
+
+[download]
+hash = '7d5155a8c04582e168e698f61d9bbdcab23e5e94'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6348359
+project-id = 1185799
