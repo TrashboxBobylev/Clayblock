@@ -71,4 +71,24 @@ ServerEvents.recipes(event => {
     event.recipes.modern_industrialization.centrifuge(12, 400)
         .itemIn("#modpack:ender_pearl_core")
         .fluidOut("1000x modern_industrialization:propene");
+
+    event.remove("modern_industrialization:electric_age/machine/large_diesel_generator_asbl");
+    event.shaped("modern_industrialization:large_diesel_generator", [
+        "TPT",
+        "tHt",
+        "TPT"
+    ], {
+        "T": "modern_industrialization:hv_diesel_generator",
+        "t": "modern_industrialization:titanium_rotor",
+        "P": "modern_industrialization:advanced_pump",
+        "H": "modern_industrialization:turbo_machine_hull"
+    });
+
+    event.remove("modern_industrialization:assembler_generated/electric_age/machine/large_diesel_generator");
+    event.recipes.modern_industrialization.assembler(8, 200)
+        .itemIn("4x modern_industrialization:hv_diesel_generator")
+        .itemIn("2x modern_industrialization:advanced_pump")
+        .itemIn("modern_industrialization:turbo_machine_hull")
+        .itemIn("2x modern_industrialization:titanium_rotor")
+        .itemOut("modern_industrialization:large_diesel_generator");
 });
