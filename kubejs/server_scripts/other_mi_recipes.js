@@ -67,4 +67,8 @@ ServerEvents.recipes(event => {
         .fluidIn("500x modern_industrialization:ethanol")
         .fluidIn("25x modern_industrialization:acrylic_acid")
         .fluidOut("400x modern_industrialization:diethyl_ether");
+
+    event.recipes.modern_industrialization.centrifuge(12, 400)
+        .itemIn("#modpack:ender_pearl_core")
+        .fluidOut("1000x modern_industrialization:propene");
 });
