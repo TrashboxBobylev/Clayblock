@@ -90,6 +90,9 @@
     "modpack.quarrysilk": "60% increased power consumption",
 
     "modpack.hpwater": "33% decreased pressurizing time",
+    "modpack.sugar_solution": "Reduced sugar needed from 8 to 3",
+    "modpack.raw_biodiesel": "33% increased production rate",
+    "modpack.diethyl_ether": "60% increased production rate",
 
     "modpack.dragon_message": "The Ender Dragon is optional in Clayblock! Explore the End and its new resources at your own pace and challenge the dragon for extra resources!",
     "modpack.dragon_treasure.name": "Ender Dragon Treasure Bag",
