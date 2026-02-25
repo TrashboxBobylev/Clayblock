@@ -8,4 +8,4 @@
 	# Range: 1 ~ 64
 	stonecutterRangeCheck = 5
 	#List of allowed storage blocks that the smart crafting table can use.
-	"Allowed Storage Blocks" = ["minecraft:chest"]
+	"Allowed Storage Blocks" = ["minecraft:chest", "ironchest:iron_chest", "ironchest:gold_chest", "ironchest:copper_chest", "ironchest:diamond_chest", "ironchest:obsidian_chest", "modern_industrialization:configurable_chest", "extended_industrialization:large_configurable_chest", "storagedrawers:controller"]
