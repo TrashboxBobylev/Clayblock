@@ -183,6 +183,24 @@ ServerEvents.recipes(event => {
         itemIn("3x modern_industrialization:platinum_cable").
         itemOut("2x modern_industrialization:clay_generator_iv");
 
+    event.shaped("modern_industrialization:clay_generator_v", [
+        "GGG",
+        "UHU",
+        "CCC"
+    ], {
+        "C": "modern_industrialization:superconductor_coil",
+        "G": "modern_industrialization:clay_generator_iv",
+        "U": "modern_industrialization:helium_plasma_bucket",
+        "H": "modern_industrialization:quantum_machine_hull"
+    });
+
+    event.recipes.modern_industrialization.assembler(2222222, 200).
+        itemIn("modern_industrialization:quantum_machine_hull").
+        itemIn('3x modern_industrialization:clay_generator_iv').
+        fluidIn('2000x modern_industrialization:helium_plasma').
+        itemIn("3x modern_industrialization:superconductor_coil").
+        itemOut("modern_industrialization:clay_generator_v");
+
     event.forEachRecipe({type: "clayworks:baking"}, recipe => {
         event.recipes.modern_industrialization.mi_kiln(4, 100)
             .itemIn(recipe.originalRecipeIngredients.getFirst())

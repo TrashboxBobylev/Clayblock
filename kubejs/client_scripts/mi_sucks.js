@@ -3,7 +3,8 @@ ClientEvents.generateAssets("after_mods", event => {
         {voltage: "lv", name: "i"},
         {voltage: "mv", name: "ii"},
         {voltage: "hv", name: "iii"},
-        {voltage: "ev", name: "iv"}
+        {voltage: "ev", name: "iv"},
+        {voltage: "superconductor", name: "v"}
     ];
 
     for (let thing of generator_config){

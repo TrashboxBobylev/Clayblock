@@ -34,7 +34,8 @@ let tooltip_changes = {
     "minecraft:redstone_torch": [{translate: "modpack.redstone_automation"}],
     "modern_industrialization:sugar_solution_bucket": [{translate: "modpack.sugar_solution"}],
     "modern_industrialization:raw_biodiesel_bucket": [{translate: "modpack.raw_biodiesel"}],
-    "modern_industrialization:diethyl_ether_bucket": [{translate: "modpack.diethyl_ether"}]
+    "modern_industrialization:diethyl_ether_bucket": [{translate: "modpack.diethyl_ether"}],
+    "modern_industrialization:clay_generator_v": [{translate: "modpack.clay_generator_v"}]
 };
 
 ItemEvents.modifyTooltips(event => {

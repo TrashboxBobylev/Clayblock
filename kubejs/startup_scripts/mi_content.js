@@ -144,4 +144,29 @@ MIMachineEvents.registerMachines(event => {
             true, true, true
         );
     }
+
+    const clayHatch = event.hatchOf("item_input", "item_output", "energy_output");
+    const quantumMember = event.memberOfBlock("modern_industrialization:replicator");
+    const clayMultiShape = event.layeredShape("superconductor", [
+        [ "H H", "HHH", "H H" ],
+        [ "H H", "H H", "HHH" ],
+        [ "HHH", "H#H", "HHH" ],
+    ])
+        .key("H", quantumMember, clayHatch)
+        .build();
+
+    event.simpleGeneratorMultiBlock(
+        "Clay Energizer MK." + convertToRoman(5),
+        "clay_generator_" + convertToRoman(5).toLowerCase(),
+        clayMultiShape,
+        22222222,
+        builder => {
+            clay_fuels.forEach(clay => {
+                builder.item(clay.item, clay.power*22);
+            });
+        },
+        "superconductor",
+        "clay_generator_" + convertToRoman(5).toLowerCase(),
+        true, true, true
+    );
 });
