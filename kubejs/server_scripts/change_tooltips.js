@@ -31,7 +31,10 @@ let tooltip_changes = {
     "rftoolsbuilder:shape_card_quarry_clear_silk": [{translate: "modpack.quarrysilk"}],
     "modern_industrialization:high_pressure_water_bucket": [{translate: "modpack.hpwater"}],
     "modern_industrialization:high_pressure_heavy_water_bucket": [{translate: "modpack.hpwater"}],
-    "minecraft:redstone_torch": [{translate: "modpack.redstone_automation"}]
+    "minecraft:redstone_torch": [{translate: "modpack.redstone_automation"}],
+    "modern_industrialization:sugar_solution_bucket": [{translate: "modpack.sugar_solution"}],
+    "modern_industrialization:raw_biodiesel_bucket": [{translate: "modpack.raw_biodiesel"}],
+    "modern_industrialization:diethyl_ether_bucket": [{translate: "modpack.diethyl_ether"}]
 };
 
 ItemEvents.modifyTooltips(event => {
