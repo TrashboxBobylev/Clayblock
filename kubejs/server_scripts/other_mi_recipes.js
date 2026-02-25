@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
         .fluidOut("1000x modern_industrialization:sugar_solution");
 
     event.remove("modern_industrialization:oil/chemical_reactor/plant_oil_to_raw_biodiesel");
-    event.recipes.modern_industrialization.chemical_reactor(12, 300)
+    event.recipes.modern_industrialization.chemical_reactor(12, 200)
         .fluidIn("6000x modern_industrialization:plant_oil")
         .fluidIn("400x modern_industrialization:ethanol")
         .fluidIn("100x modern_industrialization:sodium_hydroxide")
