@@ -126,6 +126,12 @@
     
     "modpack.advancement.clay_8.title": "Eight Coadjuvancy",
     "modpack.advancement.clay_8.desc": "Obtain the eight compression of clay (262,144 clayballs)\n\nThe mass of resulting blob is enough to tear dimensions!",
+
+    "modpack.advancement.clay_9.title": "Ninth Coalition",
+    "modpack.advancement.clay_9.desc": "Obtain the ninth compression of clay (1,048,576 clayballs)\n\nIt might be enough to start something completely non-vanilla",
+
+    "modpack.advancement.clay_10.title": "Tenth Cobelligerency",
+    "modpack.advancement.clay_10.desc": "Obtain the tenth compression of clay (4,194,304 clayballs)\n\nWith pure, primed clay out of the way, it is time to start industrializing",
     
     "modpack.advancement.terracotta_0.title": "Step to Baking",
     "modpack.advancement.terracotta_0.desc": "Seek the camp sites of grays to harden your clay mass",
@@ -152,5 +158,12 @@
     "modpack.advancement.terracotta_7.desc": "Obtain the seventh compression of terracotta (4,096 terracotta)\n\nAutomate the growth and collection of every clay asset no matter how small",
     
     "modpack.advancement.terracotta_8.title": "Vault to Symbolism",
-    "modpack.advancement.terracotta_8.desc": "Obtain the eight compression of terracotta (16,768 terracotta)\n\nYou probably have experienced the joy and heat of hell, aren't ya?"
+    "modpack.advancement.terracotta_8.desc": "Obtain the eight compression of terracotta (16,768 terracotta)\n\nYou probably have experienced the joy and heat of hell, aren't ya?",
+
+    "modpack.advancement.terracotta_9.title": "Descent to Saccharase",
+    "modpack.advancement.terracotta_9.desc": "Obtain the ninth compression of terracotta (67,072 terracotta)\n\nSo much heat is bound to create a good, stained material",
+
+    "modpack.advancement.terracotta_10.title": "Dunk to Sagacity",
+    "modpack.advancement.terracotta_10.desc": "Obtain the tenth compression of terracotta (268,288 terracotta)\n\nAccumulated thermal energy of this rock leads to decent heatproof"
+
 }

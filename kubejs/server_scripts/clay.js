@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
 });
 
 ServerEvents.generateData("before_mods", event => {
-    for (let i = 1; i <= 8; i++){
+    for (let i = 1; i <= 10; i++){
         event.json(`modpack:advancement/clay_${i}.json`, {
             display: {
                 icon: {id: `kubejs:clay_${i}x`},
