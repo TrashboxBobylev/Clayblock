@@ -146,6 +146,8 @@ ServerEvents.recipes(event => {
     blasting("modern_industrialization:antimony_tiny_dust", "minecraft:end_stone");
     mega_blasting("12x modern_industrialization:raw_silver", "kubejs:clay_9x");
     mega_blasting("12x modern_industrialization:raw_nickel", "kubejs:terracotta_9x");
+    mega_blasting("48x modern_industrialization:bauxite_dust", "kubejs:clay_10x");
+    mega_blasting("24x modern_industrialization:salt_dust", "kubejs:terracotta_10x");
 
     event.forEachRecipe(/fastpipes:*./, recipe => {
         recipe.set("result", recipe.originalRecipeResult.withCount(recipe.originalRecipeResult.count*2));
