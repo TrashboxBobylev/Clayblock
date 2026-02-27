@@ -6,7 +6,7 @@ debugCommands = false
 maxDistillationTowerHeight = 9
 #Enable the default trades from the Industrialist villager provided by MI.
 #Disable this to provide your own set of trades.
-defaultIndustrialistTrades = true
+defaultIndustrialistTrades = false
 
 [compat]
 	#Enable bidirectional energy compatibility with NeoForge's energy system.
