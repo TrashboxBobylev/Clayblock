@@ -91,4 +91,20 @@ ServerEvents.recipes(event => {
         .itemIn("modern_industrialization:turbo_machine_hull")
         .itemIn("2x modern_industrialization:titanium_rotor")
         .itemOut("modern_industrialization:large_diesel_generator");
+
+    event.remove("modern_industrialization:alloy/mixer/stainless_steel/dust");
+    event.recipes.modern_industrialization.mixer(2, 100)
+        .itemIn("3x #c:dusts/clayium")
+        .itemIn("1x #c:dusts/chromium")
+        .itemIn("1x #c:dusts/nickel")
+        .itemIn("1x #c:dusts/manganese")
+        .itemOut("6x modern_industrialization:stainless_steel_dust");
+    
+    event.remove("modern_industrialization:alloy/mixer/stainless_steel/tiny_dust");
+    event.recipes.modern_industrialization.mixer(2, 100)
+        .itemIn("3x #c:tiny_dusts/clayium")
+        .itemIn("1x #c:tiny_dusts/chromium")
+        .itemIn("1x #c:tiny_dusts/nickel")
+        .itemIn("1x #c:tiny_dusts/manganese")
+        .itemOut("6x modern_industrialization:stainless_steel_tiny_dust");
 });
