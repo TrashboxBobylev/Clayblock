@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:multiface_growth",
+  "config": {
+    "block": "minecraft:glow_lichen",
+    "can_be_placed_on": [
+      "minecraft:clay",
+      "kubejs:clay_1x",
+      "kubejs:clay_2x",
+      "kubejs:clay_3x",
+      "kubejs:clay_4x",
+      "kubejs:clay_5x",
+      "kubejs:clay_6x"
+    ],
+    "can_place_on_ceiling": true,
+    "can_place_on_floor": false,
+    "can_place_on_wall": true,
+    "chance_of_spreading": 0.5,
+    "search_range": 30
+  }
+}
