@@ -148,7 +148,7 @@ ServerEvents.recipes(event => {
     mega_blasting("12x modern_industrialization:raw_nickel", "kubejs:terracotta_9x");
     mega_blasting("48x modern_industrialization:bauxite_dust", "kubejs:clay_10x");
     mega_blasting("24x modern_industrialization:salt_dust", "kubejs:terracotta_10x");
-    mega_blasting("3x modern_industrialization:mozanite_dust", "kubejs:clay_11x");
+    mega_blasting("3x modern_industrialization:monazite_dust", "kubejs:clay_11x");
     mega_blasting("2x modern_industrialization:raw_tungsten", "kubejs:terracotta_11x");
     mega_blasting("3x modern_industrialization:raw_uranium", "kubejs:clay_12x");
     mega_blasting("2x modern_industrialization:raw_platinum", "kubejs:terracotta_12x");
