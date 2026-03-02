@@ -42,7 +42,7 @@ MIMaterialEvents.addMaterials(event => {
 
     event.createMaterial("Stained Nethercotta", "terracotta", 0xaf3200, material => {
         material.materialSet("shiny")
-            .addParts("dust", "ingot", "plate", "rod", "ring", "bolt", "gear", "curved_plate", "drill_head", "drill")
+            .addParts("dust", "tiny_dust", "ingot", "nugget", "plate", "rod", "ring", "bolt", "gear", "curved_plate", "drill_head", "drill")
             .customRegularPart("Energized %s Drill", "drill_energized")
             .barrel(256)
             .tank(32)
@@ -169,4 +169,19 @@ MIMachineEvents.registerMachines(event => {
         "clay_generator_" + convertToRoman(5).toLowerCase(),
         true, true, true
     );
+});
+
+MIRegistrationEvents.registerFluids(event => {
+    const fluid_fuels = [
+        {name: "Biodiesel", id: "biodiesel", color: 0x5cb020},
+        {name: "Boosted Diesel", id: "boosted_diesel", color: 0xfd9b0a},
+        {name: "Creosote", id: "creosote", color: 0x636050},
+        {name: "Diesel", id: "diesel", color: 0xe9bf2d},
+        {name: "Heavy Fuel", id: "heavy_fuel", color: 0xffdb46},
+        {name: "Light Fuel", id: "light_fuel", color: 0xffe946},
+        {name: "Naphtha", id: "naphtha", color: 0xa5a25e}
+    ];
+    for (let fuel of fluid_fuels){
+        event.register("Infused " + fuel.name, "infused_" + fuel.id, fuel.color, "plasma", false, "high");
+    }
 });
