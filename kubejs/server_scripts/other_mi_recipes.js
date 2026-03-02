@@ -112,4 +112,12 @@ ServerEvents.recipes(event => {
         .itemIn("minecraft:glow_lichen", 0.25)
         .fluidIn("1000x modern_industrialization:helium")
         .fluidOut("15x modern_industrialization:helium_3");
+
+    event.recipes.modern_industrialization.implosion_compressor(1, 40)
+            .itemInputs(["4x modern_industrialization:industrial_tnt", "27x minecraft:end_stone", "kubejs:clay_9x"])
+            .itemOut("1x modern_industrialization:clayium_block");
+
+    event.recipes.modern_industrialization.implosion_compressor(1, 40)
+            .itemInputs(["4x modern_industrialization:industrial_tnt", "10x modern_industrialization:sulfur_dust", "5x minecraft:blaze_rod","kubejs:terracotta_9x"])
+            .itemOut("1x modern_industrialization:terracotta_block");
 });
