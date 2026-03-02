@@ -107,4 +107,9 @@ ServerEvents.recipes(event => {
         .itemIn("1x #c:tiny_dusts/nickel")
         .itemIn("1x #c:tiny_dusts/manganese")
         .itemOut("6x modern_industrialization:stainless_steel_tiny_dust");
+
+    event.recipes.modern_industrialization.centrifuge(32, 2000)
+        .itemIn("minecraft:glow_lichen", 0.25)
+        .fluidIn("1000x modern_industrialization:helium")
+        .fluidOut("15x modern_industrialization:helium_3");
 });
