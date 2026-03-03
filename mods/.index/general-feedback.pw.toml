@@ -1,0 +1,17 @@
+filename = 'generalfeedback-1.0.0.jar'
+name = 'General Feedback'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'generalfeedback-1.0.0.jar'
+
+[download]
+hash = '6bd91642bba281448bc26e8085f243c71cdb8e9c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7144900
+project-id = 1371560
