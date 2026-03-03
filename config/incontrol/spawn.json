@@ -40,7 +40,7 @@
         "result": "allow",
         "healthmultiply": 3,
         "damagemultiply": 2.5,
-        "followrangeset": 15,
+        "followrangeset": 10,
         "ai": {
             "targets": [
                 {
