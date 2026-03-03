@@ -82,3 +82,7 @@ ServerEvents.generateData("before_mods", event => {
     event.setCompostable("kubejs:clay_stalk", 0.65, true);
     event.setCompostable("kubejs:clay_fruit", 0.2, true);
 });
+
+PlayerEvents.advancement("modpack:clay_0", event => {
+    event.player.tell({translate: "modpack.tips"});
+});
