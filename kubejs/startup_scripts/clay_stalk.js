@@ -145,7 +145,7 @@ StartupEvents.registry("block", event => {
 BlockEvents.modification(event => {
     event.modify("kubejs:clay_stalk", handler => {
         handler.randomTickCallback = callback => {
-            let side = callback.level.random.nextIntBetweenInclusive(1, 8);
+            let side = callback.level.random.nextIntBetweenInclusive(1, 7);
             let offset = "empty";
             switch (side){
                 case 1:
@@ -172,7 +172,7 @@ BlockEvents.modification(event => {
                 if (target_block.getBlockState().isAir()){
                     target_block.setBlockState("kubejs:clay_fruit", 3);
                     success = true;
-                } else if (target_block.getId() == "kubejs:clay_fruit" && callback.level.random.nextBoolean()){
+                } else if (target_block.getId() == "kubejs:clay_fruit" && callback.level.random.nextInt(9) == 0){
                     target_block.setBlockState("kubejs:clay_stalk", 3);
                     success = true;
                 }
