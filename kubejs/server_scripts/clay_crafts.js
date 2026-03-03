@@ -35,6 +35,7 @@ ServerEvents.recipes(event => {
             .itemOut(Item.of(global.terracottas[i-1]).withCount(4));
     }
 
+    event.remove("modern_industrialization:vanilla_recipes/clay_uncrafting");
     event.shapeless("4x minecraft:clay_ball", ["minecraft:clay"]);
 
     event.shaped("4x kubejs:clay_snack", [
