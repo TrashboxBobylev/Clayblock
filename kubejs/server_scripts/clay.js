@@ -78,4 +78,7 @@ ServerEvents.generateData("before_mods", event => {
             }
         });
     }
+
+    event.setCompostable("kubejs:clay_stalk", 0.65, true);
+    event.setCompostable("kubejs:clay_fruit", 0.2, true);
 });
