@@ -109,8 +109,8 @@ ServerEvents.recipes(event => {
      * @param {import("net.minecraft.world.item.ItemStack").$ItemStack$$Type} output 
      */
     function blasting(output, input){
-        event.blasting(output, input, 0.75, 200);
-        event.recipes.modern_industrialization.mi_blast(4, 200)
+        event.blasting(output, input, 0.75, 150);
+        event.recipes.modern_industrialization.mi_blast(4, 150)
             .itemIn(input)
             .itemOut(output);
     }
@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
      * @param {import("net.minecraft.world.item.ItemStack").$ItemStack$$Type} output 
      */
     function mega_blasting(output, input){
-        event.blasting(output, input, 5, 400);
+        event.blasting(output, input, 5, 300);
         event.recipes.modern_industrialization.mi_blast(8, 300)
             .itemIn(input)
             .itemOut(output);

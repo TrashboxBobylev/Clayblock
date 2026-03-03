@@ -219,12 +219,12 @@ ServerEvents.recipes(event => {
         event.custom({
             type: "clayworks:baking",
             category: "misc",
-            cookingtime: 200,
+            cookingtime: 150,
             experience: 0.3,
             ingredient: finalInput.toJson(),
             result: finalOutput.toJson()
         });
-        event.recipes.modern_industrialization.mi_kiln(4, 200)
+        event.recipes.modern_industrialization.mi_kiln(4, 150)
             .itemIn(input)
             .itemOut(output);
     }
