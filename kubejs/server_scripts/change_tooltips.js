@@ -35,7 +35,9 @@ let tooltip_changes = {
     "modern_industrialization:sugar_solution_bucket": [{translate: "modpack.sugar_solution"}],
     "modern_industrialization:raw_biodiesel_bucket": [{translate: "modpack.raw_biodiesel"}],
     "modern_industrialization:diethyl_ether_bucket": [{translate: "modpack.diethyl_ether"}],
-    "modern_industrialization:clay_generator_v": [{translate: "modpack.clay_generator_v"}]
+    "modern_industrialization:clay_generator_v": [{translate: "modpack.clay_generator_v"}],
+    "#modpack:bamboo_drawers": [{translate: "modpack.bamboo_drawers"}],
+    "minecraft:villager_spawn_egg": [{translate: "modpack.villager_1"}, {translate: "modpack.villager_2"}, {translate: "modpack.villager_3"}]
 };
 
 ItemEvents.modifyTooltips(event => {

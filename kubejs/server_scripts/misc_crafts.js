@@ -348,4 +348,11 @@ ServerEvents.tags("item", event => {
     event.add("fastpipes:fluid_pipes", "fastpipes:basic_fluid_pipe", "fastpipes:improved_fluid_pipe", "fastpipes:advanced_fluid_pipe", "fastpipes:elite_fluid_pipe", "fastpipes:ultimate_fluid_pipe");
     event.add("fastpipes:energy_pipes", "fastpipes:basic_energy_pipe", "fastpipes:improved_energy_pipe", "fastpipes:advanced_energy_pipe", "fastpipes:elite_energy_pipe", "fastpipes:ultimate_energy_pipe");
     event.add("c:hidden_from_recipe_viewers", "rftoolsbuilder:shape_card_quarry", "rftoolsbuilder:shape_card_quarry_fortune",  "rftoolsbuilder:shape_card_quarry_silk");
+
+    event.add("modpack:bamboo_drawers", "storagedrawers:bamboo_full_drawers_1");
+    event.add("modpack:bamboo_drawers", "storagedrawers:bamboo_full_drawers_2");
+    event.add("modpack:bamboo_drawers", "storagedrawers:bamboo_full_drawers_4");
+    event.add("modpack:bamboo_drawers", "storagedrawers:bamboo_half_drawers_1");
+    event.add("modpack:bamboo_drawers", "storagedrawers:bamboo_half_drawers_2");
+    event.add("modpack:bamboo_drawers", "storagedrawers:bamboo_half_drawers_4");
 });
