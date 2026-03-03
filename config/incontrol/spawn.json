@@ -26,6 +26,7 @@
         "mob": "untitledduckmod:goose",
         "mintime": 12500,
         "maxtime": 23500,
+        "maxlight": 1,
         "when": "onjoin",
         "result": "allow"
     },
