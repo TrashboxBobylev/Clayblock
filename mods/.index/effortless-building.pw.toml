@@ -1,0 +1,17 @@
+filename = 'effortlessbuilding-1.21.1-3.10-all.jar'
+name = 'Effortless Building'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'alpha'
+x-prismlauncher-version-number = 'Effortless Building 3.10 alpha (1.21.1)'
+
+[download]
+hash = '1f837b50f1c755a55830f533c08aebc3a6294a6d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6331031
+project-id = 302113

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:snow_block"
+    },
+    "S": {
+      "item": "minecraft:paper"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "A",
+    "S",
+    "P"
+  ],
+  "result": {
+    "count": 1,
+    "id": "schematicannon:clipboard"
+  },
+  "show_notification": true
+}
