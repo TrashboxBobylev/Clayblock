@@ -27,15 +27,15 @@ StartupEvents.registry("block", event => {
         return new JavaAdapter($FarmBlock, {
             /**
              * 
-             * @param {typeof import("net.minecraft.world.entity.Entity").$Entity} entity 
+             * @param {import("net.minecraft.world.entity.Entity").$Entity} entity 
              * @param {import("net.minecraft.world.level.block.state.BlockState").$BlockState} state 
              * @param {import("net.minecraft.server.level.ServerLevel").$ServerLevel} level 
              * @param {import("net.minecraft.core.BlockPos").$BlockPos} pos 
              */
-            turnToClay: function(entity, state, level, pos){
+            turningToClay: function(entity, state, level, pos){
                 let blockstate = $Block.pushEntitiesUp(state, "kubejs:clay_3x", level, pos);
                 level.setBlockAndUpdate(pos, blockstate);
-                level.gameEvent($GameEvent.BLOCK_CHANGE, pos, $GameEvent$Context.of(entity, blockstate));
+                level["gameEvent(net.minecraft.core.Holder,net.minecraft.core.BlockPos,net.minecraft.world.level.gameevent.GameEvent$Context)"]($GameEvent.BLOCK_CHANGE, pos, $GameEvent$Context.of(entity, blockstate));
             },
             /**
              * 
@@ -113,7 +113,7 @@ StartupEvents.registry("block", event => {
             fallOn: function(level, state, pos, entity, fallDistance){
                 if (!level.isClientSide()
                     && $CommonHooks.onFarmlandTrample(level, pos, Blocks.DIRT.defaultBlockState(), fallDistance, entity)) {
-                    this.turnToClay(entity, state, level, pos);
+                    this.turningToClay(entity, state, level, pos);
                 }
 
                 entity.causeFallDamage(fallDistance, 1.0, entity.damageSources().fall());
