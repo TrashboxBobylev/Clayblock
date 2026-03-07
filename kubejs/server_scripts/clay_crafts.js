@@ -250,6 +250,10 @@ ServerEvents.recipes(event => {
     baking("minecraft:mangrove_roots", "8x minecraft:stick");
     baking("minecraft:granite", "minecraft:quartz");
     baking("minecraft:brown_mushroom_block", "3x minecraft:torch");
+
+    event.recipes.modern_industrialization.vacuum_freezer(256, 200)
+        .fluidIn("500x modern_industrialization:helium_plasma")
+        .itemOut("kubejs:clay_12x");
 });
 
 ItemEvents.modifyTooltips(event => {
