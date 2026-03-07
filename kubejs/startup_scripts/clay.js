@@ -41,7 +41,7 @@ StartupEvents.registry("block", event => {
             $Block.dropResources(tickEvent.block.getBlockState(), tickEvent.getLevel(),tickEvent.block.getPos());
             tickEvent.level.removeBlock(tickEvent.block.getPos(), false);
         }
-    }).hardness(0.3).viewBlocking(false).transparent(true).tagBlock("minecraft:mineable/shovel").tagBoth("minecraft:leaves").renderType("cutout_mipped").notSolid();
+    }).hardness(0.3).viewBlocking(false).transparent(true).tagBlock("minecraft:mineable/shovel").tagBoth("minecraft:leaves").renderType("cutout_mipped").notSolid().mapColor($MapColor.TERRACOTTA_LIGHT_GRAY);
 
     event.createCustom("clay_glass", () => {
         return new $TintedGlassBlock($BlockBehaviour$Properties.ofFullCopy(Block.getBlock("minecraft:tinted_glass").getBlock()));
