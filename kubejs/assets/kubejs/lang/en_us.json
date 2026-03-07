@@ -107,6 +107,8 @@
     "modpack.dragon_treasure.desc": "Place to see your rewards",
 
     "modpack.clay_generator_v": "\"Slowpoke is suing you.\"",
+
+    "modpack.completed": "%s has successfully obtained perfect clay and completed Clayblock in time of %s! Congratulations!",
     
     "modpack.advancement.clay_0.title": "Clayblock",
     "modpack.advancement.clay_0.desc": "A world of clay... and more clay",
@@ -152,6 +154,9 @@
 
     "modpack.advancement.clay_14.title": "Fourteenth Communism",
     "modpack.advancement.clay_14.desc": "Obtain the fourteenth compression of clay (1,073,741,824 clayballs)\n\nIridescent cries can be heard from clay's sheer mass",
+
+    "modpack.advancement.clay_20.title": "Claymordial Progenitor",
+    "modpack.advancement.clay_20.desc": "Obtain the twentieth compression of clay (4,398,046,511,104 clayballs)\n\nThis blob may as well contain the universes worth of matter\n\nThanks for playing Clayblock!",
     
     "modpack.advancement.terracotta_0.title": "Step to Baking",
     "modpack.advancement.terracotta_0.desc": "Seek the camp sites of grays to harden your clay mass",
@@ -196,6 +201,8 @@
     "modpack.advancement.terracotta_13.desc": "Obtain the thirteenth compression of terracotta (67,108,864 terracotta)\n\nThere is no more hope for better stuff at this point",
 
     "modpack.advancement.terracotta_14.title": "Scurry to Satellitosis",
-    "modpack.advancement.terracotta_14.desc": "Obtain the fourteenth compression of terracotta (268,435,456 terracotta)\n\nWhat is the human limit for compression?"
+    "modpack.advancement.terracotta_14.desc": "Obtain the fourteenth compression of terracotta (268,435,456 terracotta)\n\nWhat is the human limit for compression?",
 
+    "modpack.advancement.terracotta_20.title": "Supermassive Overlord",
+    "modpack.advancement.terracotta_20.desc": "Obtain the twentieth compression of clay (1,099,511,627,776 terracotta)\n\nNo one has answer on how much building material is wasted on this dream of a chunk\n\nThanks for playing Clayblock (again)!"
 }

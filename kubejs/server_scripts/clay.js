@@ -79,10 +79,72 @@ ServerEvents.generateData("before_mods", event => {
         });
     }
 
+    event.json(`modpack:advancement/clay_20.json`, {
+        display: {
+            icon: {id: `kubejs:clay_20x`},
+            title: {translate: `modpack.advancement.clay_20.title`},
+            description: {translate: `modpack.advancement.clay_20.desc`},
+            frame: "challenge"
+        },
+        criteria: {
+            clay: {
+                trigger: "minecraft:inventory_changed",
+                conditions: {
+                    items: [
+                        {items: `kubejs:clay_20x`}
+                    ]
+                }
+            }
+        },
+        parent: `modpack:clay_14`,
+        rewards: {
+            experience: 2*(20+1)
+        }
+    });
+    event.json(`modpack:advancement/terracotta_20.json`, {
+        display: {
+            icon: {id: `kubejs:terracotta_20x`},
+            title: {translate: `modpack.advancement.terracotta_20.title`},
+            description: {translate: `modpack.advancement.terracotta_20.desc`},
+            frame: "challenge"
+        },
+        criteria: {
+            terracotta: {
+                trigger: "minecraft:inventory_changed",
+                conditions: {
+                    items: [
+                        {items: `kubejs:terracotta_20x`}
+                    ]
+                }
+            }
+        },
+        parent: `modpack:terracotta_14`,
+        rewards: {
+            experience: 4*(20+1)
+        }
+    });
+
     event.setCompostable("kubejs:clay_stalk", 0.65, true);
     event.setCompostable("kubejs:clay_fruit", 0.2, true);
 });
 
 PlayerEvents.advancement("modpack:clay_0", event => {
     event.player.tell({translate: "modpack.tips"});
+});
+
+PlayerEvents.advancement("modpack:clay_20", event => {
+    let playtime = event.player.stats.getPlayTime();
+    let hours = playtime / (20 * 60 * 60);
+    let minutes = hours * 60 - (Math.trunc(hours)*60);
+    let seconds = minutes * 60 - (Math.trunc(minutes)*60);
+    let fullTime = "";
+    if (hours > 0)
+        fullTime = fullTime + `${Math.trunc(hours)}h `;
+    if (minutes > 0)
+        fullTime = fullTime + `${Math.trunc(minutes)}m `;
+    if (seconds > 0 && hours < 0)
+        fullTime = fullTime + `${Math.trunc(seconds)}s `;
+    fullTime = fullTime.trim();
+    event.server.tell(Component.translatable("modpack.completed", event.player.name, fullTime).color("#e3f3ff").bold().underlined());
+    event.server.runCommand(`/playsound minecraft:ui.toast.challenge_complete master @a`);
 });
