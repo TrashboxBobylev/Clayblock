@@ -240,11 +240,11 @@
 			#Scale mob health by this value
 			# Default: 1.0
 			# Range: 0.0 ~ 1.7976931348623157E308
-			health_multiplier = 1.0
+			health_multiplier = 0.78
 			#Scale mob attack damage by this value
 			# Default: 1.0
 			# Range: 0.0 ~ 1.7976931348623157E308
-			attack_multiplier = 1.0
+			attack_multiplier = 0.55
 
 	[mobs.frostmaw]
 		#Disable/enable Frostmaw's boss health bar
