@@ -3,7 +3,7 @@ saves/
 screenshots/
 coremods/
 mods/*.jar
-options.txt
+/options.txt
 config/sodium-fingerprint.json
 downloads/
 .probe
