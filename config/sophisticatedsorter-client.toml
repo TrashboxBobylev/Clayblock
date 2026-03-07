@@ -6,6 +6,6 @@
 	#Only valid for containers without invalid slot such as recipe result slot if true.
 	Filter2 = true
 	#Special of screens.
-	specialList = []
+	specialList = ["container.crafting", "block.smartcrafting.smart_crafting_table"]
 	#是否启用默认拼音排序。
 	pinyin = true
