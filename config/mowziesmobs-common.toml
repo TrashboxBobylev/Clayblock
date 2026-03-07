@@ -685,7 +685,7 @@
 			# Range: -65 ~ 256
 			height_min = 0
 			#Set to true to only allow this mob to spawn in the dark, like zombies and skeletons.
-			needs_darkness = false
+			needs_darkness = true
 			#Set to true to only spawn mob if it can see the sky.
 			needs_see_sky = false
 			#Set to true to only spawn mob if it can't see the sky.
