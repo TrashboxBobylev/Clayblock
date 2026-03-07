@@ -37,7 +37,7 @@
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "kubejs:clay_4x"
+        "Name": "kubejs:clay_3x"
       }
     }
   }
