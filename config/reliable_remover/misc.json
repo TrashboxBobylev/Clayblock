@@ -1,0 +1,7 @@
+{
+    "action": "remove",
+    "items": [
+        "onlyhammersandexcavators:wooden_hammer",
+        "onlyhammersandexcavators:wooden_excavator"
+    ]
+}
