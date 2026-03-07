@@ -1,0 +1,17 @@
+filename = 'soulgravestone-1.0.2.jar'
+name = 'Soul Gravestone'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'soulgravestone-1.0.2.jar'
+
+[download]
+hash = 'b1857466a8e33702f30f05e50b9e6a4ee6e5294b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7174070
+project-id = 1283601
