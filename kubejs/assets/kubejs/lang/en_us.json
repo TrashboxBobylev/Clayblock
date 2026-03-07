@@ -140,6 +140,18 @@
 
     "modpack.advancement.clay_10.title": "Tenth Cobelligerency",
     "modpack.advancement.clay_10.desc": "Obtain the tenth compression of clay (4,194,304 clayballs)\n\nWith pure, primed clay out of the way, it is time to start industrializing",
+
+    "modpack.advancement.clay_11.title": "Eleventh Compositum",
+    "modpack.advancement.clay_11.desc": "Obtain the eleventh compression of clay (16,777,216 clayballs)\n\nCompressing primed energy even further leads to... purple?",
+
+    "modpack.advancement.clay_12.title": "Twelfth Cohesion",
+    "modpack.advancement.clay_12.desc": "Obtain the twelfth compression of clay (67,108,864 clayballs)\n\nUntapped potential of clay energy is finally materialized in nuclear way",
+
+    "modpack.advancement.clay_13.title": "Thirteenth Collegiality",
+    "modpack.advancement.clay_13.desc": "Obtain the thirteenth compression of clay (268,435,456 clayballs)\n\nTitan's flesh can also be expressed as some amount of clay",
+
+    "modpack.advancement.clay_14.title": "Fourteenth Communism",
+    "modpack.advancement.clay_14.desc": "Obtain the fourteenth compression of clay (1,073,741,824 clayballs)\n\nIridescent cries can be heard from clay's sheer mass",
     
     "modpack.advancement.terracotta_0.title": "Step to Baking",
     "modpack.advancement.terracotta_0.desc": "Seek the camp sites of grays to harden your clay mass",
@@ -163,15 +175,27 @@
     "modpack.advancement.terracotta_6.desc": "Obtain the sixth compression of terracotta (4,096 terracotta)\n\nAutomate the growth and collection of every clay asset no matter how small",
     
     "modpack.advancement.terracotta_7.title": "Spring to Synthesis",
-    "modpack.advancement.terracotta_7.desc": "Obtain the seventh compression of terracotta (4,096 terracotta)\n\nUse builder's shapes to tear the world apart",
+    "modpack.advancement.terracotta_7.desc": "Obtain the seventh compression of terracotta (16,384 terracotta)\n\nUse builder's shapes to tear the world apart",
     
     "modpack.advancement.terracotta_8.title": "Vault to Symbolism",
-    "modpack.advancement.terracotta_8.desc": "Obtain the eight compression of terracotta (16,768 terracotta)\n\nYou probably have experienced the joy and heat of hell, aren't ya?",
+    "modpack.advancement.terracotta_8.desc": "Obtain the eight compression of terracotta (65,536 terracotta)\n\nYou probably have experienced the joy and heat of hell, aren't ya?",
 
     "modpack.advancement.terracotta_9.title": "Descent to Saccharase",
-    "modpack.advancement.terracotta_9.desc": "Obtain the ninth compression of terracotta (67,072 terracotta)\n\nSo much heat is bound to create a good, stained material",
+    "modpack.advancement.terracotta_9.desc": "Obtain the ninth compression of terracotta (262,144 terracotta)\n\nSo much heat is bound to create a good, stained material",
 
     "modpack.advancement.terracotta_10.title": "Dunk to Sagacity",
-    "modpack.advancement.terracotta_10.desc": "Obtain the tenth compression of terracotta (268,288 terracotta)\n\nAccumulated thermal energy of this rock leads to decent heatproof"
+    "modpack.advancement.terracotta_10.desc": "Obtain the tenth compression of terracotta (1,048,576 terracotta)\n\nAccumulated thermal energy of this rock leads to decent heatproof",
+
+    "modpack.advancement.terracotta_11.title": "Dash to Salinity",
+    "modpack.advancement.terracotta_11.desc": "Obtain the eleventh compression of terracotta (4,194,304 terracotta)\n\nThe compression levels have reached the unfathomable heights",
+
+    "modpack.advancement.terracotta_12.title": "Spurt to Salvation",
+    "modpack.advancement.terracotta_12.desc": "Obtain the twelfth compression of terracotta (16,777,216 terracotta)\n\nMolecules merged, electrons refined to supreme levels...",
+
+    "modpack.advancement.terracotta_13.title": "Gallop to Sanatoria",
+    "modpack.advancement.terracotta_13.desc": "Obtain the thirteenth compression of terracotta (67,108,864 terracotta)\n\nThere is no more hope for better stuff at this point",
+
+    "modpack.advancement.terracotta_14.title": "Scurry to Satellitosis",
+    "modpack.advancement.terracotta_14.desc": "Obtain the fourteenth compression of terracotta (268,435,456 terracotta)\n\nWhat is the human limit for compression?"
 
 }
