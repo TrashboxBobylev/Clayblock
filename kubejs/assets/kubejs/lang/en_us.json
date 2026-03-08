@@ -267,5 +267,11 @@
     "modpack.tip_57": "Clay is obviously renewable.",
     "modpack.tip_58": "The big Clay memelords are stealing the cure, so you can craft their poison.",
     "modpack.tip_59": "No one will care, if your base resembles pasta.",
-    "modpack.tip_60": "Subscribe to /r/Silksong for more Pablo's tips."
+    "modpack.tip_60": "Subscribe to /r/Silksong for more Pablo's tips.",
+
+    "biome.modpack.clayland": "Clay Landscape",
+    "biome.modpack.terracottaland": "Terracotta Grotto",
+    "biome.nullscape.shadowlands": "Decaying Shadowlands",
+    "biome.nullscape.void_barrens": "Void Barrens",
+    "biome.nullscape.crystal_peaks": "Crystal Peaks"
 }
