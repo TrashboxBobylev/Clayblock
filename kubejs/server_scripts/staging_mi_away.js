@@ -24,3 +24,10 @@ PlayerEvents.advancement("modern_industrialization:forge_hammer", event => {
     if (!AStages.playerHasStage("MI", event.player))
         AStages.addStageToPlayer("MI", event.player);
 });
+
+ServerEvents.recipes(event => {
+    event.remove("modern_industrialization:materials/curium/craft/block_from_ingot");
+    event.remove("modern_industrialization:materials/curium/craft/ingot_from_block");
+    event.remove("modern_industrialization:materials/basalt/craft/block_from_ingot");
+    event.remove("modern_industrialization:materials/basalt/craft/ingot_from_block");
+});
