@@ -62,6 +62,11 @@
     "entity": true,
     "entity_variant": true
   },
+  "toms_storage": {
+    "inventory_hopper": true,
+    "inventory_config": true,
+    "inventory_connector": true
+  },
   "untitledduckmod": {
     "lay_egg": true,
     "next_eat": true
@@ -83,9 +88,6 @@
   "modern_industrialization": {
     "overclock": true,
     "pipe": true
-  },
-  "gravestone": {
-    "grave": true
   },
   "astages": {
     "block_component_provider": true

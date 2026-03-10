@@ -1,0 +1,17 @@
+filename = 'shulkerboxslot-neoforge-6.0.0+1.21.1.jar'
+name = 'Shulker Box Slot (Fabric/Forge/Quilt)'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'shulkerboxslot-neoforge-6.0.0+1.21.1.jar'
+
+[download]
+hash = '3aea08a3de0ebeccb86c55497f4198e75f0c8a92'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5802206
+project-id = 316881

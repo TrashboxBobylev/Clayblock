@@ -1,0 +1,17 @@
+filename = 'dontcrashtom-1.0.0.jar'
+name = "DontCrashTom (Fixes for Tom's Simple Storage Mod)"
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'dontcrashtom-1.0.0'
+
+[download]
+hash = '9e8e9f2618eb2f6bb61bfbe83e3c4abe2202f0ec'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7389568
+project-id = 1415372
