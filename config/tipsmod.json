@@ -4,7 +4,7 @@
       "The default amount of time for a tip to be displayed before it cycles to the    ",
       "next tip.                                                                       "
     ],
-    "//default": 3500,
+    "//default": 5000,
     "value": 3500
   },
   "ignored_namespaces": {
