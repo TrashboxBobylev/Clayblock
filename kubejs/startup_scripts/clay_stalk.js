@@ -172,7 +172,7 @@ BlockEvents.modification(event => {
                 if (target_block.getBlockState().isAir()){
                     target_block.setBlockState("kubejs:clay_fruit", 3);
                     success = true;
-                } else if (target_block.getId() == "kubejs:clay_fruit" && callback.level.random.nextInt(9) == 0){
+                } else if (target_block.getId() == "kubejs:clay_fruit" && callback.level.random.nextInt(24) == 0){
                     target_block.setBlockState("kubejs:clay_stalk", 3);
                     success = true;
                 }
