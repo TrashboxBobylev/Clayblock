@@ -49,6 +49,7 @@
     "block.kubejs.clay_farmland": "Clay Farmland",
     "block.kubejs.clay_glass": "Crystamogrified Clay",
     "block.kubejs.otherworldy_crystal": "Otherworldy Crystal",
+    "block.kubejs.brittle_obsidian": "Brittle Obsidian",
 
     "item.kubejs.clay_snack": "Clay Snack",
     "item.kubejs.clayium_rotary_blade": "Clayium Rotary Blade",
@@ -59,7 +60,7 @@
     "modpack.breed_scrimblows": "Can be used to breed Scrimblows",
     "modpack.crying_location": "Found in the underground Temple of Color",
     "modpack.dripping_crying_1": "Drips water into a cauldron, when pointed two blocks above dripstone",
-    "modpack.dripping_crying_2": "Will eventually decay, if used for this purpose",
+    "modpack.dripping_crying_2": "Will eventually decay into Brittle Obsidian, if used for this purpose",
     "modpack.tnt_tip": "Has bigger explosion power in the Nether",
     "modpack.mi_title": "Discovered Modern Industrialization!",
     "modpack.mi_unlocked": "You discover a brand new way to create materials and machines...",

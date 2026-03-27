@@ -15,12 +15,12 @@
             },
             {
                 "type": "chance",
-                "chance": 0.5
+                "chance": 0.6
             }
         ]
     },
     "post": {
         "type": "place",
-        "block": "minecraft:obsidian"
+        "block": "kubejs:brittle_obsidian"
     }
 }

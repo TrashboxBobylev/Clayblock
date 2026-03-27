@@ -342,6 +342,15 @@ ServerEvents.recipes(event => {
         "i": "minecraft:bucket",
         "r": "minecraft:redstone"
     });
+
+    event.shaped("2x minecraft:obsidian", [
+        "OAO",
+        "AOA",
+        "OAO"
+    ], {
+        "A": "minecraft:amethyst_shard",
+        "O": "kubejs:brittle_obsidian"
+    });
 });
 
 ServerEvents.tags("item", event => {

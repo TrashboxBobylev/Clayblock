@@ -56,6 +56,8 @@ StartupEvents.registry("block", event => {
     event.create("clay_slab", "kubejs:slab").copyPropertiesFrom("minecraft:oak_slab").tagBoth(["minecraft:wooden_slabs", "minecraft:slab"]).tagBlock("minecraft:mineable/axe").texture("kubejs:block/clay_planks");
 
     event.create("clay_stairs", "kubejs:stairs").copyPropertiesFrom("minecraft:oak_stairs").tagBoth(["minecraft:wooden_stairs", "minecraft:stairs"]).tagBlock("minecraft:mineable/axe").texture("kubejs:block/clay_planks");
+
+    event.create("brittle_obsidian").copyPropertiesFrom("minecraft:obsidian").hardness(15).resistance(500).tagBlock(["minecraft:mineable/pickaxe", "minecraft:needs_diamond_tool", "minecraft:dragon_immune"]).tagBoth(["c:obsidians"]);
 });
 
 StartupEvents.registry("item", event => {
