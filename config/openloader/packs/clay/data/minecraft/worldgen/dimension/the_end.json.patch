@@ -1,0 +1,7 @@
+[
+    {
+        "op": "replace",
+        "path": "/generator/biome_source/biomes/5/parameters/continentalness/0",
+        "value": 0
+    }
+]
