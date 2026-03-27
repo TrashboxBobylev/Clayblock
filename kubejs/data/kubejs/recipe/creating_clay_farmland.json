@@ -1,13 +1,17 @@
 {
     "type": "lychee:block_crushing",
-    "landing_block": "kubejs:clay_3x",
+    "landing_block": "kubejs:clay_4x",
     "item_in": [
-        "minecraft:bone_meal",
-        "minecraft:short_grass",
-        "minecraft:brown_dye"
+        "3x minecraft:bone_meal",
+        "2x minecraft:short_grass",
+        "2x minecraft:brown_dye"
     ],
     "post": [
-        "place kubejs:clay_farmland",
+        {
+            "type": "drop_item",
+            "id": "kubejs:clay_farmland",
+            "count": 3
+        },
         "run \"particle minecraft:happy_villager ~ ~1 ~ 1 1 1 0.2 30\" /hide"
     ]
 }
