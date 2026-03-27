@@ -373,3 +373,10 @@ ServerEvents.tags("item", event => {
     event.add("modpack:bamboo_drawers", "storagedrawers:bamboo_half_drawers_2");
     event.add("modpack:bamboo_drawers", "storagedrawers:bamboo_half_drawers_4");
 });
+
+ServerEvents.tags("block", event => {
+    event.add("minecraft:dragon_immune", "soulgravestone:gravestone");
+    event.add("minecraft:wither_immune", "soulgravestone:gravestone");
+    event.add("true_ending:stops_dragonfireball", "soulgravestone:gravestone");
+    event.add("true_ending:stops_laser", "soulgravestone:gravestone");
+});
