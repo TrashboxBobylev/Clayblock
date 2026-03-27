@@ -3,7 +3,7 @@
 let tooltip_changes = {
     "#untitledduckmod:duck_taming_food": [{translate: "modpack.tame_scrimblows"}],
     "#untitledduckmod:duck_breeding_food": [{translate: "modpack.breed_scrimblows"}],
-    "minecraft:crying_obsidian": [{translate: "modpack.dripping_crying_1"}, {translate: "modpack.dripping_crying_2"}],
+    "minecraft:crying_obsidian": [{translate: "modpack.crying_location"}, {translate: "modpack.dripping_crying_1"}, {translate: "modpack.dripping_crying_2"}],
     "minecraft:tnt": [{translate: "modpack.tnt_tip"}],
     "modern_industrialization:forge_hammer": [{translate: "modpack.mi_how_to_unlock"}],
     "rehooked:blaze_hook": [{translate: "modpack.hook_changes_1"}],
@@ -13,7 +13,7 @@ let tooltip_changes = {
     "#fastpipes:fluid_pipes": [{translate: "modpack.fluid_pipe"}],
     "#fastpipes:energy_pipes": [{translate: "modpack.fluid_pipe"}],
     "minecraft:anvil": [{translate: "modpack.anvil"}],
-    "kubejs:clay_stalk": [{translate: "modpack.claysta"}],
+    "kubejs:clay_stalk": [{translate: "modpack.claysta_1"}, {translate: "modpack.claysta_2"}],
     "minecraft:dragon_egg": [{translate: "modpack.dragon_egg_1"}, {translate: "modpack.dragon_egg_2"}],
     "onlyhammersandexcavators:emerald_hammer": [{translate: "modpack.emerald_tool"}],
     "onlyhammersandexcavators:emerald_excavator": [{translate: "modpack.emerald_tool"}],
@@ -37,7 +37,21 @@ let tooltip_changes = {
     "modern_industrialization:diethyl_ether_bucket": [{translate: "modpack.diethyl_ether"}],
     "modern_industrialization:clay_generator_v": [{translate: "modpack.clay_generator_v"}],
     "#modpack:bamboo_drawers": [{translate: "modpack.bamboo_drawers"}],
-    "minecraft:villager_spawn_egg": [{translate: "modpack.villager_1"}, {translate: "modpack.villager_2"}, {translate: "modpack.villager_3"}]
+    "minecraft:villager_spawn_egg": [{translate: "modpack.villager_1"}, {translate: "modpack.villager_2"}, {translate: "modpack.villager_3"}],
+    "minecraft:shulker_box": [{translate: "modpack.crying_location"}],
+    "minecraft:dead_tube_coral_block": [{translate: "modpack.location_shadowlands"}],
+    "minecraft:dead_brain_coral_block": [{translate: "modpack.location_shadowlands"}],
+    "minecraft:dead_bubble_coral_block": [{translate: "modpack.location_shadowlands"}],
+    "minecraft:dead_fire_coral_block": [{translate: "modpack.location_shadowlands"}],
+    "minecraft:dead_horn_coral_block": [{translate: "modpack.location_shadowlands"}],
+    "minecraft:smooth_basalt": [{translate: "modpack.location_void_barrens"}],
+    "minecraft:blackstone": [{translate: "modpack.location_void_barrens"}],
+    "kubejs:otherworldy_crystal": [{translate: "modpack.location_crystal_peaks"}],
+    "minecraft:pearlescent_froglight": [{translate: "modpack.location_void_barrens"}],
+    "minecraft:ochre_froglight": [{translate: "modpack.location_nether"}],
+    "minecraft:red_nether_blocks": [{translate: "modpack.location_nether"}],
+    "kubejs:clay_glass": [{translate: "modpack.location_the_end"}],
+    "minecraft:green_candle": [{translate: "modpack.claysta_2"}]
 };
 
 ItemEvents.modifyTooltips(event => {
