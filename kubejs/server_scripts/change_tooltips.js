@@ -50,6 +50,7 @@ let tooltip_changes = {
     "minecraft:pearlescent_froglight": [{translate: "modpack.location_void_barrens"}],
     "minecraft:ochre_froglight": [{translate: "modpack.location_nether"}],
     "minecraft:red_nether_bricks": [{translate: "modpack.location_nether"}],
+    "minecraft:granite": [{translate: "modpack.location_nether"}],
     "kubejs:clay_glass": [{translate: "modpack.location_the_end"}],
     "minecraft:green_candle": [{translate: "modpack.claysta_2"}]
 };
