@@ -53,6 +53,7 @@
 
     "item.kubejs.clay_snack": "Clay Snack",
     "item.kubejs.clayium_rotary_blade": "Clayium Rotary Blade",
+    "item.kubejs.pablo_radio": "Pablo's Radio",
 
     "modpack.clay_amount": "Worth %s clay balls.",
     "modpack.terracotta_amount": "Worth %s terracotta blocks.",
@@ -215,6 +216,8 @@
     "modpack.advancement.terracotta_20.desc": "Obtain the twentieth compression of clay (1,099,511,627,776 terracotta)\n\nNo one has answer on how much building material is wasted on this dream of a chunk\n\nThanks for playing Clayblock (again)!",
 
     "modpack.tiptitle": "Pablo's Tip",
+    "modpack.pablo_phone": "%s: %s",
+    "modpack.pablo_chat": "Pablo",
 
     "modpack.tip_1": "Murder is okay.",
     "modpack.tip_2": "Sneak with a hammer to break only one block.",

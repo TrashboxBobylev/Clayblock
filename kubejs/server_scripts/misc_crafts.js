@@ -351,6 +351,14 @@ ServerEvents.recipes(event => {
         "A": "minecraft:amethyst_shard",
         "O": "kubejs:brittle_obsidian"
     });
+
+    event.shaped("kubejs:pablo_radio", [
+        " I",
+        "G "
+    ], {
+        "I": "kubejs:clay_4x",
+        "G": "#modpack:green_things"
+    });
 });
 
 ServerEvents.tags("item", event => {
@@ -372,6 +380,10 @@ ServerEvents.tags("item", event => {
     event.add("modpack:bamboo_drawers", "storagedrawers:bamboo_half_drawers_1");
     event.add("modpack:bamboo_drawers", "storagedrawers:bamboo_half_drawers_2");
     event.add("modpack:bamboo_drawers", "storagedrawers:bamboo_half_drawers_4");
+
+    for (let green_thing of Ingredient.of(/(.*):green_(.*)/).stacks){
+        event.add("modpack:green_things", green_thing.id);
+    }
 });
 
 ServerEvents.tags("block", event => {

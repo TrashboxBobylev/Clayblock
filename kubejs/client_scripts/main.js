@@ -11,3 +11,11 @@ ClientEvents.generateAssets("before_mods", event => {
         });
     }
 });
+
+
+ItemEvents.modifyTooltips(event => {
+    event.modify("kubejs:pablo_radio", builder => {
+        builder.removeLine(0);
+        builder.insert(0, [{translate: "item.kubejs.pablo_radio", color: "#27FF1F"}]);
+    });
+});
