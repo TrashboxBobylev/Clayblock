@@ -10,7 +10,7 @@ StartupEvents.registry("item", event => {
                 if (entity.player){
                     /** @type {import("net.minecraft.world.entity.player.Player").$Player } */
                     let player = Java.cast($Player, entity);
-                    let tip = entity.random.nextIntBetweenInclusive(1, 70);
+                    let tip = entity.random.nextIntBetweenInclusive(1, 80);
                     player.tell({translate: "modpack.pablo_phone", with: [{translate: "modpack.pablo_chat", color: "#27FF1F"}, {translate: `modpack.tip_${tip}`}]});
                 }
             }

@@ -2,7 +2,7 @@
 console.info('Hello, World! (Loaded client example script)')
 
 ClientEvents.generateAssets("before_mods", event => {
-    for (let i = 1; i <= 75; i++){
+    for (let i = 1; i <= 80; i++){
         event.json(`modpack:tips/tip_${i}.json`, {
             type: "tipsmod:simple",
             text: {
