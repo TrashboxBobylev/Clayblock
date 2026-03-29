@@ -88,6 +88,16 @@ ServerEvents.recipes(event => {
         "B": "minecraft:blaze_rod"
     });
 
+    event.shaped("modern_industrialization:conveyor", [
+        "DDD",
+        "CBC",
+        "DDD"
+    ], {
+        "D": "modern_industrialization:basalt_large_plate",
+        "C": "modern_industrialization:motor",
+        "B": "modern_industrialization:tin_cable"
+    });
+
     event.shaped("modern_industrialization:basalt_machine_casing", [
         "PPP",
         "PGP",
