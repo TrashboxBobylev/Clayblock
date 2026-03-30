@@ -1,4 +1,4 @@
 [config]
-	displayFeedbackButtonOnInventoryScreen = true
+	displayFeedbackButtonOnInventoryScreen = false
 	displayFeedbackButtonOnPauseScreen = true
 	displayFeedbackButtonOnDeathScreen = true
