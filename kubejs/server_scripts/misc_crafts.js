@@ -367,6 +367,67 @@ ServerEvents.recipes(event => {
     ], {
         "c": "minecraft:green_candle"
     });
+
+    event.remove("moderndynamics:fluid_pipe");
+    event.shaped("9x moderndynamics:fluid_pipe", [
+        "MMM",
+        "PPP",
+        "MMM"
+    ], {
+        "M": "minecraft:mangrove_planks",
+        "P": "fastpipes:advanced_fluid_pipe"
+    });
+    
+    event.remove("moderndynamics:item_pipe");
+    event.shaped("9x moderndynamics:item_pipe", [
+        "MMM",
+        "PPP",
+        "MMM"
+    ], {
+        "M": "minecraft:mangrove_planks",
+        "P": "fastpipes:advanced_item_pipe"
+    });
+
+    event.remove("moderndynamics:inhibitor");
+    event.shaped("4x moderndynamics:inhibitor", [
+        " Q ",
+        "GRG",
+        " Q "
+    ], {
+        "G": "minecraft:glow_lichen",
+        "Q": "minecraft:quartz",
+        "R": "minecraft:redstone"
+    });
+
+    event.remove("moderndynamics:extractor");
+    event.shaped("4x moderndynamics:extractor", [
+        " I ",
+        "ITI",
+        " I "
+    ], {
+        "I": "moderndynamics:inhibitor",
+        "T": "minecraft:hopper"
+    });
+
+    event.remove("moderndynamics:filter");
+    event.shaped("4x moderndynamics:filter", [
+        " I ",
+        "ITI",
+        " I "
+    ], {
+        "I": "moderndynamics:inhibitor",
+        "T": "schematicannon:clipboard"
+    });
+
+    event.remove("moderndynamics:attractor");
+    event.shaped("4x moderndynamics:attractor", [
+        " I ",
+        "ITI",
+        " I "
+    ], {
+        "I": "moderndynamics:inhibitor",
+        "T": "minecraft:ender_eye"
+    });
 });
 
 ServerEvents.tags("item", event => {
