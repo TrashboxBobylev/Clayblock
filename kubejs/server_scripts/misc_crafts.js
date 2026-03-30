@@ -359,6 +359,14 @@ ServerEvents.recipes(event => {
         "I": "kubejs:clay_4x",
         "G": "#modpack:green_things"
     });
+
+    event.shaped("kubejs:clay_stalk", [
+        "ccc",
+        "ccc",
+        "ccc"
+    ], {
+        "c": "minecraft:green_candle"
+    });
 });
 
 ServerEvents.tags("item", event => {
