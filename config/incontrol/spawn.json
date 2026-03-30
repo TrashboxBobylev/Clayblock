@@ -63,7 +63,8 @@
         "result": "allow",
         "healthmultiply": 2,
         "damagemultiply": 2.5,
-        "speedmultiply": 1.5
+        "speedmultiply": 1.5,
+        "playerhelditem": "minecraft:crossbow"
     },
     {
         "mob": "minecraft:vindicator",
@@ -71,7 +72,8 @@
         "result": "allow",
         "healthmultiply": 2,
         "damagemultiply": 1.33,
-        "speedmultiply": 1.33
+        "speedmultiply": 1.33,
+        "playerhelditem": "minecraft:iron_axe"
     },
     {
         "mob": "minecraft:evoker",
