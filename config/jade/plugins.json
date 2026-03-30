@@ -52,8 +52,15 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "jadeaddons": {
-    "equipment_requirement": ""
+  "csr": {
+    "zombie_clay_soldier": true,
+    "clay_mob": true,
+    "vampire_clay_soldier": true,
+    "easel_block_storage": true,
+    "clay_soldier": true,
+    "clay_wraith": true,
+    "hamster_wheel": true,
+    "boss_clay_soldier": true
   },
   "jade_access": {
     "held_item": true,
@@ -61,18 +68,6 @@
     "block": true,
     "entity": true,
     "entity_variant": true
-  },
-  "toms_storage": {
-    "inventory_hopper": true,
-    "inventory_config": true,
-    "inventory_connector": true
-  },
-  "untitledduckmod": {
-    "lay_egg": true,
-    "next_eat": true
-  },
-  "fastpipes": {
-    "energy_pipe_info": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -89,14 +84,29 @@
     "overclock": true,
     "pipe": true
   },
-  "astages": {
-    "block_component_provider": true
-  },
   "balm": {
     "jade": true
   },
   "custommachinery": {
     "machine_component_provider": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "toms_storage": {
+    "inventory_hopper": true,
+    "inventory_config": true,
+    "inventory_connector": true
+  },
+  "untitledduckmod": {
+    "lay_egg": true,
+    "next_eat": true
+  },
+  "fastpipes": {
+    "energy_pipe_info": true
+  },
+  "astages": {
+    "block_component_provider": true
   },
   "storagedrawers": {
     "display.stacklimit": true,
