@@ -120,4 +120,20 @@ ServerEvents.recipes(event => {
     event.recipes.modern_industrialization.implosion_compressor(1, 40)
             .itemInputs(["4x modern_industrialization:industrial_tnt", "10x modern_industrialization:sulfur_dust", "5x minecraft:blaze_rod","kubejs:terracotta_9x"])
             .itemOut("1x modern_industrialization:terracotta_block");
+
+    event.recipes.modern_industrialization.electrolyzer(2, 100)
+        .itemIn("12x kubejs:clay_sapling")
+        .fluidIn("4000x modern_industrialization:biodiesel")
+        .itemOut("minecraft:oak_sapling", 0.25)
+        .itemOut("minecraft:birch_sapling", 0.25)
+        .itemOut("minecraft:spruce_sapling", 0.25)
+        .itemOut("minecraft:jungle_sapling", 0.25);
+
+    event.recipes.modern_industrialization.electrolyzer(2, 100)
+        .itemIn("12x kubejs:clay_sapling")
+        .fluidIn("4000x modern_industrialization:ethanol")
+        .itemOut("minecraft:cherry_sapling", 0.25)
+        .itemOut("minecraft:dark_oak_sapling", 0.25)
+        .itemOut("minecraft:acacia_sapling", 0.25)
+        .itemOut("minecraft:azalea", 0.25);
 });
