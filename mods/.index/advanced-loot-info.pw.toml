@@ -1,17 +1,17 @@
-filename = 'AdvancedLootInfo-neoforge-1.21.1-1.7.2.jar'
+filename = 'AdvancedLootInfo-neoforge-1.21.1-1.8.2.jar'
 name = 'AdvancedLootInfo'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'beta'
-x-prismlauncher-version-number = 'AdvancedLootInfo-neoforge-1.21.1-1.7.2.jar'
+x-prismlauncher-version-number = 'AdvancedLootInfo-neoforge-1.21.1-1.8.2.jar'
 
 [download]
-hash = 'cf383014d2646376db9fa28bc81a4e2495d3a235'
+hash = 'dffdf271a8b01cb9f951a3cb6ac27de66467181d'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7600918
+file-id = 7767452
 project-id = 1205426
