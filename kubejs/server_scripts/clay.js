@@ -6,6 +6,7 @@ ServerEvents.tags("block", event => {
         event.add("minecraft:nether_carver_replaceables", clay);
     }
     event.add("minecraft:saplings", "kubejs:clay_sapling");
+    event.add("minecraft:mineable/pickaxe", "kubejs:clay_glass");
 });
 
 ServerEvents.tags("item", event => {
