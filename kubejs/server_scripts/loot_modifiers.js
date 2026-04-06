@@ -90,8 +90,9 @@ LootJS.lootTables(event => {
     event.getEntityTable("mowziesmobs:ferrous_wroughtnaut").createPool(pool => {
         pool.addEntry(LootEntry.of("minecraft:heavy_core").randomChance(0.666666));
     }).createPool(pool => {
-        pool.rolls([3, 5]);
+        pool.rolls([4, 6]);
         pool.addEntry(LootEntry.of("fastpipes:ultimate_extractor_attachment").setCount([4, 8]));
+        pool.addEntry(LootEntry.of("fastpipes:ultimate_inserter_attachment").setCount([4, 8]));
         pool.addEntry(LootEntry.of("fastpipes:advanced_item_pipe").setCount([12, 24]));
         pool.addEntry(LootEntry.of("fastpipes:ultimate_fluid_pipe").setCount([12, 24]));
         pool.addEntry(LootEntry.of("fastpipes:ultimate_energy_pipe").setCount([12, 24]));
