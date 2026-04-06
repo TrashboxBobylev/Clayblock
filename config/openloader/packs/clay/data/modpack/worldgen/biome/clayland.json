@@ -53,23 +53,9 @@
   "spawners": {
     "ambient": [],
     "axolotls": [],
-    "creature": [
-      {
-        "type": "untitledduckmod:duck",
-        "minCount": 2,
-        "maxCount": 4,
-        "weight": 12
-      }
-    ],
+    "creature": [],
     "misc": [],
-    "monster": [
-      {
-        "type": "untitledduckmod:goose",
-        "minCount": 1,
-        "maxCount": 6,
-        "weight": 12
-      }
-    ],
+    "monster": [],
     "underground_water_creature": [],
     "water_ambient": [],
     "water_creature": []
