@@ -239,13 +239,13 @@
 		# 
 		# Range is blocks out from drawer as: [horizontal, up, down]
 		# If ranges from multiple upgrades are added, they are not allowed to exceed these values.
-		maxRange = [24, 8, 0]
+		maxRange = [24, 8, 8]
 
 		[Upgrades.Magnet.Level1]
 			enableUpgrade = true
 			# 
 			# Range is blocks out from drawer as: [horizontal, up, down]
-			range = [1, 1, 0]
+			range = [1, 1, 1]
 			# 
 			# Ticks between active collection when this is the highest upgrade tier.
 			activeSpeed = 20
@@ -258,7 +258,7 @@
 			enableUpgrade = true
 			# 
 			# Range is blocks out from drawer as: [horizontal, up, down]
-			range = [4, 2, 0]
+			range = [4, 2, 2]
 			# 
 			# Ticks between active collection when this is the highest upgrade tier.
 			activeSpeed = 10
@@ -271,7 +271,7 @@
 			enableUpgrade = false
 			# 
 			# Range is blocks out from drawer as: [horizontal, up, down]
-			range = [8, 3, 0]
+			range = [8, 3, 3]
 			# 
 			# Ticks between active collection when this is the highest upgrade tier.
 			activeSpeed = 5
