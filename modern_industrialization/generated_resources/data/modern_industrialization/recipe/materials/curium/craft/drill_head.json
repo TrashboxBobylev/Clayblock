@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "c:gears/curium"
+    },
+    "R": {
+      "tag": "c:rods/curium"
+    },
+    "b": {
+      "item": "modern_industrialization:curium_bolt"
+    },
+    "c": {
+      "item": "modern_industrialization:curium_curved_plate"
+    },
+    "p": {
+      "tag": "c:plates/curium"
+    }
+  },
+  "pattern": [
+    "bcp",
+    "GRc",
+    "bGb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "modern_industrialization:curium_drill_head"
+  }
+}

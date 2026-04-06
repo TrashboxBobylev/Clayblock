@@ -54,6 +54,15 @@
         }
       ]
     },
+    "modern_industrialization:curium_gear": {
+      "components": [
+        {
+          "color": "#A9A9A9",
+          "italic": false,
+          "translate": "text.modern_industrialization.HasBetterYieldAssemblerRecipe"
+        }
+      ]
+    },
     "modern_industrialization:gold_gear": {
       "components": [
         {
