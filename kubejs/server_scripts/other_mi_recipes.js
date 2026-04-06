@@ -136,4 +136,9 @@ ServerEvents.recipes(event => {
         .itemOut("minecraft:dark_oak_sapling", 0.25)
         .itemOut("minecraft:acacia_sapling", 0.25)
         .itemOut("minecraft:azalea", 0.25);
+
+    event.recipes.modern_industrialization.mixer(2, 100)
+        .itemIn("1x minecraft:coal_ore")
+        .itemIn("8x minecraft:nether_brick")
+        .itemOut("modern_industrialization:lignite_coal_ore");
 });
