@@ -155,7 +155,7 @@ ServerEvents.recipes(event => {
     mega_blasting("2x modern_industrialization:raw_titanium", "kubejs:clay_13x");
     mega_blasting("2x modern_industrialization:raw_iridium", "kubejs:clay_14x");
 
-    event.forEachRecipe(/fastpipes:*./, recipe => {
+    event.forEachRecipe(/fastpipes:(?!wrench)(.*)/, recipe => {
         recipe.set("result", recipe.originalRecipeResult.withCount(recipe.originalRecipeResult.count*2));
     });
 
@@ -167,6 +167,16 @@ ServerEvents.recipes(event => {
     event.remove("fastpipes:basic_extractor_attachment");
     event.shaped("fastpipes:basic_extractor_attachment", [
         "ICI"
+    ], {
+        "I": "minecraft:iron_ingot",
+        "C": "minecraft:glow_lichen"
+    });
+
+    event.remove("fastpipes:basic_inserter_attachment");
+    event.shaped("fastpipes:basic_inserter_attachment", [
+        "C",
+        "I",
+        "C"
     ], {
         "I": "minecraft:iron_ingot",
         "C": "minecraft:glow_lichen"

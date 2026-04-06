@@ -265,3 +265,83 @@
 				canSetRoutingMode = true
 				#Whether the extractor can toggle exact mode.
 				canSetExactMode = true
+
+			[pipe.attachment.inserter.basic]
+				#The number of filter slots.
+				# Default: 0
+				# Range: 0 ~ 15
+				filterSlots = 0
+				#Whether the redstone mode can be configured.
+				canSetRedstoneMode = false
+				#Whether the inserter can toggle between whitelist and blacklist.
+				canSetWhitelistBlacklist = false
+				#Whether the inserter can toggle exact mode.
+				canSetExactMode = false
+				#Insertion priority. Items are routed to higher-priority inserters first.
+				# Default: 0
+				# Range: > 0
+				priority = 0
+
+			[pipe.attachment.inserter.improved]
+				#The number of filter slots.
+				# Default: 4
+				# Range: 0 ~ 15
+				filterSlots = 4
+				#Whether the redstone mode can be configured.
+				canSetRedstoneMode = true
+				#Whether the inserter can toggle between whitelist and blacklist.
+				canSetWhitelistBlacklist = false
+				#Whether the inserter can toggle exact mode.
+				canSetExactMode = false
+				#Insertion priority. Items are routed to higher-priority inserters first.
+				# Default: 1
+				# Range: > 0
+				priority = 1
+
+			[pipe.attachment.inserter.advanced]
+				#The number of filter slots.
+				# Default: 8
+				# Range: 0 ~ 15
+				filterSlots = 8
+				#Whether the redstone mode can be configured.
+				canSetRedstoneMode = true
+				#Whether the inserter can toggle between whitelist and blacklist.
+				canSetWhitelistBlacklist = true
+				#Whether the inserter can toggle exact mode.
+				canSetExactMode = true
+				#Insertion priority. Items are routed to higher-priority inserters first.
+				# Default: 2
+				# Range: > 0
+				priority = 2
+
+			[pipe.attachment.inserter.elite]
+				#The number of filter slots.
+				# Default: 12
+				# Range: 0 ~ 15
+				filterSlots = 12
+				#Whether the redstone mode can be configured.
+				canSetRedstoneMode = true
+				#Whether the inserter can toggle between whitelist and blacklist.
+				canSetWhitelistBlacklist = true
+				#Whether the inserter can toggle exact mode.
+				canSetExactMode = true
+				#Insertion priority. Items are routed to higher-priority inserters first.
+				# Default: 3
+				# Range: > 0
+				priority = 3
+
+			[pipe.attachment.inserter.ultimate]
+				#The number of filter slots.
+				# Default: 15
+				# Range: 0 ~ 15
+				filterSlots = 15
+				#Whether the redstone mode can be configured.
+				canSetRedstoneMode = true
+				#Whether the inserter can toggle between whitelist and blacklist.
+				canSetWhitelistBlacklist = true
+				#Whether the inserter can toggle exact mode.
+				canSetExactMode = true
+				#Insertion priority. Items are routed to higher-priority inserters first.
+				# Default: 4
+				# Range: > 0
+				priority = 4

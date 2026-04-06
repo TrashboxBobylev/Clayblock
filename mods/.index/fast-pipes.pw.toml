@@ -1,17 +1,17 @@
-filename = 'fastpipes-1.21.1-1.0.1.jar'
+filename = 'fastpipes-1.21.1-1.2.0.jar'
 name = 'FastPipes'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'fastpipes-1.21.1-1.0.1'
+x-prismlauncher-version-number = 'fastpipes-1.21.1-1.2.0'
 
 [download]
-hash = '8651bbfe8400635a3cfd25ff44098de51866b5fe'
+hash = 'b0d4e3777b055ecf5dd4e58b0c2cef5f50370959'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7577210
+file-id = 7872342
 project-id = 1329310

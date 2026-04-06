@@ -103,7 +103,9 @@
     "next_eat": true
   },
   "fastpipes": {
-    "energy_pipe_info": true
+    "fluid_pipe_info": true,
+    "energy_pipe_info": true,
+    "item_pipe_info": true
   },
   "astages": {
     "block_component_provider": true

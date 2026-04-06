@@ -12,6 +12,8 @@
   "custommachinery:machine_component_provider": null,
   "custommachinery:machine_server_data_provider": null,
   "fastpipes:energy_pipe_info": null,
+  "fastpipes:fluid_pipe_info": null,
+  "fastpipes:item_pipe_info": null,
   "gravestone:grave": null,
   "jade:block_face": null,
   "jade:block_properties": null,
