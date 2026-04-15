@@ -33,6 +33,10 @@ ServerEvents.recipes(event => {
         event.recipes.modern_industrialization.unpacker(2, 100)
             .itemIn(global.terracottas[i])
             .itemOut(Item.of(global.terracottas[i-1]).withCount(4));
+        event.recipes.modern_industrialization.chemical_reactor(8, 100)
+            .itemIn("minecraft:glow_lichen", 0.15)
+            .itemIn((global.terracottas[i]))
+            .itemOut(Item.of(global.clays[i-1]).withCount(2));
     }
 
     event.remove("modern_industrialization:vanilla_recipes/clay_uncrafting");
