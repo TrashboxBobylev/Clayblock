@@ -5,8 +5,8 @@ LootJS.lootTables(event => {
                 ItemFilter.hasEnchantment("minecraft:silk_touch", 1)
             ));
             let ores = [];
-            for (let ore of ["antimony", "bauxite", "lead", "lignite_coal", "nickel", "salt", "tin", "tungsten", "uranium", "silver"]){
-                ores.push(LootEntry.of(`modern_industrialization:${ore}_dust`));
+            for (let ore of ["antimony", "bauxite", "lead", "lignite_coal", "nickel", "salt", "tin", "silver"]){
+                ores.push(LootEntry.of(`modern_industrialization:${ore}_dust`).applyOreBonus("minecraft:fortune"));
             }
             full_entry.addEntry(LootEntry.group(ores));
             pool.addEntry(full_entry);
