@@ -105,6 +105,11 @@ ServerEvents.recipes(event => {
         "B": "minecraft:bricks",
         "T": "minecraft:terracotta"
     });
+    event.recipes.modern_industrialization.assembler(8, 200)
+        .itemIn("4x minecraft:terracotta")
+        .itemIn("4x minecraft:bricks")
+        .itemIn("kubejs:clay_3x")
+        .itemOut("clayworks:kiln");
 
     event.shaped('custommachinery:custom_machine_item[custommachinery:machine="custommachinery:clay_generator"]', [
         "TCT",
@@ -115,6 +120,11 @@ ServerEvents.recipes(event => {
         "F": "clayworks:kiln",
         "C": "minecraft:copper_block"
     });
+    event.recipes.modern_industrialization.assembler(8, 200)
+        .itemIn("18x minecraft:copper_ingot")
+        .itemIn("6x kubejs:clay_4x")
+        .itemIn("clayworks:kiln")
+        .itemOut(`custommachinery:custom_machine_item[custommachinery:machine="custommachinery:clay_generator"]`);
     
     event.shaped("2x modern_industrialization:clay_generator_i", [
         "GGG",
