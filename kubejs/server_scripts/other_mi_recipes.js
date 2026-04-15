@@ -142,8 +142,11 @@ ServerEvents.recipes(event => {
         .itemIn("8x minecraft:nether_brick")
         .itemOut("modern_industrialization:lignite_coal_ore");
 
-    event.forEachRecipe(/modern_industrialization:[lmh]v_diesel_generator/, recipe => {
+    event.forEachRecipe(/modern_industrialization:electric_age\/machine\/[lmh]v_diesel_generator/, recipe => {
         recipe.set("result", recipe.originalRecipeResult.withCount(recipe.originalRecipeResult.count*3));
+    });
+    event.forEachRecipe(/modern_industrialization:assembler_generated\/electric_age\/machine\/[lmh]v_diesel_generator/, recipe => {
+        recipe.set("item_outputs", [recipe.get("item_outputs")[0].getStack().withCount(recipe.get("item_outputs")[0].getStack().count*3)]);
     });
 
     event.replaceInput({output: "extended_industrialization:processing_array"}, "modern_industrialization:digital_circuit", "modern_industrialization:highly_advanced_upgrade");
