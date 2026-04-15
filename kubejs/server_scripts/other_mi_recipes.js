@@ -147,4 +147,11 @@ ServerEvents.recipes(event => {
     });
 
     event.replaceInput({output: "extended_industrialization:processing_array"}, "modern_industrialization:digital_circuit", "modern_industrialization:highly_advanced_upgrade");
+
+    event.remove("modern_industrialization:materials/blast_furnace/annealed_copper");
+    event.recipes.modern_industrialization.blast_furnace(64, 600)
+        .fluidIn("250x modern_industrialization:oxygen")
+        .itemIn("modern_industrialization:copper_dust")
+        .itemIn("#modpack:fuel_improvement_parts")
+        .itemOut("modern_industrialization:annealed_copper_hot_ingot");
 });
