@@ -52,7 +52,8 @@ let tooltip_changes = {
     "minecraft:red_nether_bricks": [{translate: "modpack.location_nether"}],
     "minecraft:granite": [{translate: "modpack.location_nether"}],
     "kubejs:clay_glass": [{translate: "modpack.location_the_end"}],
-    "minecraft:green_candle": [{translate: "modpack.claysta_2"}]
+    "minecraft:green_candle": [{translate: "modpack.claysta_2"}],
+    "extended_industrialization:processing_array": [{translate: "modpack.processing_array"}]
 };
 
 ItemEvents.modifyTooltips(event => {

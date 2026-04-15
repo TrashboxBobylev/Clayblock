@@ -71,6 +71,7 @@
     "modpack.hook_changes_2": "Has practically infinite range",
     "modpack.anvil": "Can be placed down with dispensers",
     "modpack.redstone_automation": "Can be put in an item frame next to dispensers, crafters or droppers to make them constantly activate",
+    "modpack.processing_array": "Limited to up to 16 machines at once instead of 64",
     "modpack.claysta_1": "Grows into Claysta Fruit-bearing vine",
     "modpack.claysta_2": "Found in the underground terracotta geodes",
     "modpack.dragon_egg_1": "Every successful dragon kill drops an egg",

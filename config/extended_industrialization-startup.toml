@@ -30,7 +30,7 @@ allow_upgrades_in_processing_array = true
 #Default: 4
 # Default: 4
 # Range: 1 ~ 4
-processing_array_max_size = 4
+processing_array_max_size = 2
 
 [batching_machines]
 	#The maximum batch size to use for the Large Steam Furnace

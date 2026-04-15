@@ -145,4 +145,6 @@ ServerEvents.recipes(event => {
     event.forEachRecipe(/modern_industrialization:[lmh]v_diesel_generator/, recipe => {
         recipe.set("result", recipe.originalRecipeResult.withCount(recipe.originalRecipeResult.count*3));
     });
+
+    event.replaceInput({output: "extended_industrialization:processing_array"}, "modern_industrialization:digital_circuit", "modern_industrialization:highly_advanced_upgrade");
 });
