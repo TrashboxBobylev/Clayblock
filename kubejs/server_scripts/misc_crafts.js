@@ -149,11 +149,11 @@ ServerEvents.recipes(event => {
     mega_blasting("48x modern_industrialization:bauxite_dust", "kubejs:clay_10x");
     mega_blasting("32x modern_industrialization:salt_dust", "kubejs:terracotta_10x");
     mega_blasting("3x modern_industrialization:monazite_dust", "kubejs:clay_11x");
-    mega_blasting("3x modern_industrialization:raw_tungsten", "kubejs:terracotta_11x");
-    mega_blasting("3x modern_industrialization:raw_uranium", "kubejs:clay_12x");
-    mega_blasting("3x modern_industrialization:raw_platinum", "kubejs:terracotta_12x");
-    mega_blasting("2x modern_industrialization:raw_titanium", "kubejs:clay_13x");
-    mega_blasting("2x modern_industrialization:raw_iridium", "kubejs:clay_14x");
+    mega_blasting("6x modern_industrialization:raw_tungsten", "kubejs:terracotta_11x");
+    mega_blasting("6x modern_industrialization:raw_uranium", "kubejs:clay_12x");
+    mega_blasting("6x modern_industrialization:raw_platinum", "kubejs:terracotta_12x");
+    mega_blasting("3x modern_industrialization:raw_titanium", "kubejs:clay_13x");
+    mega_blasting("3x modern_industrialization:raw_iridium", "kubejs:clay_14x");
 
     event.forEachRecipe(/fastpipes:(?!wrench)(.*)/, recipe => {
         recipe.set("result", recipe.originalRecipeResult.withCount(recipe.originalRecipeResult.count*2));
