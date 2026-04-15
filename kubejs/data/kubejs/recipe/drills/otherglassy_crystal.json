@@ -1,0 +1,62 @@
+{
+    "type": "modern_industrialization:quarry",
+    "eu": 8,
+    "duration": 200,
+    "item_inputs": {
+        "item": "kubejs:otherglassy_crystal",
+        "amount": 1,
+        "probability": 1
+    },
+    "item_outputs": [
+        {
+            "item": "modern_industrialization:antimony_dust",
+            "amount": 1,
+            "probability": 0.25
+        },
+        {
+            "item": "modern_industrialization:bauxite_dust",
+            "amount": 1,
+            "probability": 0.25
+        },
+        {
+            "item": "modern_industrialization:lead_dust",
+            "amount": 1,
+            "probability": 0.25
+        },
+        {
+            "item": "modern_industrialization:lignite_coal_dust",
+            "amount": 1,
+            "probability": 0.25
+        },
+        {
+            "item": "modern_industrialization:nickel_dust",
+            "amount": 1,
+            "probability": 0.25
+        },
+        {
+            "item": "modern_industrialization:salt_dust",
+            "amount": 1,
+            "probability": 0.25
+        },
+        {
+            "item": "modern_industrialization:tin_dust",
+            "amount": 1,
+            "probability": 0.25
+        },
+        {
+            "item": "modern_industrialization:tungsten_dust",
+            "amount": 1,
+            "probability": 0.25
+        },
+        {
+            "item": "modern_industrialization:uranium_dust",
+            "amount": 1,
+            "probability": 0.25
+        },
+        {
+            "item": "modern_industrialization:silver_dust",
+            "amount": 1,
+            "probability": 0.25
+        }
+    ]
+}

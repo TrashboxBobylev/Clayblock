@@ -20,4 +20,12 @@ NativeEvents.onEvent($RegisterColorHandlersEvent$Block, event => {
 
         return Color.rgba(145 + 110 * posHash, 180 * posHash, 205 + 50 * posHash, 180).getRgb();
     }, Block.getBlock("kubejs:otherworldy_crystal"));
+    event.register((state, level, pos, tintIndex) => {
+        if (pos == null)
+            pos = BlockPos.ZERO;
+
+        let posHash = Math.abs(noise_thing.getValue(pos.x * pos.z, pos.y*pos.y, false));
+
+        return Color.rgba(125 + 130 * posHash, 190 * posHash, 185 + 70 * posHash, 180).getRgb();
+    }, Block.getBlock("kubejs:otherglassy_crystal"));
 });

@@ -14,6 +14,20 @@ LootJS.lootTables(event => {
 });
 
 ServerEvents.tags("block", event => {
-    event.add("minecraft:mineable/pickaxe", "kubejs:otherworldy_crystal");
-    event.add("minecraft:needs_diamond_tool", "kubejs:otherworldy_crystal");
+    event.add("minecraft:mineable/pickaxe", "kubejs:otherworldy_crystal", "kubejs:otherglassy_crystal");
+    event.add("minecraft:needs_diamond_tool", "kubejs:otherworldy_crystal", "kubejs:otherglassy_crystal");
+});
+
+ServerEvents.recipes(event => {
+    event.recipes.modern_industrialization.mixer(8, 200)
+        .itemIn("kubejs:otherworldy_crystal")
+        .itemIn("4x kubejs:clay_glass")
+        .fluidIn("100x extended_industrialization:blazing_essence")
+        .itemOut("kubejs:otherglassy_crystal");
+
+    event.recipes.modern_industrialization.mixer(8, 75)
+        .itemIn("kubejs:otherworldy_crystal")
+        .itemIn("2x kubejs:clay_glass")
+        .fluidIn("50x modern_industrialization:diethyl_ether")
+        .itemOut("kubejs:otherglassy_crystal");
 });
