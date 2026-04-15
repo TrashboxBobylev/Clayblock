@@ -142,6 +142,12 @@ ServerEvents.recipes(event => {
         .itemIn("8x minecraft:nether_brick")
         .itemOut("modern_industrialization:lignite_coal_ore");
 
+    event.recipes.modern_industrialization.mixer(8, 200)
+        .itemIn("minecraft:netherrack", 0.0)
+        .fluidIn("1x extended_industrialization:blazing_essence")
+        .fluidIn("1x minecraft:lava", 0.0)
+        .itemOut("2x minecraft:netherrack");
+
     event.forEachRecipe(/modern_industrialization:electric_age\/machine\/[lmh]v_diesel_generator/, recipe => {
         recipe.set("result", recipe.originalRecipeResult.withCount(recipe.originalRecipeResult.count*3));
     });
