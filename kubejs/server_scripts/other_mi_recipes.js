@@ -141,4 +141,8 @@ ServerEvents.recipes(event => {
         .itemIn("1x minecraft:coal_ore")
         .itemIn("8x minecraft:nether_brick")
         .itemOut("modern_industrialization:lignite_coal_ore");
+
+    event.forEachRecipe(/modern_industrialization:[lmh]v_diesel_generator/, recipe => {
+        recipe.set("result", recipe.originalRecipeResult.withCount(recipe.originalRecipeResult.count*3));
+    });
 });
