@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
         });
         event.recipes.modern_industrialization.chemical_reactor(12, 200)
             .itemIn(Item.of(recipe[0]).withCount(16))
-            .fluidIn("200x modern_industrialization:sulfiric_acid")
+            .fluidIn("200x modern_industrialization:sulfuric_acid")
             .itemOut(Item.of(typeof(recipe[1]) == "string" ? recipe[1] : recipe[1].item)
                 .withCount(Math.round(10 * (typeof(recipe[1]) == "string" ? 0.5 : recipe[1].chance))));
         event.recipes.modern_industrialization.implosion_compressor(1, 10)
