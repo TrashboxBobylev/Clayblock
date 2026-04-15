@@ -51,7 +51,7 @@
         {
             "item": "minecraft:end_crystal",
             "amount": 1,
-            "probability": 0.0125
+            "probability": 0.02
         }
     ]
 }

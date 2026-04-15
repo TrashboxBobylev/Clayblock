@@ -202,13 +202,12 @@ ServerEvents.recipes(event => {
     });
 
     event.shaped("minecraft:end_crystal", [
-        "GQG",
-        "QEQ",
-        "GQG"
+        "GGG",
+        "GEG",
+        "GGG"
     ], {
-        "Q": "modern_industrialization:clayium_rod",
         "G": "kubejs:clay_glass",
-        "E": "minecraft:ender_eye"
+        "E": "rftoolsbase:infused_enderpearl"
     });
 
     event.shaped("minecraft:sculk_sensor", [

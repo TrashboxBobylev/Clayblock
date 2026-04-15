@@ -41,9 +41,9 @@ LootJS.lootTables(event => {
         pool.replaceItem(ItemFilter.item("minecraft:iron_chestplate", false), "onlyhammersandexcavators:emerald_hammer");
         pool.replaceItem(ItemFilter.item("minecraft:iron_leggings", false), "onlyhammersandexcavators:diamond_excavator");
         pool.replaceItem(ItemFilter.item("minecraft:iron_boots", false), "onlyhammersandexcavators:diamond_hammer");
+        pool.replaceItem(ItemFilter.item("minecraft:diamond_horse_armor", false), "minecraft:end_crystal");
         pool.removeItem("minecraft:iron_horse_armor");
         pool.removeItem("minecraft:golden_horse_armor");
-        pool.removeItem("minecraft:diamond_horse_armor");
         pool.removeItem("minecraft:saddle");
         pool.removeItem("minecraft:beetroot_seeds");
     });
