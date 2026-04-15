@@ -141,17 +141,17 @@ ServerEvents.recipes(event => {
     blasting("minecraft:quartz", "minecraft:granite");
     blasting("5x rftoolsbase:dimensionalshard", "kubejs:clay_8x");
 
-    mega_blasting("8x modern_industrialization:tin_ingot", "modern_industrialization:clayium_ingot");
+    mega_blasting("9x modern_industrialization:raw_tin_block", "modern_industrialization:clayium_block");
     blasting("2x modern_industrialization:lead_tiny_dust", "kubejs:clay_glass");
     blasting("modern_industrialization:antimony_tiny_dust", "minecraft:end_stone");
-    mega_blasting("12x modern_industrialization:raw_silver", "kubejs:clay_9x");
-    mega_blasting("12x modern_industrialization:raw_nickel", "kubejs:terracotta_9x");
+    mega_blasting("16x modern_industrialization:raw_silver", "kubejs:clay_9x");
+    mega_blasting("16x modern_industrialization:raw_nickel", "kubejs:terracotta_9x");
     mega_blasting("48x modern_industrialization:bauxite_dust", "kubejs:clay_10x");
-    mega_blasting("24x modern_industrialization:salt_dust", "kubejs:terracotta_10x");
+    mega_blasting("32x modern_industrialization:salt_dust", "kubejs:terracotta_10x");
     mega_blasting("3x modern_industrialization:monazite_dust", "kubejs:clay_11x");
-    mega_blasting("2x modern_industrialization:raw_tungsten", "kubejs:terracotta_11x");
+    mega_blasting("3x modern_industrialization:raw_tungsten", "kubejs:terracotta_11x");
     mega_blasting("3x modern_industrialization:raw_uranium", "kubejs:clay_12x");
-    mega_blasting("2x modern_industrialization:raw_platinum", "kubejs:terracotta_12x");
+    mega_blasting("3x modern_industrialization:raw_platinum", "kubejs:terracotta_12x");
     mega_blasting("2x modern_industrialization:raw_titanium", "kubejs:clay_13x");
     mega_blasting("2x modern_industrialization:raw_iridium", "kubejs:clay_14x");
 
